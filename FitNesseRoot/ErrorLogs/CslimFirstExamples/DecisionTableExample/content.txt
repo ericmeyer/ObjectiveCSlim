@@ -1,6 +1,0 @@
-!3 !-slim-!
-|'''Date: '''|!-4:23:18 PM (CDT) on Friday, October 14, 2011-!|
-|'''Test Page: '''|.CslimFirstExamples.DecisionTableExample|
-|'''Command: '''|!-/Users/ericmeyer/Library/Developer/Xcode/DerivedData/ObjectiveCSlim-bcttiwaododcgkdyailthkgiazti/Build/Products/Debug/AcceptanceTest.app/Contents/MacOS/AcceptanceTest  8092-!|
-|'''Exit code: '''|!-0-!|
-|'''Time elapsed: '''|!-0.08 seconds-!|
