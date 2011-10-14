@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82102491448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
+		F821024A1448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F873F3D21448BF0700FFCA02 /* Fixtures.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.c */; };
 		F873F3D41448BF2800FFCA02 /* DecisionTableExample.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
-		F873F3DA1448C6BC00FFCA02 /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D81448C6BC00FFCA02 /* Adder.m */; };
+		F873F3DA1448C6BC00FFCA02 /* AdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D81448C6BC00FFCA02 /* AdderFixture.m */; };
 		F8ED9F011448BDF900DCBB3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
 		F8ED9F0B1448BDF900DCBB3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F091448BDF900DCBB3F /* InfoPlist.strings */; };
 		F8ED9F0E1448BDF900DCBB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F0D1448BDF900DCBB3F /* main.m */; };
@@ -36,11 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F82102471448DF420086919F /* Adder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adder.h; sourceTree = "<group>"; };
+		F82102481448DF420086919F /* Adder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adder.m; sourceTree = "<group>"; };
 		F873F3D11448BF0700FFCA02 /* Fixtures.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Fixtures.c; sourceTree = "<group>"; };
 		F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DecisionTableExample.c; sourceTree = "<group>"; };
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
 		F873F3D71448C5F100FFCA02 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = fitnesse.jar; sourceTree = "<group>"; };
-		F873F3D81448C6BC00FFCA02 /* Adder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adder.m; sourceTree = "<group>"; };
+		F873F3D81448C6BC00FFCA02 /* AdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdderFixture.m; sourceTree = "<group>"; };
 		F8ED9EFC1448BDF900DCBB3F /* ObjectiveCSlim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCSlim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ED9F001448BDF900DCBB3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F8ED9F031448BDF900DCBB3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -107,7 +111,7 @@
 				F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */,
 				F873F3D11448BF0700FFCA02 /* Fixtures.c */,
 				F873F3D51448BF4F00FFCA02 /* Main.c */,
-				F873F3D81448C6BC00FFCA02 /* Adder.m */,
+				F873F3D81448C6BC00FFCA02 /* AdderFixture.m */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -158,6 +162,8 @@
 				F8ED9F131448BDF900DCBB3F /* ObjectiveCSlimAppDelegate.m */,
 				F8ED9F151448BDF900DCBB3F /* MainMenu.xib */,
 				F8ED9F071448BDF900DCBB3F /* Supporting Files */,
+				F82102471448DF420086919F /* Adder.h */,
+				F82102481448DF420086919F /* Adder.m */,
 			);
 			path = ObjectiveCSlim;
 			sourceTree = "<group>";
@@ -294,6 +300,7 @@
 			files = (
 				F8ED9F0E1448BDF900DCBB3F /* main.m in Sources */,
 				F8ED9F141448BDF900DCBB3F /* ObjectiveCSlimAppDelegate.m in Sources */,
+				F82102491448DF420086919F /* Adder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +323,8 @@
 				F873F3D21448BF0700FFCA02 /* Fixtures.c in Sources */,
 				F873F3D41448BF2800FFCA02 /* DecisionTableExample.c in Sources */,
 				F873F3D61448BF4F00FFCA02 /* Main.c in Sources */,
-				F873F3DA1448C6BC00FFCA02 /* Adder.m in Sources */,
+				F873F3DA1448C6BC00FFCA02 /* AdderFixture.m in Sources */,
+				F821024A1448DF420086919F /* Adder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
