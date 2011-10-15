@@ -1,0 +1,6 @@
+!|script|Count    |
+|check  |counter|0|
+|count            |
+|check  |counter|1|
+|count            |
+|check  |counter|2|
