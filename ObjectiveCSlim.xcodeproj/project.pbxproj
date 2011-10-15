@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F81ADAC81448F2C500BC821A /* ScriptTableExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADAC71448F2C500BC821A /* ScriptTableExample.m */; };
+		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F82102491448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F821024A1448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F873F3D21448BF0700FFCA02 /* Fixtures.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.c */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		F81ADAC71448F2C500BC821A /* ScriptTableExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptTableExample.m; sourceTree = "<group>"; };
+		F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjAdderFixture.h; sourceTree = "<group>"; };
+		F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjAdderFixture.m; sourceTree = "<group>"; };
 		F82102471448DF420086919F /* Adder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adder.h; sourceTree = "<group>"; };
 		F82102481448DF420086919F /* Adder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adder.m; sourceTree = "<group>"; };
 		F873F3D11448BF0700FFCA02 /* Fixtures.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Fixtures.c; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				F873F3D11448BF0700FFCA02 /* Fixtures.c */,
 				F873F3D51448BF4F00FFCA02 /* Main.c */,
 				F873F3D81448C6BC00FFCA02 /* AdderFixture.m */,
+				F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */,
+				F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				F873F3DA1448C6BC00FFCA02 /* AdderFixture.m in Sources */,
 				F821024A1448DF420086919F /* Adder.m in Sources */,
 				F81ADAC81448F2C500BC821A /* ScriptTableExample.m in Sources */,
+				F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

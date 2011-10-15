@@ -5,8 +5,9 @@
 #include "Fixtures.h"
 #import <Cocoa/Cocoa.h>
 #import "Adder.h"
+#import "ObjAdderFixture.h"
 
-ObjAdder* globalObjAdder;
+ObjAdderFixture* objFixture;
 
 typedef struct Adder
 {
@@ -16,30 +17,35 @@ typedef struct Adder
 void* Adder_Create(StatementExecutor* errorHandler, SlimList* args)
 {
 	Adder* self = (Adder*)malloc(sizeof(Adder));
-    globalObjAdder = [[ObjAdder alloc] init];
+    objFixture = [[ObjAdderFixture alloc] init];
 	memset(self, 0, sizeof(Adder));
 	return self;
 }
 
 void Adder_Destroy(void* void_self)
 {
-    [globalObjAdder release];
+    [objFixture release];
 	free(void_self);
 }
 
 static char* setFirst(void* void_self, SlimList* args) {
-    globalObjAdder.first = SlimList_GetDoubleAt(args, 0);
+    NSString* string = [NSString stringWithFormat:@"%s" , SlimList_GetStringAt(args, 0)];
+    [objFixture setFirst: string];
+    [string release];
 	return "";
 }
 
 static char* setSecond(void* void_self, SlimList* args) {
-    globalObjAdder.second = SlimList_GetDoubleAt(args, 0);
+    NSString* string = [NSString stringWithFormat:@"%s" , SlimList_GetStringAt(args, 0)];
+    [objFixture setSecond: string];
+    [string release];
 	return "";
 }
 
 static char* Result(void* void_self, SlimList* args) {
 	Adder* self = (Adder*)void_self;
-    snprintf(self->result, 32, "%g", [globalObjAdder result]);
+    snprintf(self->result, 32, "%s", [[objFixture result] UTF8String]);
+    printf("first: %g", objFixture.adder.first);
     return self->result;
 }
 
