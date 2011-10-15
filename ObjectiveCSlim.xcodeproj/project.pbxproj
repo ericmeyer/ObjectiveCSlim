@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81ADAC81448F2C500BC821A /* ScriptTableExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADAC71448F2C500BC821A /* ScriptTableExample.m */; };
 		F82102491448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F821024A1448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F873F3D21448BF0700FFCA02 /* Fixtures.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.c */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F81ADAC71448F2C500BC821A /* ScriptTableExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptTableExample.m; sourceTree = "<group>"; };
 		F82102471448DF420086919F /* Adder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adder.h; sourceTree = "<group>"; };
 		F82102481448DF420086919F /* Adder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adder.m; sourceTree = "<group>"; };
 		F873F3D11448BF0700FFCA02 /* Fixtures.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Fixtures.c; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		F873F3CF1448BEF300FFCA02 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				F81ADAC71448F2C500BC821A /* ScriptTableExample.m */,
 				F873F3D71448C5F100FFCA02 /* fitnesse.jar */,
 				F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */,
 				F873F3D11448BF0700FFCA02 /* Fixtures.c */,
@@ -325,6 +328,7 @@
 				F873F3D61448BF4F00FFCA02 /* Main.c in Sources */,
 				F873F3DA1448C6BC00FFCA02 /* AdderFixture.m in Sources */,
 				F821024A1448DF420086919F /* Adder.m in Sources */,
+				F81ADAC81448F2C500BC821A /* ScriptTableExample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
