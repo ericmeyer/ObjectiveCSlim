@@ -9,23 +9,15 @@
 
 ObjAdderFixture* objFixture;
 
-typedef struct Adder
-{
-	char result[32];
-} Adder;
-
 void* Adder_Create(StatementExecutor* errorHandler, SlimList* args)
 {
-	Adder* self = (Adder*)malloc(sizeof(Adder));
     objFixture = [[ObjAdderFixture alloc] init];
-	memset(self, 0, sizeof(Adder));
-	return self;
+	return objFixture;
 }
 
 void Adder_Destroy(void* void_self)
 {
     [objFixture release];
-	free(void_self);
 }
 
 static char* setFirst(void* void_self, SlimList* args) {
@@ -43,10 +35,9 @@ static char* setSecond(void* void_self, SlimList* args) {
 }
 
 static char* Result(void* void_self, SlimList* args) {
-	Adder* self = (Adder*)void_self;
-    snprintf(self->result, 32, "%s", [[objFixture result] UTF8String]);
-    printf("first: %g", objFixture.adder.first);
-    return self->result;
+    char *string = malloc (32 * sizeof (char));
+    snprintf(string, 32, "%s", [[objFixture result] UTF8String]);
+    return string;
 }
 
 
