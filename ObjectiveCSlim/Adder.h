@@ -1,4 +1,4 @@
-@interface ObjAdder: NSObject {
+@interface Adder: NSObject {
     double first;
     double second;
 }

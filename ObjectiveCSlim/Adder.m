@@ -1,6 +1,6 @@
 #import "Adder.h"
 
-@implementation ObjAdder
+@implementation Adder
 @synthesize first, second;
 
 -(id) init {

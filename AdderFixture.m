@@ -6,11 +6,11 @@
 #import <Cocoa/Cocoa.h>
 #import "Adder.h"
 
-ObjAdder* globalObjAdder;
+Adder* globalObjAdder;
 
 void* Adder_Create(StatementExecutor* errorHandler, SlimList* args)
 {
-    globalObjAdder = [[ObjAdder alloc] init];
+    globalObjAdder = [[Adder alloc] init];
 	return globalObjAdder;
 }
 
