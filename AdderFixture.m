@@ -8,23 +8,15 @@
 
 ObjAdder* globalObjAdder;
 
-typedef struct Adder
-{
-	char result[32];
-} Adder;
-
 void* Adder_Create(StatementExecutor* errorHandler, SlimList* args)
 {
-	Adder* self = (Adder*)malloc(sizeof(Adder));
     globalObjAdder = [[ObjAdder alloc] init];
-	memset(self, 0, sizeof(Adder));
-	return self;
+	return globalObjAdder;
 }
 
 void Adder_Destroy(void* void_self)
 {
     [globalObjAdder release];
-	free(void_self);
 }
 
 static char* setFirst(void* void_self, SlimList* args) {
@@ -38,9 +30,9 @@ static char* setSecond(void* void_self, SlimList* args) {
 }
 
 static char* Result(void* void_self, SlimList* args) {
-	Adder* self = (Adder*)void_self;
-    snprintf(self->result, 32, "%g", [globalObjAdder result]);
-    return self->result;
+    char *string = malloc (32 * sizeof (char));
+    snprintf(string, 32, "%g", [globalObjAdder result]);
+    return string;
 }
 
 
