@@ -57,7 +57,7 @@ int SymbolTable_GetSymbolLength(SymbolTable* self, char const* symbol, int lengt
 	char * symbolValue = SymbolTable_FindSymbol(self, symbol, length);
 	if (symbolValue == NULL)
 		return -1;
-	return strlen(symbolValue);
+	return (int)strlen(symbolValue);
 }
 
 

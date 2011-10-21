@@ -1,6 +1,7 @@
 !contents -R2 -g -p -f -h
 
+
 !define TEST_SYSTEM {slim}
-!define TEST_RUNNER {/Users/ericmeyer/Library/Developer/Xcode/DerivedData/ObjectiveCSlim-fgkwezoabacokoeeipksamojkkza/Build/Products/Debug/AcceptanceTest.app/Contents/MacOS/AcceptanceTest}
+!define TEST_RUNNER {build/Debug/AcceptanceTest.app/Contents/MacOS/AcceptanceTest}
 !define COMMAND_PATTERN {%m}
 !define SLIM_VERSION {0.0}

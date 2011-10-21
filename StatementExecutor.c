@@ -194,8 +194,8 @@ static char* replaceStringFrom(SymbolTable* symbolTable, char* string, char* fro
 		char * symbolValue = SymbolTable_FindSymbol(symbolTable, dollarSign + 1, length);
 		if (symbolValue)
 		{
-			int valueLength = strlen(symbolValue);
-			int bufferLength = strlen(string)+valueLength-(length+1) + 1;
+			int valueLength = (int)strlen(symbolValue);
+			int bufferLength = (int)strlen(string)+valueLength-(length+1) + 1;
 			char * newString = (char*)malloc(bufferLength);
 			memset(newString, 0, bufferLength);
 			strncat(newString, string, (dollarSign - string));
