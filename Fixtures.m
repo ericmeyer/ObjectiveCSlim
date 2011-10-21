@@ -1,4 +1,5 @@
 #include "Fixtures.h"
+#import "ObjAdderFixture.h"
 
 SLIM_FIXTURES
     SLIM_FIXTURE(Adder)
