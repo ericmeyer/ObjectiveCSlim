@@ -1,0 +1,3 @@
+[submodule "OCDSpec"]
+	path = OCDSpec
+	url = git@github.com:ericmeyer/OCDSpec.git
