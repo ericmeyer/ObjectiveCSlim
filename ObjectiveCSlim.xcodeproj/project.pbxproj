@@ -15,6 +15,17 @@
 		F873F3D41448BF2800FFCA02 /* DecisionTableExample.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
 		F873F3DA1448C6BC00FFCA02 /* AdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D81448C6BC00FFCA02 /* AdderFixture.m */; };
+		F8A425B5145208CC00FD4ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
+		F8A425E71452098500FD4ECA /* OCDSpecDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425D81452098500FD4ECA /* OCDSpecDescription.m */; };
+		F8A425E81452098500FD4ECA /* OCDSpecDescriptionRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425DA1452098500FD4ECA /* OCDSpecDescriptionRunner.m */; };
+		F8A425E91452098500FD4ECA /* OCDSpecExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425DC1452098500FD4ECA /* OCDSpecExample.m */; };
+		F8A425EA1452098500FD4ECA /* OCDSpecExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425DE1452098500FD4ECA /* OCDSpecExpectation.m */; };
+		F8A425EB1452098500FD4ECA /* OCDSpecFail.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425E01452098500FD4ECA /* OCDSpecFail.m */; };
+		F8A425EC1452098500FD4ECA /* OCDSpecOutputter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425E21452098500FD4ECA /* OCDSpecOutputter.m */; };
+		F8A425ED1452098500FD4ECA /* OCDSpecOutputter+RedirectOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425E41452098500FD4ECA /* OCDSpecOutputter+RedirectOutput.m */; };
+		F8A425EE1452098500FD4ECA /* OCDSpecSharedResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425E61452098500FD4ECA /* OCDSpecSharedResults.m */; };
+		F8A425F0145209A000FD4ECA /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425EF145209A000FD4ECA /* unitTestMain.m */; };
+		F8A425F2145209F800FD4ECA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425F1145209F800FD4ECA /* UIKit.framework */; };
 		F8ED9F011448BDF900DCBB3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
 		F8ED9F0B1448BDF900DCBB3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F091448BDF900DCBB3F /* InfoPlist.strings */; };
 		F8ED9F0E1448BDF900DCBB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F0D1448BDF900DCBB3F /* main.m */; };
@@ -50,6 +61,31 @@
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
 		F873F3D71448C5F100FFCA02 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = fitnesse.jar; sourceTree = "<group>"; };
 		F873F3D81448C6BC00FFCA02 /* AdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdderFixture.m; sourceTree = "<group>"; };
+		F8A425B0145208CC00FD4ECA /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A425B2145208CC00FD4ECA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F8A425B4145208CC00FD4ECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8A425B6145208CC00FD4ECA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8A425BE145208CD00FD4ECA /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		F8A425D51452098500FD4ECA /* iPhone-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "iPhone-Prefix.pch"; path = "OCDSpec/OCDSpec/iPhone-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		F8A425D61452098500FD4ECA /* OCDSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDSpec.h; path = OCDSpec/OCDSpec/OCDSpec.h; sourceTree = SOURCE_ROOT; };
+		F8A425D71452098500FD4ECA /* OCDSpecDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDSpecDescription.h; path = OCDSpec/OCDSpec/OCDSpecDescription.h; sourceTree = SOURCE_ROOT; };
+		F8A425D81452098500FD4ECA /* OCDSpecDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDSpecDescription.m; path = OCDSpec/OCDSpec/OCDSpecDescription.m; sourceTree = SOURCE_ROOT; };
+		F8A425D91452098500FD4ECA /* OCDSpecDescriptionRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDSpecDescriptionRunner.h; path = OCDSpec/OCDSpec/OCDSpecDescriptionRunner.h; sourceTree = SOURCE_ROOT; };
+		F8A425DA1452098500FD4ECA /* OCDSpecDescriptionRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDSpecDescriptionRunner.m; path = OCDSpec/OCDSpec/OCDSpecDescriptionRunner.m; sourceTree = SOURCE_ROOT; };
+		F8A425DB1452098500FD4ECA /* OCDSpecExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDSpecExample.h; path = OCDSpec/OCDSpec/OCDSpecExample.h; sourceTree = SOURCE_ROOT; };
+		F8A425DC1452098500FD4ECA /* OCDSpecExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDSpecExample.m; path = OCDSpec/OCDSpec/OCDSpecExample.m; sourceTree = SOURCE_ROOT; };
+		F8A425DD1452098500FD4ECA /* OCDSpecExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDSpecExpectation.h; path = OCDSpec/OCDSpec/OCDSpecExpectation.h; sourceTree = SOURCE_ROOT; };
+		F8A425DE1452098500FD4ECA /* OCDSpecExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDSpecExpectation.m; path = OCDSpec/OCDSpec/OCDSpecExpectation.m; sourceTree = SOURCE_ROOT; };
+		F8A425DF1452098500FD4ECA /* OCDSpecFail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDSpecFail.h; path = OCDSpec/OCDSpec/OCDSpecFail.h; sourceTree = SOURCE_ROOT; };
+		F8A425E01452098500FD4ECA /* OCDSpecFail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDSpecFail.m; path = OCDSpec/OCDSpec/OCDSpecFail.m; sourceTree = SOURCE_ROOT; };
+		F8A425E11452098500FD4ECA /* OCDSpecOutputter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDSpecOutputter.h; path = OCDSpec/OCDSpec/OCDSpecOutputter.h; sourceTree = SOURCE_ROOT; };
+		F8A425E21452098500FD4ECA /* OCDSpecOutputter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDSpecOutputter.m; path = OCDSpec/OCDSpec/OCDSpecOutputter.m; sourceTree = SOURCE_ROOT; };
+		F8A425E31452098500FD4ECA /* OCDSpecOutputter+RedirectOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OCDSpecOutputter+RedirectOutput.h"; path = "OCDSpec/OCDSpec/OCDSpecOutputter+RedirectOutput.h"; sourceTree = SOURCE_ROOT; };
+		F8A425E41452098500FD4ECA /* OCDSpecOutputter+RedirectOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OCDSpecOutputter+RedirectOutput.m"; path = "OCDSpec/OCDSpec/OCDSpecOutputter+RedirectOutput.m"; sourceTree = SOURCE_ROOT; };
+		F8A425E51452098500FD4ECA /* OCDSpecSharedResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDSpecSharedResults.h; path = OCDSpec/OCDSpec/OCDSpecSharedResults.h; sourceTree = SOURCE_ROOT; };
+		F8A425E61452098500FD4ECA /* OCDSpecSharedResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDSpecSharedResults.m; path = OCDSpec/OCDSpec/OCDSpecSharedResults.m; sourceTree = SOURCE_ROOT; };
+		F8A425EF145209A000FD4ECA /* unitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = unitTestMain.m; path = OCDSpec/OCDSpec/Programs/unitTestMain.m; sourceTree = SOURCE_ROOT; };
+		F8A425F1145209F800FD4ECA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F8ED9EFC1448BDF900DCBB3F /* ObjectiveCSlim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCSlim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ED9F001448BDF900DCBB3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F8ED9F031448BDF900DCBB3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -90,6 +126,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F8A425AD145208CC00FD4ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A425F2145209F800FD4ECA /* UIKit.framework in Frameworks */,
+				F8A425B5145208CC00FD4ECA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8ED9EF91448BDF900DCBB3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,9 +169,47 @@
 			name = Fixtures;
 			sourceTree = "<group>";
 		};
+		F8A425B8145208CC00FD4ECA /* OCDSpec */ = {
+			isa = PBXGroup;
+			children = (
+				F8A425EF145209A000FD4ECA /* unitTestMain.m */,
+				F8A425D51452098500FD4ECA /* iPhone-Prefix.pch */,
+				F8A425D61452098500FD4ECA /* OCDSpec.h */,
+				F8A425D71452098500FD4ECA /* OCDSpecDescription.h */,
+				F8A425D81452098500FD4ECA /* OCDSpecDescription.m */,
+				F8A425D91452098500FD4ECA /* OCDSpecDescriptionRunner.h */,
+				F8A425DA1452098500FD4ECA /* OCDSpecDescriptionRunner.m */,
+				F8A425DB1452098500FD4ECA /* OCDSpecExample.h */,
+				F8A425DC1452098500FD4ECA /* OCDSpecExample.m */,
+				F8A425DD1452098500FD4ECA /* OCDSpecExpectation.h */,
+				F8A425DE1452098500FD4ECA /* OCDSpecExpectation.m */,
+				F8A425DF1452098500FD4ECA /* OCDSpecFail.h */,
+				F8A425E01452098500FD4ECA /* OCDSpecFail.m */,
+				F8A425E11452098500FD4ECA /* OCDSpecOutputter.h */,
+				F8A425E21452098500FD4ECA /* OCDSpecOutputter.m */,
+				F8A425E31452098500FD4ECA /* OCDSpecOutputter+RedirectOutput.h */,
+				F8A425E41452098500FD4ECA /* OCDSpecOutputter+RedirectOutput.m */,
+				F8A425E51452098500FD4ECA /* OCDSpecSharedResults.h */,
+				F8A425E61452098500FD4ECA /* OCDSpecSharedResults.m */,
+				F8A425B9145208CC00FD4ECA /* Supporting Files */,
+			);
+			name = OCDSpec;
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		F8A425B9145208CC00FD4ECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8A425BE145208CD00FD4ECA /* Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F8ED9EF11448BDF900DCBB3F = {
 			isa = PBXGroup;
 			children = (
+				F8A425B8145208CC00FD4ECA /* OCDSpec */,
+				F8A425F1145209F800FD4ECA /* UIKit.framework */,
 				F873F3CF1448BEF300FFCA02 /* Fixtures */,
 				F8ED9F311448BE4B00DCBB3F /* cslim */,
 				F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */,
@@ -140,6 +223,7 @@
 			children = (
 				F8ED9EFC1448BDF900DCBB3F /* ObjectiveCSlim.app */,
 				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTest.app */,
+				F8A425B0145208CC00FD4ECA /* Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +232,9 @@
 			isa = PBXGroup;
 			children = (
 				F8ED9F001448BDF900DCBB3F /* Cocoa.framework */,
+				F8A425B2145208CC00FD4ECA /* UIKit.framework */,
+				F8A425B4145208CC00FD4ECA /* Foundation.framework */,
+				F8A425B6145208CC00FD4ECA /* CoreGraphics.framework */,
 				F8ED9F021448BDF900DCBB3F /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -221,6 +308,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F8A425AF145208CC00FD4ECA /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A425D2145208CD00FD4ECA /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				F8A425AC145208CC00FD4ECA /* Sources */,
+				F8A425AD145208CC00FD4ECA /* Frameworks */,
+				F8A425AE145208CC00FD4ECA /* Resources */,
+				F8A425F314520A0600FD4ECA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = F8A425B0145208CC00FD4ECA /* Specs.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F8ED9EFB1448BDF900DCBB3F /* ObjectiveCSlim */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8ED9F1A1448BDF900DCBB3F /* Build configuration list for PBXNativeTarget "ObjectiveCSlim" */;
@@ -274,11 +379,19 @@
 			targets = (
 				F8ED9EFB1448BDF900DCBB3F /* ObjectiveCSlim */,
 				F8ED9F211448BE3200DCBB3F /* AcceptanceTest */,
+				F8A425AF145208CC00FD4ECA /* Specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F8A425AE145208CC00FD4ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8ED9EFA1448BDF900DCBB3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,7 +414,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F8A425F314520A0600FD4ECA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F8A425AC145208CC00FD4ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A425E71452098500FD4ECA /* OCDSpecDescription.m in Sources */,
+				F8A425E81452098500FD4ECA /* OCDSpecDescriptionRunner.m in Sources */,
+				F8A425E91452098500FD4ECA /* OCDSpecExample.m in Sources */,
+				F8A425EA1452098500FD4ECA /* OCDSpecExpectation.m in Sources */,
+				F8A425EB1452098500FD4ECA /* OCDSpecFail.m in Sources */,
+				F8A425EC1452098500FD4ECA /* OCDSpecOutputter.m in Sources */,
+				F8A425ED1452098500FD4ECA /* OCDSpecOutputter+RedirectOutput.m in Sources */,
+				F8A425EE1452098500FD4ECA /* OCDSpecSharedResults.m in Sources */,
+				F8A425F0145209A000FD4ECA /* unitTestMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8ED9EF81448BDF900DCBB3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,6 +513,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F8A425D3145208CD00FD4ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8A425D4145208CD00FD4ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		F8ED9F181448BDF900DCBB3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -463,6 +651,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F8A425D2145208CD00FD4ECA /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A425D3145208CD00FD4ECA /* Debug */,
+				F8A425D4145208CD00FD4ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F8ED9EF61448BDF900DCBB3F /* Build configuration list for PBXProject "ObjectiveCSlim" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
