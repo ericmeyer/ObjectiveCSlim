@@ -26,6 +26,19 @@
 		F8A425EE1452098500FD4ECA /* OCDSpecSharedResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425E61452098500FD4ECA /* OCDSpecSharedResults.m */; };
 		F8A425F0145209A000FD4ECA /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425EF145209A000FD4ECA /* unitTestMain.m */; };
 		F8A425F2145209F800FD4ECA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425F1145209F800FD4ECA /* UIKit.framework */; };
+		F8A426041452130900FD4ECA /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A426031452130900FD4ECA /* StatementExecutorSpec.m */; };
+		F8E09F541452185700C33534 /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F441448BE8100DCBB3F /* SocketServer.c */; };
+		F8E09F551452185700C33534 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F451448BE8100DCBB3F /* TcpComLink.c */; };
+		F8E09F561452185700C33534 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F321448BE7200DCBB3F /* ListExecutor.c */; };
+		F8E09F571452185700C33534 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F331448BE7200DCBB3F /* Slim.c */; };
+		F8E09F581452185700C33534 /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F341448BE7200DCBB3F /* SlimConnectionHandler.c */; };
+		F8E09F591452185700C33534 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F351448BE7200DCBB3F /* SlimList.c */; };
+		F8E09F5A1452185700C33534 /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F361448BE7200DCBB3F /* SlimListDeserializer.c */; };
+		F8E09F5B1452185700C33534 /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F371448BE7200DCBB3F /* SlimListSerializer.c */; };
+		F8E09F5C1452185700C33534 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F381448BE7200DCBB3F /* SlimUtil.c */; };
+		F8E09F5E1452185700C33534 /* SymbolTable.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F3A1448BE7200DCBB3F /* SymbolTable.c */; };
+		F8E09F611452189900C33534 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F601452189900C33534 /* StatementExecutor.m */; };
+		F8E09F6414521AF300C33534 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F6314521AF300C33534 /* TestSlim.m */; };
 		F8ED9F011448BDF900DCBB3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
 		F8ED9F0B1448BDF900DCBB3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F091448BDF900DCBB3F /* InfoPlist.strings */; };
 		F8ED9F0E1448BDF900DCBB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F0D1448BDF900DCBB3F /* main.m */; };
@@ -86,6 +99,10 @@
 		F8A425E61452098500FD4ECA /* OCDSpecSharedResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDSpecSharedResults.m; path = OCDSpec/OCDSpec/OCDSpecSharedResults.m; sourceTree = SOURCE_ROOT; };
 		F8A425EF145209A000FD4ECA /* unitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = unitTestMain.m; path = OCDSpec/OCDSpec/Programs/unitTestMain.m; sourceTree = SOURCE_ROOT; };
 		F8A425F1145209F800FD4ECA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F8A426031452130900FD4ECA /* StatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatementExecutorSpec.m; sourceTree = "<group>"; };
+		F8E09F601452189900C33534 /* StatementExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatementExecutor.m; sourceTree = "<group>"; };
+		F8E09F6214521AF300C33534 /* TestSlim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSlim.h; sourceTree = "<group>"; };
+		F8E09F6314521AF300C33534 /* TestSlim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSlim.m; sourceTree = "<group>"; };
 		F8ED9EFC1448BDF900DCBB3F /* ObjectiveCSlim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCSlim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ED9F001448BDF900DCBB3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F8ED9F031448BDF900DCBB3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -205,14 +222,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F8A425F41452110700FD4ECA /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				F8A426031452130900FD4ECA /* StatementExecutorSpec.m */,
+				F8E09F6214521AF300C33534 /* TestSlim.h */,
+				F8E09F6314521AF300C33534 /* TestSlim.m */,
+			);
+			name = Specs;
+			sourceTree = "<group>";
+		};
 		F8ED9EF11448BDF900DCBB3F = {
 			isa = PBXGroup;
 			children = (
 				F8A425B8145208CC00FD4ECA /* OCDSpec */,
+				F8ED9F311448BE4B00DCBB3F /* cslim */,
 				F8A425F1145209F800FD4ECA /* UIKit.framework */,
 				F873F3CF1448BEF300FFCA02 /* Fixtures */,
-				F8ED9F311448BE4B00DCBB3F /* cslim */,
 				F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */,
+				F8A425F41452110700FD4ECA /* Specs */,
 				F8ED9EFF1448BDF900DCBB3F /* Frameworks */,
 				F8ED9EFD1448BDF900DCBB3F /* Products */,
 			);
@@ -301,6 +329,7 @@
 				F8ED9F381448BE7200DCBB3F /* SlimUtil.c */,
 				F8ED9F391448BE7200DCBB3F /* StatementExecutor.c */,
 				F8ED9F3A1448BE7200DCBB3F /* SymbolTable.c */,
+				F8E09F601452189900C33534 /* StatementExecutor.m */,
 			);
 			name = cslim;
 			sourceTree = "<group>";
@@ -444,6 +473,19 @@
 				F8A425ED1452098500FD4ECA /* OCDSpecOutputter+RedirectOutput.m in Sources */,
 				F8A425EE1452098500FD4ECA /* OCDSpecSharedResults.m in Sources */,
 				F8A425F0145209A000FD4ECA /* unitTestMain.m in Sources */,
+				F8A426041452130900FD4ECA /* StatementExecutorSpec.m in Sources */,
+				F8E09F541452185700C33534 /* SocketServer.c in Sources */,
+				F8E09F551452185700C33534 /* TcpComLink.c in Sources */,
+				F8E09F561452185700C33534 /* ListExecutor.c in Sources */,
+				F8E09F571452185700C33534 /* Slim.c in Sources */,
+				F8E09F581452185700C33534 /* SlimConnectionHandler.c in Sources */,
+				F8E09F591452185700C33534 /* SlimList.c in Sources */,
+				F8E09F5A1452185700C33534 /* SlimListDeserializer.c in Sources */,
+				F8E09F5B1452185700C33534 /* SlimListSerializer.c in Sources */,
+				F8E09F5C1452185700C33534 /* SlimUtil.c in Sources */,
+				F8E09F5E1452185700C33534 /* SymbolTable.c in Sources */,
+				F8E09F611452189900C33534 /* StatementExecutor.m in Sources */,
+				F8E09F6414521AF300C33534 /* TestSlim.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +700,7 @@
 				F8A425D4145208CD00FD4ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8ED9EF61448BDF900DCBB3F /* Build configuration list for PBXProject "ObjectiveCSlim" */ = {
 			isa = XCConfigurationList;
