@@ -2,4 +2,28 @@
 
 @implementation TestSlim
 
+@synthesize wasNoArgsCalled, calledWithStringArg, calledWithFirstStringArg, calledWithSecondStringArg;
+
+-(void) noArgs {
+    self.wasNoArgsCalled = YES;
+}
+
+-(void) withStringArg:(NSString*) someString {
+    self.calledWithStringArg = someString;
+}
+
+-(void) withMultipleArgs:(NSArray*) args {
+    self.calledWithFirstStringArg = [args objectAtIndex: 0];
+    self.calledWithSecondStringArg = [args objectAtIndex: 1];
+}
+
+-(void) dealloc {
+    [calledWithStringArg release];
+    [calledWithFirstStringArg release];
+    [calledWithSecondStringArg release];
+    [super dealloc];
+}
+
+
+
 @end

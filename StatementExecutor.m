@@ -1,5 +1,7 @@
 #import "StatementExecutor.h"
 
+SEL NSSelectorFromCString(char const* c_string);
+NSString* SlimList_GetNSStringAt(SlimList* self, int index);
 //void StatementExecutor_Destroy(StatementExecutor*);
 //
 //void StatementExecutor_AddFixture(StatementExecutor* executor, Fixture);
@@ -16,26 +18,45 @@
 
 struct StatementExecutor
 {
-    id instance;
+    NSMutableDictionary* instances;
 };
 
 StatementExecutor* StatementExecutor_Create(void) {
 	StatementExecutor* self = (StatementExecutor*)malloc(sizeof(StatementExecutor));
 	memset(self, 0, sizeof(StatementExecutor));
+    self->instances = [NSMutableDictionary dictionary];
 	return self;
 }
 
 void* StatementExecutor_Instance(StatementExecutor* executor, char const* instanceName) {
-    return executor->instance;
+    return [executor->instances valueForKey: [NSString stringWithFormat: @"%s", instanceName]];
 }
 
 char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceName, char const* className, SlimList* args){
-    executor->instance = [[NSClassFromString([NSString stringWithFormat: @"%s", className]) alloc] init];
+    [executor->instances setValue: [[NSClassFromString([NSString stringWithFormat: @"%s", className]) alloc] init]
+                           forKey: [NSString stringWithFormat: @"%s", instanceName]];
+    NSLog(@"dictionary: %@", executor->instances);
     return "OK";
 }
 
 char* StatementExecutor_Call(StatementExecutor* executor, char const* instanceName, char const* methodName, SlimList* args){
-    return nil;
+    id instance = StatementExecutor_Instance(executor, instanceName);
+    int length = SlimList_GetLength(args);
+    if(length == 0) {
+        [instance performSelector: NSSelectorFromCString(methodName)];
+    } else if (length == 1) {
+        NSString* string = [NSString stringWithFormat:@"%s:", methodName];
+        [instance performSelector: NSSelectorFromString(string) withObject: SlimList_GetNSStringAt(args, 0)];
+    } else {
+        NSString* string = [NSString stringWithFormat:@"%s:", methodName];
+        NSMutableArray* newArgs = [NSMutableArray array];
+        for(int i=0; i<length; i++) {
+            [newArgs addObject: SlimList_GetNSStringAt(args, i)];
+        }
+        [instance performSelector: NSSelectorFromString(string) withObject: newArgs];
+    }
+    
+    return "OK";
 }
 
 void StatementExecutor_SetSymbol(StatementExecutor* self, char const* symbol, char const* value) {
@@ -48,4 +69,12 @@ void StatementExecutor_Destroy(StatementExecutor* self) {
 
 void AddFixtures(StatementExecutor* executor) {
     
+}
+
+SEL NSSelectorFromCString(char const* c_string) {
+    return NSSelectorFromString([NSString stringWithFormat:@"%s", c_string]);
+}
+
+NSString* SlimList_GetNSStringAt(SlimList* self, int index) {
+    return [NSString stringWithFormat:@"%s", SlimList_GetStringAt(self, index)];
 }
