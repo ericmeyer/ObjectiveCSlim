@@ -1,5 +1,11 @@
-!|ObjAdderFixture     |
+!|ObjAdderFixture    |
 |first|second|result?|
 |6    |2     |8      |
 |12   |3     |15     |
 |5    |1     |6      |
+
+
+!|MissingFixture|
+|something|else?|
+|1        |2    |
+|3        |4    |

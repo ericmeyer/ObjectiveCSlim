@@ -122,5 +122,13 @@ CONTEXT(StatementExecutor)
                     [expect(test_slim_instance.calledWithFirstStringArg) toBeEqualTo:@"put the toilet seat down"];
                     [expect(test_slim_instance.calledWithSecondStringArg) toBeEqualTo:@"every time"];
                 }),
-             nil);
+            it(@"returns an error if the class is missing",
+               ^{
+                   SlimList* empty = SlimList_Create();
+                   StatementExecutor* statementExecutor = StatementExecutor_Create();
+                   
+                   NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Make(statementExecutor, "test_slim", "NoSuchClass", empty)];
+                   [expect(result) toBeEqualTo: @"__EXCEPTION__:message:<<NO_CLASS NoSuchClass.>>"];
+               }),
+            nil);
 }

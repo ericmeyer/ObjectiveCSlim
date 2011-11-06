@@ -35,9 +35,16 @@ void* StatementExecutor_Instance(StatementExecutor* executor, char const* instan
 }
 
 char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceName, char const* className, SlimList* args){
-    [executor->instances setValue: [[NSClassFromString([NSString stringWithFormat: @"%s", className]) alloc] init]
+    id instance = [[NSClassFromString([NSString stringWithFormat: @"%s", className]) alloc] init];
+    if(instance == nil) {
+        char *errorMessage = malloc (128 * sizeof (char));
+        snprintf(errorMessage, 128, "%s", [[NSString stringWithFormat: @"__EXCEPTION__:message:<<NO_CLASS %s.>>", className] UTF8String]);
+        return errorMessage;
+    } else {
+        [executor->instances setValue: instance
                            forKey: [NSString stringWithFormat: @"%s", instanceName]];
-    return "OK";
+        return "OK";
+    }
 }
 
 char* StatementExecutor_Call(StatementExecutor* executor, char const* instanceName, char const* methodName, SlimList* args){
