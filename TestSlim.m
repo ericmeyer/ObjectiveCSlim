@@ -4,8 +4,9 @@
 
 @synthesize wasNoArgsCalled, calledWithStringArg, calledWithFirstStringArg, calledWithSecondStringArg;
 
--(void) noArgs {
+-(NSString*) noArgs {
     self.wasNoArgsCalled = YES;
+    return @"return value";
 }
 
 -(void) withStringArg:(NSString*) someString {

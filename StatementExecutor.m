@@ -45,11 +45,13 @@ char* StatementExecutor_Call(StatementExecutor* executor, char const* instanceNa
     id instance = StatementExecutor_Instance(executor, instanceName);
     int length = SlimList_GetLength(args);
     SEL selector = NSSelectorFromCStringAndLength(methodName, length);
+    char *result = malloc (32 * sizeof (char));
     if(![instance respondsToSelector: selector]) {
         return noMethodErrorFor(methodName, length);
     }
     if(length == 0) {
-        [instance performSelector: selector];
+        snprintf(result, 32, "%s", [[instance performSelector: selector] UTF8String]);
+        return result;
     } else if (length == 1) {
         [instance performSelector: selector withObject: SlimList_GetNSStringAt(args, 0)];
     } else {
@@ -67,9 +69,16 @@ void StatementExecutor_Destroy(StatementExecutor* self) {
     free(self);
 }
 
-void AddFixtures(StatementExecutor* executor) {
-    
+
+void StatementExecutor_AddFixture(StatementExecutor* executor, Fixture fixture) {
 }
+void StatementExecutor_RegisterFixture(StatementExecutor* executor, char const * className, Constructor constructor, Destructor destructor){
+}
+void StatementExecutor_RegisterMethod(StatementExecutor* executor, char const * className, char const * methodName, Method method){
+}
+//void AddFixtures(StatementExecutor* executor) {
+//    
+//}
 
 SEL NSSelectorFromCStringAndLength(char const* methodName, int numberOrArguments) {
     if (numberOrArguments == 0) {

@@ -11,7 +11,9 @@
 		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F82102491448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F821024A1448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
-		F8543DA31464E087001FC9E6 /* StatementExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F391448BE7200DCBB3F /* StatementExecutor.c */; };
+		F8543DA4146711FB001FC9E6 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F601452189900C33534 /* StatementExecutor.m */; };
+		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
+		F8543DA814672929001FC9E6 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.m */; };
 		F873F3D21448BF0700FFCA02 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.m */; };
 		F873F3D41448BF2800FFCA02 /* DecisionTableExample.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
@@ -69,6 +71,8 @@
 		F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjAdderFixture.m; sourceTree = "<group>"; };
 		F82102471448DF420086919F /* Adder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adder.h; sourceTree = "<group>"; };
 		F82102481448DF420086919F /* Adder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adder.m; sourceTree = "<group>"; };
+		F8543DA514671E11001FC9E6 /* Count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Count.h; sourceTree = "<group>"; };
+		F8543DA614671E11001FC9E6 /* Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Count.m; sourceTree = "<group>"; };
 		F873F3D11448BF0700FFCA02 /* Fixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixtures.m; sourceTree = "<group>"; };
 		F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DecisionTableExample.c; sourceTree = "<group>"; };
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				F873F3D81448C6BC00FFCA02 /* AdderFixture.m */,
 				F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */,
 				F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */,
+				F8543DA514671E11001FC9E6 /* Count.h */,
+				F8543DA614671E11001FC9E6 /* Count.m */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -486,6 +492,7 @@
 				F8E09F5E1452185700C33534 /* SymbolTable.c in Sources */,
 				F8E09F611452189900C33534 /* StatementExecutor.m in Sources */,
 				F8E09F6414521AF300C33534 /* TestSlim.m in Sources */,
+				F8543DA814672929001FC9E6 /* Fixtures.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +528,8 @@
 				F821024A1448DF420086919F /* Adder.m in Sources */,
 				F81ADAC81448F2C500BC821A /* ScriptTableExample.m in Sources */,
 				F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */,
-				F8543DA31464E087001FC9E6 /* StatementExecutor.c in Sources */,
+				F8543DA4146711FB001FC9E6 /* StatementExecutor.m in Sources */,
+				F8543DA714671E11001FC9E6 /* Count.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

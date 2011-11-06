@@ -10,7 +10,7 @@
 @property (nonatomic, retain) NSString* calledWithSecondStringArg;
 
 
--(void) noArgs;
+-(NSString*) noArgs;
 -(void) withStringArg:(NSString*) someString;
 -(void) withMultipleArgs:(NSArray*) args;
 

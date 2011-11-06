@@ -43,15 +43,17 @@ CONTEXT(StatementExecutor)
                     TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
                     expectTruth(test_slim_instance.wasNoArgsCalled);
                 }),
-            it(@"returns OK",
+            it(@"returns what the method that takes no arguments returns",
                 ^{
                     SlimList* empty = SlimList_Create();
                     SlimList* args = SlimList_Create();
                     StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
+                    TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+
                     NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Call(statementExecutor, "test_slim", "noArgs", args)];
                     
-                    [expect(result) toBeEqualTo: @"OK"];
+                    [expect(result) toBeEqualTo: [test_slim_instance noArgs]];
                 }),
              it(@"returns an error if the function with no arguments does not exist",
                 ^{
