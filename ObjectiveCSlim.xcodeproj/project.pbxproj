@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F81ADAC81448F2C500BC821A /* ScriptTableExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADAC71448F2C500BC821A /* ScriptTableExample.m */; };
 		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F82102491448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F821024A1448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
@@ -15,9 +14,7 @@
 		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
 		F8543DA814672929001FC9E6 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.m */; };
 		F873F3D21448BF0700FFCA02 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.m */; };
-		F873F3D41448BF2800FFCA02 /* DecisionTableExample.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
-		F873F3DA1448C6BC00FFCA02 /* AdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D81448C6BC00FFCA02 /* AdderFixture.m */; };
 		F8A425B5145208CC00FD4ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		F8A425E71452098500FD4ECA /* OCDSpecDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425D81452098500FD4ECA /* OCDSpecDescription.m */; };
 		F8A425E81452098500FD4ECA /* OCDSpecDescriptionRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425DA1452098500FD4ECA /* OCDSpecDescriptionRunner.m */; };
@@ -66,7 +63,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F81ADAC71448F2C500BC821A /* ScriptTableExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptTableExample.m; sourceTree = "<group>"; };
 		F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjAdderFixture.h; sourceTree = "<group>"; };
 		F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjAdderFixture.m; sourceTree = "<group>"; };
 		F82102471448DF420086919F /* Adder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adder.h; sourceTree = "<group>"; };
@@ -74,10 +70,8 @@
 		F8543DA514671E11001FC9E6 /* Count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Count.h; sourceTree = "<group>"; };
 		F8543DA614671E11001FC9E6 /* Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Count.m; sourceTree = "<group>"; };
 		F873F3D11448BF0700FFCA02 /* Fixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixtures.m; sourceTree = "<group>"; };
-		F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DecisionTableExample.c; sourceTree = "<group>"; };
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
 		F873F3D71448C5F100FFCA02 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = fitnesse.jar; sourceTree = "<group>"; };
-		F873F3D81448C6BC00FFCA02 /* AdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdderFixture.m; sourceTree = "<group>"; };
 		F8A425B0145208CC00FD4ECA /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A425B2145208CC00FD4ECA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F8A425B4145208CC00FD4ECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -178,12 +172,9 @@
 		F873F3CF1448BEF300FFCA02 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				F81ADAC71448F2C500BC821A /* ScriptTableExample.m */,
 				F873F3D71448C5F100FFCA02 /* fitnesse.jar */,
-				F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */,
 				F873F3D11448BF0700FFCA02 /* Fixtures.m */,
 				F873F3D51448BF4F00FFCA02 /* Main.c */,
-				F873F3D81448C6BC00FFCA02 /* AdderFixture.m */,
 				F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */,
 				F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */,
 				F8543DA514671E11001FC9E6 /* Count.h */,
@@ -522,11 +513,8 @@
 				F8ED9F461448BE8100DCBB3F /* SocketServer.c in Sources */,
 				F8ED9F471448BE8100DCBB3F /* TcpComLink.c in Sources */,
 				F873F3D21448BF0700FFCA02 /* Fixtures.m in Sources */,
-				F873F3D41448BF2800FFCA02 /* DecisionTableExample.c in Sources */,
 				F873F3D61448BF4F00FFCA02 /* Main.c in Sources */,
-				F873F3DA1448C6BC00FFCA02 /* AdderFixture.m in Sources */,
 				F821024A1448DF420086919F /* Adder.m in Sources */,
-				F81ADAC81448F2C500BC821A /* ScriptTableExample.m in Sources */,
 				F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */,
 				F8543DA4146711FB001FC9E6 /* StatementExecutor.m in Sources */,
 				F8543DA714671E11001FC9E6 /* Count.m in Sources */,

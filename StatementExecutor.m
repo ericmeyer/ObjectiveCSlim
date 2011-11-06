@@ -37,7 +37,6 @@ void* StatementExecutor_Instance(StatementExecutor* executor, char const* instan
 char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceName, char const* className, SlimList* args){
     [executor->instances setValue: [[NSClassFromString([NSString stringWithFormat: @"%s", className]) alloc] init]
                            forKey: [NSString stringWithFormat: @"%s", instanceName]];
-    NSLog(@"dictionary: %@", executor->instances);
     return "OK";
 }
 

@@ -25,9 +25,6 @@ CONTEXT(StatementExecutor)
                     TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
                     TestSlim* test_slim_instance_2 = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim_2");
                     StatementExecutor_Call(statementExecutor, "test_slim", "noArgs", args);
-                    
-                    NSLog(@"test_slim_instance: %@", test_slim_instance);
-                    NSLog(@"test_slim_instance_2: %@", test_slim_instance_2);
 
                     expectTruth(test_slim_instance.wasNoArgsCalled);
                     expectFalse(test_slim_instance_2.wasNoArgsCalled);
