@@ -1,7 +1,9 @@
 #import "StatementExecutor.h"
 
-SEL NSSelectorFromCString(char const* c_string);
+SEL NSSelectorFromCStringAndLength(char const* methodName, int numberOrArguments);
 NSString* SlimList_GetNSStringAt(SlimList* self, int index);
+char* noMethodErrorFor(char const* methodName, int length);
+NSArray* SlimList_ToNSArray(SlimList* self);
 //void StatementExecutor_Destroy(StatementExecutor*);
 //
 //void StatementExecutor_AddFixture(StatementExecutor* executor, Fixture);
@@ -42,18 +44,16 @@ char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceNa
 char* StatementExecutor_Call(StatementExecutor* executor, char const* instanceName, char const* methodName, SlimList* args){
     id instance = StatementExecutor_Instance(executor, instanceName);
     int length = SlimList_GetLength(args);
+    SEL selector = NSSelectorFromCStringAndLength(methodName, length);
+    if(![instance respondsToSelector: selector]) {
+        return noMethodErrorFor(methodName, length);
+    }
     if(length == 0) {
-        [instance performSelector: NSSelectorFromCString(methodName)];
+        [instance performSelector: selector];
     } else if (length == 1) {
-        NSString* string = [NSString stringWithFormat:@"%s:", methodName];
-        [instance performSelector: NSSelectorFromString(string) withObject: SlimList_GetNSStringAt(args, 0)];
+        [instance performSelector: selector withObject: SlimList_GetNSStringAt(args, 0)];
     } else {
-        NSString* string = [NSString stringWithFormat:@"%s:", methodName];
-        NSMutableArray* newArgs = [NSMutableArray array];
-        for(int i=0; i<length; i++) {
-            [newArgs addObject: SlimList_GetNSStringAt(args, i)];
-        }
-        [instance performSelector: NSSelectorFromString(string) withObject: newArgs];
+        [instance performSelector: selector withObject: SlimList_ToNSArray(args)];
     }
     
     return "OK";
@@ -71,10 +71,29 @@ void AddFixtures(StatementExecutor* executor) {
     
 }
 
-SEL NSSelectorFromCString(char const* c_string) {
-    return NSSelectorFromString([NSString stringWithFormat:@"%s", c_string]);
+SEL NSSelectorFromCStringAndLength(char const* methodName, int numberOrArguments) {
+    if (numberOrArguments == 0) {
+        return NSSelectorFromString([NSString stringWithFormat:@"%s", methodName]);
+    } else {
+        return NSSelectorFromString([NSString stringWithFormat:@"%s:", methodName]);
+    }
 }
 
+NSArray* SlimList_ToNSArray(SlimList* self) {
+    int length = SlimList_GetLength(self);
+    NSMutableArray* array = [NSMutableArray array];
+    for(int i=0; i<length; i++) {
+        [array addObject: SlimList_GetNSStringAt(self, i)];
+    }
+    return array;
+}
+
+char* noMethodErrorFor(char const* methodName, int length) {
+    NSString* errorMessage = [NSString stringWithFormat: @"__EXCEPTION__:message:<<NO_METHOD_IN_CLASS %s[%d] TestSlim.>>", methodName, length];
+    char *string = malloc (128 * sizeof (char));
+    snprintf(string, 128, "%s", [errorMessage UTF8String]);
+    return string;
+}
 NSString* SlimList_GetNSStringAt(SlimList* self, int index) {
     return [NSString stringWithFormat:@"%s", SlimList_GetStringAt(self, index)];
 }

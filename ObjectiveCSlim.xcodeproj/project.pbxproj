@@ -11,6 +11,7 @@
 		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F82102491448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F821024A1448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
+		F8543DA31464E087001FC9E6 /* StatementExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F391448BE7200DCBB3F /* StatementExecutor.c */; };
 		F873F3D21448BF0700FFCA02 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.m */; };
 		F873F3D41448BF2800FFCA02 /* DecisionTableExample.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D31448BF2800FFCA02 /* DecisionTableExample.c */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
@@ -57,7 +58,6 @@
 		F8ED9F3F1448BE7200DCBB3F /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F361448BE7200DCBB3F /* SlimListDeserializer.c */; };
 		F8ED9F401448BE7200DCBB3F /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F371448BE7200DCBB3F /* SlimListSerializer.c */; };
 		F8ED9F411448BE7200DCBB3F /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F381448BE7200DCBB3F /* SlimUtil.c */; };
-		F8ED9F421448BE7200DCBB3F /* StatementExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F391448BE7200DCBB3F /* StatementExecutor.c */; };
 		F8ED9F431448BE7200DCBB3F /* SymbolTable.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F3A1448BE7200DCBB3F /* SymbolTable.c */; };
 		F8ED9F461448BE8100DCBB3F /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F441448BE8100DCBB3F /* SocketServer.c */; };
 		F8ED9F471448BE8100DCBB3F /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F451448BE8100DCBB3F /* TcpComLink.c */; };
@@ -511,7 +511,6 @@
 				F8ED9F3F1448BE7200DCBB3F /* SlimListDeserializer.c in Sources */,
 				F8ED9F401448BE7200DCBB3F /* SlimListSerializer.c in Sources */,
 				F8ED9F411448BE7200DCBB3F /* SlimUtil.c in Sources */,
-				F8ED9F421448BE7200DCBB3F /* StatementExecutor.c in Sources */,
 				F8ED9F431448BE7200DCBB3F /* SymbolTable.c in Sources */,
 				F8ED9F461448BE8100DCBB3F /* SocketServer.c in Sources */,
 				F8ED9F471448BE8100DCBB3F /* TcpComLink.c in Sources */,
@@ -522,6 +521,7 @@
 				F821024A1448DF420086919F /* Adder.m in Sources */,
 				F81ADAC81448F2C500BC821A /* ScriptTableExample.m in Sources */,
 				F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */,
+				F8543DA31464E087001FC9E6 /* StatementExecutor.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
