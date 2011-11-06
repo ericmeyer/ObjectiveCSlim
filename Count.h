@@ -5,6 +5,8 @@
 }
 @property (assign) int number;
 
+-(id) initWithString: (NSString*) startingNumber;
+
 -(NSString*) counter;
 -(NSString*) count;
 

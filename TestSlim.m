@@ -4,6 +4,13 @@
 
 @synthesize wasNoArgsCalled, calledWithStringArg, calledWithFirstStringArg, calledWithSecondStringArg;
 
+-(id) initWithString: (NSString*) givenString {
+    if ((self = [super init])) {
+        self.calledWithStringArg = givenString;
+    }
+    return self;
+}
+
 -(NSString*) noArgs {
     self.wasNoArgsCalled = YES;
     return @"return value";

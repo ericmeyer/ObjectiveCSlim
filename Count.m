@@ -4,6 +4,13 @@
 
 @synthesize number;
 
+-(id) initWithString:(NSString *)startingNumber {
+    if ((self = [super init])) {
+        self.number = [startingNumber intValue];
+    }
+    return self;
+}
+
 -(id) init {
     if ((self = [super init])) {
         self.number = 0;

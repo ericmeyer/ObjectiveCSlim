@@ -1,6 +1,16 @@
-!|script|Count |
+!|script|Count    |
 |check  |counter|0|
 |count            |
 |check  |counter|1|
 |count            |
 |check  |counter|2|
+
+!|script|Count  |34|
+|check  |counter|34|
+|count             |
+|check  |counter|35|
+|count             |
+|check  |counter|36|
+
+!|script|MissingScript|
+|callMissingMethod    |

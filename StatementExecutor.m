@@ -35,14 +35,27 @@ void* StatementExecutor_Instance(StatementExecutor* executor, char const* instan
 }
 
 char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceName, char const* className, SlimList* args){
-    id instance = [[NSClassFromString([NSString stringWithFormat: @"%s", className]) alloc] init];
-    if(instance == nil) {
+    Class class = NSClassFromString([NSString stringWithFormat: @"%s", className]);
+    if(class == nil) {
         char *errorMessage = malloc (128 * sizeof (char));
         snprintf(errorMessage, 128, "%s", [[NSString stringWithFormat: @"__EXCEPTION__:message:<<NO_CLASS %s.>>", className] UTF8String]);
         return errorMessage;
     } else {
-        [executor->instances setValue: instance
-                           forKey: [NSString stringWithFormat: @"%s", instanceName]];
+        int length = SlimList_GetLength(args);
+        @try {
+            if(length == 0) {
+                id instance = [[class alloc] init];
+                [executor->instances setValue: instance
+                                       forKey: [NSString stringWithFormat: @"%s", instanceName]];
+            } else {
+                id instance = [[class alloc] initWithString: SlimList_GetNSStringAt(args, 0)];
+                [executor->instances setValue: instance
+                                       forKey: [NSString stringWithFormat: @"%s", instanceName]];
+            }
+        }
+        @catch (NSException* exception) {
+            return "__EXCEPTION__:message:<<COULD_NOT_INVOKE_CONSTRUCTOR TestSlimTwo xxx.>>";
+        }
         return "OK";
     }
 }

@@ -5,7 +5,7 @@
 CONTEXT(StatementExecutor)
 {
     describe(@"slim class",
-             it(@"makes an instance of a class",
+             it(@"makes an instance of a class with no arguments",
                 ^{
                     SlimList* empty = SlimList_Create();
                     StatementExecutor* statementExecutor = StatementExecutor_Create();
@@ -15,7 +15,27 @@ CONTEXT(StatementExecutor)
                     bool isTestSlimClass = [test_slim_instance isKindOfClass: [TestSlim class]];
                     expectTruth(isTestSlimClass);
                 }),
-             it(@"makes a different instance of a class",
+             it(@"makes an instance of a class with 1 argument",
+                ^{
+                    SlimList* args = SlimList_Create();
+                    SlimList_AddString(args, "starting param");
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);
+                    TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+
+                    [expect(test_slim_instance.calledWithStringArg) toBeEqualTo: @"starting param"];
+                }),
+//             it(@"returns an error if the wrong number of arguments is passed for make (1 for 0)",
+//                ^{
+//                    SlimList* args = SlimList_Create();
+//                    SlimList_AddString(args, "starting param");
+//                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+//
+//                    NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Make(statementExecutor, "test_slim", "TestSlimTwo", args)];
+//
+//                    [expect(result) toBeEqualTo: @"__EXCEPTION__:message:<<COULD_NOT_INVOKE_CONSTRUCTOR TestSlimTwo xxx.>>"];
+//                }),
+             it(@"makes a different instance of the same class",
                 ^{
                     SlimList* empty = SlimList_Create();
                     SlimList* args = SlimList_Create();

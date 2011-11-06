@@ -9,6 +9,7 @@
 @property (nonatomic, retain) NSString* calledWithFirstStringArg;
 @property (nonatomic, retain) NSString* calledWithSecondStringArg;
 
+-(id) initWithString: (NSString*) givenString;
 
 -(NSString*) noArgs;
 -(void) withStringArg:(NSString*) someString;
