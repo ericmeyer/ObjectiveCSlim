@@ -4,19 +4,6 @@ SEL NSSelectorFromCStringAndLength(char const* methodName, int numberOrArguments
 NSString* SlimList_GetNSStringAt(SlimList* self, int index);
 char* noMethodErrorFor(char const* methodName, int length);
 NSArray* SlimList_ToNSArray(SlimList* self);
-//void StatementExecutor_Destroy(StatementExecutor*);
-//
-//void StatementExecutor_AddFixture(StatementExecutor* executor, Fixture);
-//void StatementExecutor_RegisterFixture(StatementExecutor*, char const * className, Constructor, Destructor);
-//void StatementExecutor_RegisterMethod(StatementExecutor*, char const * className, char const * methodName, Method);
-//
-//char* StatementExecutor_Make(StatementExecutor*, char const* instanceName, char const* className, SlimList* args);
-//char* StatementExecutor_Call(StatementExecutor*, char const* instanceName, char const* methodName, SlimList*);
-//void* StatementExecutor_Instance(StatementExecutor*, char const* instanceName);
-//void StatementExecutor_SetSymbol(StatementExecutor*, char const* symbol, char const* value);
-//
-//void StatementExecutor_ConstructorError(StatementExecutor* executor, char const* message);
-//char* StatementExecutor_FixtureError(char const* message);
 
 struct StatementExecutor
 {
@@ -37,6 +24,7 @@ void* StatementExecutor_Instance(StatementExecutor* executor, char const* instan
 char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceName, char const* className, SlimList* args){
     Class class = NSClassFromString([NSString stringWithFormat: @"%s", className]);
     if(class == nil) {
+        [executor->instances removeObjectForKey: [NSString stringWithFormat: @"%s", instanceName]];
         char *errorMessage = malloc (128 * sizeof (char));
         snprintf(errorMessage, 128, "%s", [[NSString stringWithFormat: @"__EXCEPTION__:message:<<NO_CLASS %s.>>", className] UTF8String]);
         return errorMessage;
@@ -65,6 +53,11 @@ char* StatementExecutor_Call(StatementExecutor* executor, char const* instanceNa
     int length = SlimList_GetLength(args);
     SEL selector = NSSelectorFromCStringAndLength(methodName, length);
     char *result = malloc (32 * sizeof (char));
+    if(instance == NULL) {
+        char *errorMessage = malloc (128 * sizeof (char));
+        snprintf(errorMessage, 128, "%s", [[NSString stringWithFormat: @"__EXCEPTION__:message:<<The instance %s. does not exist>>", instanceName] UTF8String]);
+        return errorMessage;
+    }
     if(![instance respondsToSelector: selector]) {
         return noMethodErrorFor(methodName, length);
     }
@@ -95,9 +88,6 @@ void StatementExecutor_RegisterFixture(StatementExecutor* executor, char const *
 }
 void StatementExecutor_RegisterMethod(StatementExecutor* executor, char const * className, char const * methodName, Method method){
 }
-//void AddFixtures(StatementExecutor* executor) {
-//    
-//}
 
 SEL NSSelectorFromCStringAndLength(char const* methodName, int numberOrArguments) {
     if (numberOrArguments == 0) {

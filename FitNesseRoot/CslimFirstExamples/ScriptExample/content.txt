@@ -12,5 +12,15 @@
 |count             |
 |check  |counter|36|
 
+!|script|Math  |1|2|3|4|5|
+|check  |sum   |15       |
+|check  |length|5        |
+|check  |max   |5        |
+
+!|script|Math  |1|2|
+|check  |sum   |3  |
+|check  |length|2  |
+|check  |max   |2  |
+
 !|script|MissingScript|
 |callMissingMethod    |

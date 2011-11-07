@@ -49,6 +49,26 @@ CONTEXT(StatementExecutor)
                     expectTruth(test_slim_instance.wasNoArgsCalled);
                     expectFalse(test_slim_instance_2.wasNoArgsCalled);
                 }),
+             it(@"removes an instance when failing to create one of a different name",
+                ^{
+                    SlimList* empty = SlimList_Create();
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
+                    StatementExecutor_Make(statementExecutor, "test_slim", "NoSuchClass", empty);
+                    
+                    id test_slim_instance = StatementExecutor_Instance(statementExecutor, "test_slim");
+                    
+                    expectTruth(test_slim_instance == NULL);
+                }),
+             it(@"returns an error if the instance does not exists",
+                ^{
+                    SlimList* empty = SlimList_Create();
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Call(statementExecutor, "missing_instance", "anyMethod", empty)];
+                    
+                    [expect(result) toBeEqualTo: @"__EXCEPTION__:message:<<The instance missing_instance. does not exist>>"];
+                    //        snprintf(errorMessage, 128, "%s", [[NSString stringWithFormat: @"__EXCEPTION__:message:<<The instance %s. does not exist>>", instanceName] UTF8String]);
+                }),
              it(@"calls a function with no args",
                 ^{
                     SlimList* empty = SlimList_Create();
