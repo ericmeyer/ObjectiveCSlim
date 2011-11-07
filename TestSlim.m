@@ -10,6 +10,13 @@
     }
     return self;
 }
+-(id) initWithArray: (NSArray*) givenArray {
+    if ((self = [super init])) {
+        self.calledWithFirstStringArg = [givenArray objectAtIndex: 0];
+        self.calledWithSecondStringArg = [givenArray objectAtIndex: 1];
+    }
+    return self;
+}
 
 -(NSString*) noArgs {
     self.wasNoArgsCalled = YES;

@@ -13,7 +13,8 @@
 		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
 		F8543DA814672929001FC9E6 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.m */; };
 		F8543DAB146748BA001FC9E6 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DAA146748BA001FC9E6 /* TestSlimTwo.m */; };
-		F8543DB1146787E9001FC9E6 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F601452189900C33534 /* StatementExecutor.m */; };
+		F8543DB414683673001FC9E6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
+		F8543DB61468602E001FC9E6 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F601452189900C33534 /* StatementExecutor.m */; };
 		F873F3D21448BF0700FFCA02 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D11448BF0700FFCA02 /* Fixtures.m */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
 		F8A425B5145208CC00FD4ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
@@ -72,6 +73,8 @@
 		F8543DA614671E11001FC9E6 /* Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Count.m; sourceTree = "<group>"; };
 		F8543DA9146748BA001FC9E6 /* TestSlimTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSlimTwo.h; sourceTree = "<group>"; };
 		F8543DAA146748BA001FC9E6 /* TestSlimTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSlimTwo.m; sourceTree = "<group>"; };
+		F8543DB214683673001FC9E6 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		F8543DB314683673001FC9E6 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
 		F873F3D11448BF0700FFCA02 /* Fixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixtures.m; sourceTree = "<group>"; };
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
 		F873F3D71448C5F100FFCA02 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = fitnesse.jar; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */,
 				F8543DA514671E11001FC9E6 /* Count.h */,
 				F8543DA614671E11001FC9E6 /* Count.m */,
+				F8543DB214683673001FC9E6 /* Math.h */,
+				F8543DB314683673001FC9E6 /* Math.m */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -523,7 +528,8 @@
 				F821024A1448DF420086919F /* Adder.m in Sources */,
 				F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */,
 				F8543DA714671E11001FC9E6 /* Count.m in Sources */,
-				F8543DB1146787E9001FC9E6 /* StatementExecutor.m in Sources */,
+				F8543DB414683673001FC9E6 /* Math.m in Sources */,
+				F8543DB61468602E001FC9E6 /* StatementExecutor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

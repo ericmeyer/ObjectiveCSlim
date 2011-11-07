@@ -31,15 +31,17 @@ char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceNa
     } else {
         int length = SlimList_GetLength(args);
         @try {
+            id instance;
             if(length == 0) {
-                id instance = [[class alloc] init];
-                [executor->instances setValue: instance
-                                       forKey: [NSString stringWithFormat: @"%s", instanceName]];
+                instance = [[class alloc] init];
+            } else if(length == 1) {
+                instance = [[class alloc] initWithString: SlimList_GetNSStringAt(args, 0)];
             } else {
-                id instance = [[class alloc] initWithString: SlimList_GetNSStringAt(args, 0)];
-                [executor->instances setValue: instance
-                                       forKey: [NSString stringWithFormat: @"%s", instanceName]];
+                NSLog(@"Array: %@", SlimList_ToNSArray(args));
+                instance = [[class alloc] initWithArray: SlimList_ToNSArray(args)];
             }
+            [executor->instances setValue: instance
+                                   forKey: [NSString stringWithFormat: @"%s", instanceName]];
         }
         @catch (NSException* exception) {
             return "__EXCEPTION__:message:<<COULD_NOT_INVOKE_CONSTRUCTOR TestSlimTwo xxx.>>";

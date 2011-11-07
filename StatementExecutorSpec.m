@@ -25,6 +25,18 @@ CONTEXT(StatementExecutor)
 
                     [expect(test_slim_instance.calledWithStringArg) toBeEqualTo: @"starting param"];
                 }),
+             it(@"makes an instance of a class with 2 arguments",
+                ^{
+                    SlimList* args = SlimList_Create();
+                    SlimList_AddString(args, "first param");
+                    SlimList_AddString(args, "second param");
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);
+                    TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+
+                    [expect(test_slim_instance.calledWithFirstStringArg) toBeEqualTo: @"first param"];
+                    [expect(test_slim_instance.calledWithSecondStringArg) toBeEqualTo: @"second param"];
+                }),
 //             it(@"returns an error if the wrong number of arguments is passed for make (1 for 0)",
 //                ^{
 //                    SlimList* args = SlimList_Create();
@@ -170,5 +182,18 @@ CONTEXT(StatementExecutor)
                    NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Make(statementExecutor, "test_slim", "NoSuchClass", empty)];
                    [expect(result) toBeEqualTo: @"__EXCEPTION__:message:<<NO_CLASS NoSuchClass.>>"];
                }),
+//            it(@"replaces a symbol with it's value",
+//               ^{
+//                   ,
+//               })
+//             TEST(StatementExecutor, canReplaceSymbolsWithTheirValue)
+//    {
+//        StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
+//        SlimList_AddString(args, "hi $v.");
+//        char * result = StatementExecutor_Call(statementExecutor, "test_slim", "echo", args);
+//        LONGS_EQUAL(strlen("hi bob."), strlen(result))
+//        STRCMP_EQUAL("hi bob.", result)   
+//    }
+
             nil);
 }
