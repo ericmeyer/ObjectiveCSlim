@@ -1,5 +1,7 @@
 #import "StatementExecutor.h"
 
+
+void StatementExecutor_ReplaceSymbols(StatementExecutor* executor, SlimList* args);
 SEL NSSelectorFromCStringAndLength(char const* methodName, int numberOrArguments);
 NSString* SlimList_GetNSStringAt(SlimList* self, int index);
 char* noMethodErrorFor(char const* methodName, int length);
@@ -9,12 +11,14 @@ char* NSStringToCString(NSString* string);
 struct StatementExecutor
 {
     NSMutableDictionary* instances;
+    NSMutableDictionary* symbols;
 };
 
 StatementExecutor* StatementExecutor_Create(void) {
 	StatementExecutor* self = (StatementExecutor*)malloc(sizeof(StatementExecutor));
 	memset(self, 0, sizeof(StatementExecutor));
     self->instances = [NSMutableDictionary dictionary];
+    self->symbols = [NSMutableDictionary dictionary];
 	return self;
 }
 
@@ -58,6 +62,7 @@ char* StatementExecutor_Call(StatementExecutor* executor, char const* instanceNa
     if(![instance respondsToSelector: selector]) {
         return noMethodErrorFor(methodName, length);
     }
+    StatementExecutor_ReplaceSymbols(executor, args);
     if(length == 0) {
         return NSStringToCString([instance performSelector: selector]);
     } else if (length == 1) {
@@ -69,11 +74,26 @@ char* StatementExecutor_Call(StatementExecutor* executor, char const* instanceNa
     return "OK";
 }
 
+void StatementExecutor_ReplaceSymbols(StatementExecutor* executor, SlimList* args) {
+    for(int i=0; i<SlimList_GetLength(args); i++) {
+        NSString* newArgument = SlimList_GetNSStringAt(args, i);
+        for(NSString* symbol in [[executor->symbols keyEnumerator] allObjects]) {
+            newArgument = [newArgument stringByReplacingOccurrencesOfString: [NSString stringWithFormat: @"$%@", symbol]
+                                                                 withString: [executor->symbols objectForKey: symbol]];
+            SlimList_ReplaceAt(args, i, NSStringToCString(newArgument));
+        }
+    }
+}
+
 void StatementExecutor_SetSymbol(StatementExecutor* self, char const* symbol, char const* value) {
+    [self->symbols setObject: [NSString stringWithUTF8String: value]
+                      forKey: [NSString stringWithUTF8String: symbol]];
 }
 
 
 void StatementExecutor_Destroy(StatementExecutor* self) {
+    [self->instances release];
+    [self->symbols release];
     free(self);
 }
 

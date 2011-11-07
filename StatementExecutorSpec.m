@@ -182,18 +182,58 @@ CONTEXT(StatementExecutor)
                    NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Make(statementExecutor, "test_slim", "NoSuchClass", empty)];
                    [expect(result) toBeEqualTo: @"__EXCEPTION__:message:<<NO_CLASS NoSuchClass.>>"];
                }),
-//            it(@"replaces a symbol with it's value",
-//               ^{
-//                   SlimList* empty = SlimList_Create();
-//                   SlimList* args = SlimList_Create();
-//                   SlimList_AddString(args, "hello $v");
-//                   StatementExecutor* statementExecutor = StatementExecutor_Create();
-//                   StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
-//                   StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
-//                   StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
-//                   
-//                   TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
-//                   [expect(test_slim_instance.calledWithStringArg) toBeEqualTo:@"hello bob"];
-//               }),
-            nil);
+            it(@"replaces a symbol with it's value",
+               ^{
+                   SlimList* empty = SlimList_Create();
+                   SlimList* args = SlimList_Create();
+                   SlimList_AddString(args, "hello $v");
+                   StatementExecutor* statementExecutor = StatementExecutor_Create();
+                   StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
+                   StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
+                   StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
+                   
+                   TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+                   [expect(test_slim_instance.calledWithStringArg) toBeEqualTo:@"hello bob"];
+               }),
+             it(@"replaces a symbol in the middle",
+                ^{
+                    SlimList* empty = SlimList_Create();
+                    SlimList* args = SlimList_Create();
+                    SlimList_AddString(args, "hello $v person");
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    StatementExecutor_SetSymbol(statementExecutor, "v", "eric");
+                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
+                    StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
+                    
+                    TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+                    [expect(test_slim_instance.calledWithStringArg) toBeEqualTo:@"hello eric person"];
+                }),
+             it(@"replaces a symbol with other non-alphanumeric",
+                ^{
+                    SlimList* empty = SlimList_Create();
+                    SlimList* args = SlimList_Create();
+                    SlimList_AddString(args, "$v=why");
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    StatementExecutor_SetSymbol(statementExecutor, "v", "jim");
+                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
+                    StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
+                    
+                    TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+                    [expect(test_slim_instance.calledWithStringArg) toBeEqualTo:@"jim=why"];
+                }),
+             it(@"replaces multiple different symbols",
+                ^{
+                    SlimList* empty = SlimList_Create();
+                    SlimList* args = SlimList_Create();
+                    SlimList_AddString(args, "hi $v. Cost:  $12.32 from $e.");
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
+                    StatementExecutor_SetSymbol(statementExecutor, "e", "doug");
+                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
+                    StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
+                    
+                    TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+                    [expect(test_slim_instance.calledWithStringArg) toBeEqualTo:@"hi bob. Cost:  $12.32 from doug."];
+                }),
+           nil);
 }
