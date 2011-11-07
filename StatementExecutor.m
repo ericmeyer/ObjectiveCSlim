@@ -4,6 +4,7 @@ SEL NSSelectorFromCStringAndLength(char const* methodName, int numberOrArguments
 NSString* SlimList_GetNSStringAt(SlimList* self, int index);
 char* noMethodErrorFor(char const* methodName, int length);
 NSArray* SlimList_ToNSArray(SlimList* self);
+char* NSStringToCString(NSString* string);
 
 struct StatementExecutor
 {
@@ -25,9 +26,7 @@ char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceNa
     Class class = NSClassFromString([NSString stringWithFormat: @"%s", className]);
     if(class == nil) {
         [executor->instances removeObjectForKey: [NSString stringWithFormat: @"%s", instanceName]];
-        char *errorMessage = malloc (128 * sizeof (char));
-        snprintf(errorMessage, 128, "%s", [[NSString stringWithFormat: @"__EXCEPTION__:message:<<NO_CLASS %s.>>", className] UTF8String]);
-        return errorMessage;
+        return NSStringToCString([NSString stringWithFormat: @"__EXCEPTION__:message:<<NO_CLASS %s.>>", className]);
     } else {
         int length = SlimList_GetLength(args);
         @try {
@@ -37,7 +36,6 @@ char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceNa
             } else if(length == 1) {
                 instance = [[class alloc] initWithString: SlimList_GetNSStringAt(args, 0)];
             } else {
-                NSLog(@"Array: %@", SlimList_ToNSArray(args));
                 instance = [[class alloc] initWithArray: SlimList_ToNSArray(args)];
             }
             [executor->instances setValue: instance
@@ -54,18 +52,14 @@ char* StatementExecutor_Call(StatementExecutor* executor, char const* instanceNa
     id instance = StatementExecutor_Instance(executor, instanceName);
     int length = SlimList_GetLength(args);
     SEL selector = NSSelectorFromCStringAndLength(methodName, length);
-    char *result = malloc (32 * sizeof (char));
     if(instance == NULL) {
-        char *errorMessage = malloc (128 * sizeof (char));
-        snprintf(errorMessage, 128, "%s", [[NSString stringWithFormat: @"__EXCEPTION__:message:<<The instance %s. does not exist>>", instanceName] UTF8String]);
-        return errorMessage;
+        return NSStringToCString([NSString stringWithFormat: @"__EXCEPTION__:message:<<The instance %s. does not exist>>", instanceName]);
     }
     if(![instance respondsToSelector: selector]) {
         return noMethodErrorFor(methodName, length);
     }
     if(length == 0) {
-        snprintf(result, 32, "%s", [[instance performSelector: selector] UTF8String]);
-        return result;
+        return NSStringToCString([instance performSelector: selector]);
     } else if (length == 1) {
         [instance performSelector: selector withObject: SlimList_GetNSStringAt(args, 0)];
     } else {
@@ -91,6 +85,11 @@ void StatementExecutor_RegisterFixture(StatementExecutor* executor, char const *
 void StatementExecutor_RegisterMethod(StatementExecutor* executor, char const * className, char const * methodName, Method method){
 }
 
+
+char* noMethodErrorFor(char const* methodName, int length) {
+    return NSStringToCString([NSString stringWithFormat: @"__EXCEPTION__:message:<<NO_METHOD_IN_CLASS %s[%d] TestSlim.>>", methodName, length]);
+}
+
 SEL NSSelectorFromCStringAndLength(char const* methodName, int numberOrArguments) {
     if (numberOrArguments == 0) {
         return NSSelectorFromString([NSString stringWithFormat:@"%s", methodName]);
@@ -108,12 +107,10 @@ NSArray* SlimList_ToNSArray(SlimList* self) {
     return array;
 }
 
-char* noMethodErrorFor(char const* methodName, int length) {
-    NSString* errorMessage = [NSString stringWithFormat: @"__EXCEPTION__:message:<<NO_METHOD_IN_CLASS %s[%d] TestSlim.>>", methodName, length];
-    char *string = malloc (128 * sizeof (char));
-    snprintf(string, 128, "%s", [errorMessage UTF8String]);
-    return string;
+char* NSStringToCString(NSString* string) {
+    return (char*)[string UTF8String];
 }
+
 NSString* SlimList_GetNSStringAt(SlimList* self, int index) {
     return [NSString stringWithFormat:@"%s", SlimList_GetStringAt(self, index)];
 }

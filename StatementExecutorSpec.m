@@ -184,16 +184,16 @@ CONTEXT(StatementExecutor)
                }),
 //            it(@"replaces a symbol with it's value",
 //               ^{
-//                   ,
-//               })
-//             TEST(StatementExecutor, canReplaceSymbolsWithTheirValue)
-//    {
-//        StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
-//        SlimList_AddString(args, "hi $v.");
-//        char * result = StatementExecutor_Call(statementExecutor, "test_slim", "echo", args);
-//        LONGS_EQUAL(strlen("hi bob."), strlen(result))
-//        STRCMP_EQUAL("hi bob.", result)   
-//    }
-
+//                   SlimList* empty = SlimList_Create();
+//                   SlimList* args = SlimList_Create();
+//                   SlimList_AddString(args, "hello $v");
+//                   StatementExecutor* statementExecutor = StatementExecutor_Create();
+//                   StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
+//                   StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
+//                   StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
+//                   
+//                   TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+//                   [expect(test_slim_instance.calledWithStringArg) toBeEqualTo:@"hello bob"];
+//               }),
             nil);
 }
