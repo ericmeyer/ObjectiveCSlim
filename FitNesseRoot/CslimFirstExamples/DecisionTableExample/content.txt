@@ -4,6 +4,11 @@
 |12   |3     |15     |
 |5    |1     |6      |
 
+!|ObjAdderFixture                            |
+|first        |second        |result?        |
+|6            |2             |$first_result= |
+|12           |3             |$second_result=|
+|$first_result|$second_result|23             |
 
 !|MissingFixture|
 |something|else?|
