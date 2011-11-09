@@ -33,6 +33,7 @@ char* StatementExecutor_Make(StatementExecutor* executor, char const* instanceNa
         return NSStringToCString([NSString stringWithFormat: @"__EXCEPTION__:message:<<NO_CLASS %s.>>", className]);
     } else {
         int length = SlimList_GetLength(args);
+        StatementExecutor_ReplaceSymbols(executor, args);
         @try {
             id instance;
             if(length == 0) {

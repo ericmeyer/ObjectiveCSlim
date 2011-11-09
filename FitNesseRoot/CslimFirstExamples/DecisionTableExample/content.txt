@@ -10,6 +10,11 @@
 |12           |3             |$second_result=|
 |$first_result|$second_result|23             |
 
+!|script|Count  |$first_result|
+|check  |counter|8            |
+|count                        |
+|check  |counter|9            |
+
 !|MissingFixture|
 |something|else?|
 |1        |2    |
