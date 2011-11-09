@@ -265,7 +265,7 @@ CONTEXT(StatementExecutor)
                 ^{
                     
                 }),
-             it(@"creates an instance while replacing a symbol",
+             it(@"creates an instance with one arg while replacing a symbol",
                 ^{
                     SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "hello $person");
@@ -276,21 +276,31 @@ CONTEXT(StatementExecutor)
                     
                     [expect(test_slim_instance.calledWithStringArg) toBeEqualTo: @"hello bob"];
                 }),
-//             TEST(StatementExecutor, canReplaceSymbolsInSubLists) 
-//    {
-//        StatementExecutor_SetSymbol(statementExecutor, "v2", "doug");
-//        SlimList* subList = SlimList_Create();
-//        SlimList_AddString(subList, "Hi $v2.");
-//        SlimList_AddList(args, subList);
-//        char* result = StatementExecutor_Call(statementExecutor, "test_slim", "echo", args);
-//        CHECK(result != NULL);
-//        SlimList* returnedList = SlimList_Deserialize(result);
-//        CHECK(NULL != returnedList);
-//        LONGS_EQUAL(1, SlimList_GetLength(returnedList));
-//        char* element = SlimList_GetStringAt(returnedList, 0);
-//        STRCMP_EQUAL("Hi doug.", element);
-//        SlimList_Destroy(subList);	
-//        SlimList_Destroy(returnedList);
-//    }
+             it(@"creates an instance with one arg while replacing two symbols",
+                ^{
+                    SlimList* args = SlimList_Create();
+                    SlimList_AddString(args, "hello $person $animal");
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    StatementExecutor_SetSymbol(statementExecutor, "person", "bob");
+                    StatementExecutor_SetSymbol(statementExecutor, "animal", "dog");
+                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);
+                    TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+                    
+                    [expect(test_slim_instance.calledWithStringArg) toBeEqualTo: @"hello bob dog"];
+                }),
+             it(@"creates an instance with two args while replacing two symbols",
+                ^{
+                    SlimList* args = SlimList_Create();
+                    SlimList_AddString(args, "hello $person $animal");
+                    SlimList_AddString(args, "hello $animal");
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    StatementExecutor_SetSymbol(statementExecutor, "person", "bob");
+                    StatementExecutor_SetSymbol(statementExecutor, "animal", "dog");
+                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);
+                    TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+                    
+                    [expect(test_slim_instance.calledWithFirstStringArg) toBeEqualTo: @"hello bob dog"];
+                    [expect(test_slim_instance.calledWithSecondStringArg) toBeEqualTo: @"hello dog"];
+                }),
            nil);
 }
