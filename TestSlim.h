@@ -13,7 +13,8 @@
 -(id) initWithArray: (NSArray*) givenArray;
 
 -(NSString*) noArgs;
--(void) withStringArg:(NSString*) someString;
--(void) withMultipleArgs:(NSArray*) args;
+-(NSString*) withStringArg:(NSString*) someString;
+-(NSString*) withMultipleArgs:(NSArray*) args;
+-(NSString*) createTestSlimWithString: (NSString*) givenString;
 
 @end

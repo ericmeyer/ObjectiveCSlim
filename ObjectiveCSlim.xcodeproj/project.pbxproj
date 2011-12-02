@@ -41,6 +41,13 @@
 		F8E09F5E1452185700C33534 /* SymbolTable.c in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F3A1448BE7200DCBB3F /* SymbolTable.c */; };
 		F8E09F611452189900C33534 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F601452189900C33534 /* StatementExecutor.m */; };
 		F8E09F6414521AF300C33534 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F6314521AF300C33534 /* TestSlim.m */; };
+		F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
+		F8E91E2B146C579700D064A5 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F6314521AF300C33534 /* TestSlim.m */; };
+		F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
+		F8E91E31146E05E800D064A5 /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
+		F8E91E35146E060900D064A5 /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
+		F8E91E38146E061E00D064A5 /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
+		F8E91E3B14706A9B00D064A5 /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
 		F8ED9F011448BDF900DCBB3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
 		F8ED9F0B1448BDF900DCBB3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F091448BDF900DCBB3F /* InfoPlist.strings */; };
 		F8ED9F0E1448BDF900DCBB3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ED9F0D1448BDF900DCBB3F /* main.m */; };
@@ -107,6 +114,18 @@
 		F8E09F601452189900C33534 /* StatementExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatementExecutor.m; sourceTree = "<group>"; };
 		F8E09F6214521AF300C33534 /* TestSlim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSlim.h; sourceTree = "<group>"; };
 		F8E09F6314521AF300C33534 /* TestSlim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSlim.m; sourceTree = "<group>"; };
+		F8E91E27146C2BE500D064A5 /* EchoFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoFixture.h; sourceTree = "<group>"; };
+		F8E91E28146C2BE500D064A5 /* EchoFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchoFixture.m; sourceTree = "<group>"; };
+		F8E91E2C146DC1CE00D064A5 /* TestQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuery.h; sourceTree = "<group>"; };
+		F8E91E2D146DC1CE00D064A5 /* TestQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQuery.m; sourceTree = "<group>"; };
+		F8E91E2F146E05E700D064A5 /* TearDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TearDown.h; sourceTree = "<group>"; };
+		F8E91E30146E05E700D064A5 /* TearDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TearDown.m; sourceTree = "<group>"; };
+		F8E91E32146E060400D064A5 /* PageDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageDriver.h; sourceTree = "<group>"; };
+		F8E91E33146E060400D064A5 /* PageDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageDriver.m; sourceTree = "<group>"; };
+		F8E91E36146E061E00D064A5 /* SetUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUp.h; sourceTree = "<group>"; };
+		F8E91E37146E061E00D064A5 /* SetUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUp.m; sourceTree = "<group>"; };
+		F8E91E3914706A9B00D064A5 /* Uncle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uncle.h; sourceTree = "<group>"; };
+		F8E91E3A14706A9B00D064A5 /* Uncle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Uncle.m; sourceTree = "<group>"; };
 		F8ED9EFC1448BDF900DCBB3F /* ObjectiveCSlim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCSlim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ED9F001448BDF900DCBB3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F8ED9F031448BDF900DCBB3F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -187,6 +206,18 @@
 				F8543DA614671E11001FC9E6 /* Count.m */,
 				F8543DB214683673001FC9E6 /* Math.h */,
 				F8543DB314683673001FC9E6 /* Math.m */,
+				F8E91E27146C2BE500D064A5 /* EchoFixture.h */,
+				F8E91E28146C2BE500D064A5 /* EchoFixture.m */,
+				F8E91E2C146DC1CE00D064A5 /* TestQuery.h */,
+				F8E91E2D146DC1CE00D064A5 /* TestQuery.m */,
+				F8E91E2F146E05E700D064A5 /* TearDown.h */,
+				F8E91E30146E05E700D064A5 /* TearDown.m */,
+				F8E91E32146E060400D064A5 /* PageDriver.h */,
+				F8E91E33146E060400D064A5 /* PageDriver.m */,
+				F8E91E36146E061E00D064A5 /* SetUp.h */,
+				F8E91E37146E061E00D064A5 /* SetUp.m */,
+				F8E91E3914706A9B00D064A5 /* Uncle.h */,
+				F8E91E3A14706A9B00D064A5 /* Uncle.m */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -530,6 +561,13 @@
 				F8543DA714671E11001FC9E6 /* Count.m in Sources */,
 				F8543DB414683673001FC9E6 /* Math.m in Sources */,
 				F8543DB61468602E001FC9E6 /* StatementExecutor.m in Sources */,
+				F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */,
+				F8E91E2B146C579700D064A5 /* TestSlim.m in Sources */,
+				F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */,
+				F8E91E31146E05E800D064A5 /* TearDown.m in Sources */,
+				F8E91E35146E060900D064A5 /* PageDriver.m in Sources */,
+				F8E91E38146E061E00D064A5 /* SetUp.m in Sources */,
+				F8E91E3B14706A9B00D064A5 /* Uncle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

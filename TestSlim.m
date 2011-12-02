@@ -23,13 +23,33 @@
     return @"return value";
 }
 
--(void) withStringArg:(NSString*) someString {
-    self.calledWithStringArg = someString;
+-(void) setString: (NSString*) string {
+    self.calledWithStringArg = string;
+}
+-(NSString*) getStringArg {
+    return self.calledWithStringArg;
 }
 
--(void) withMultipleArgs:(NSArray*) args {
+-(NSString*) echoBoolean: (NSString*) string {
+    return string;
+}
+-(NSString*) withStringArg:(NSString*) someString {
+    self.calledWithStringArg = someString;
+    return @"return value for one string";
+}
+
+-(NSString*) withMultipleArgs:(NSArray*) args {
     self.calledWithFirstStringArg = [args objectAtIndex: 0];
     self.calledWithSecondStringArg = [args objectAtIndex: 1];
+    return @"return value for multiple strings";
+}
+
+-(NSString*) createTestSlimWithString: (NSString*) givenString {
+    return givenString;
+}
+
+-(NSString*) getFixture {
+    return @"foo";
 }
 
 -(void) dealloc {

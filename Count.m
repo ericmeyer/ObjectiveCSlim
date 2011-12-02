@@ -12,11 +12,9 @@
 }
 
 -(id) init {
-    if ((self = [super init])) {
-        self.number = 0;
-    }
-    return self;
+    return [self initWithString: @"0"];
 }
+
 -(NSString*) counter {
     return [NSString stringWithFormat: @"%d", self.number];
 }

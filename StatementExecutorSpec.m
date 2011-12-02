@@ -182,6 +182,31 @@ CONTEXT(StatementExecutor)
                    NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Make(statementExecutor, "test_slim", "NoSuchClass", empty)];
                    [expect(result) toBeEqualTo: @"__EXCEPTION__:message:<<NO_CLASS NoSuchClass.>>"];
                }),
+            it(@"returns the return value of the called method with one argument",
+               ^{
+                   SlimList* empty = SlimList_Create();
+                   SlimList* args = SlimList_Create();
+                   SlimList_AddString(args, "call with and return this");
+
+                   StatementExecutor* statementExecutor = StatementExecutor_Create();
+                   StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
+                   
+                   NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args)];
+                   [expect(result) toBeEqualTo: @"return value for one string"];
+               }),
+             it(@"returns the return value of the called method with multiple arguments",
+                ^{
+                    SlimList* empty = SlimList_Create();
+                    SlimList* args = SlimList_Create();
+                    SlimList_AddString(args, "first");
+                    SlimList_AddString(args, "second");
+                    
+                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
+                    
+                    NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Call(statementExecutor, "test_slim", "withMultipleArgs", args)];
+                    [expect(result) toBeEqualTo: @"return value for multiple strings"];
+                }),
             it(@"replaces a symbol with it's value",
                ^{
                    SlimList* empty = SlimList_Create();
@@ -302,5 +327,15 @@ CONTEXT(StatementExecutor)
                     [expect(test_slim_instance.calledWithFirstStringArg) toBeEqualTo: @"hello bob dog"];
                     [expect(test_slim_instance.calledWithSecondStringArg) toBeEqualTo: @"hello dog"];
                 }),
+//             it(@"mvkdn",
+//                ^{
+//                    SlimList* args = SlimList_Create();
+//                    SlimList_AddString(args, "Köln");
+//                    StatementExecutor* statementExecutor = StatementExecutor_Create();
+//                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);
+//                    TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
+//                    
+//                    [expect(test_slim_instance.calledWithStringArg) toBeEqualTo: @"Köln"];
+//                }),
            nil);
 }

@@ -6,8 +6,8 @@
 }
 @property (nonatomic, retain) ObjAdder* adder;
 
--(void) setFirst:(NSString*) first;
--(void) setSecond:(NSString*) second;
+-(NSString*) setFirst:(NSString*) first;
+-(NSString*) setSecond:(NSString*) second;
 -(NSString*) result;
 
 @end

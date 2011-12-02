@@ -1,4 +1,7 @@
 !define TEST_SYSTEM {slim}
+!define TEST_RUNNER {build/Debug/AcceptanceTest.app/Contents/MacOS/AcceptanceTest}
+!define COMMAND_PATTERN {%m}
+!define SLIM_VERSION {0.0}
 
 !contents -R2 -g -p -f -h
 
