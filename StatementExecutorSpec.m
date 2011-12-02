@@ -4,11 +4,19 @@
 
 CONTEXT(StatementExecutor)
 {
+    __block SlimList* empty;
+    __block SlimList* args;
+    __block StatementExecutor* statementExecutor;
+
     describe(@"slim class",
+             beforeEach(
+                ^{
+                    empty = SlimList_Create();
+                    args = SlimList_Create();
+                    statementExecutor = StatementExecutor_Create();
+                }),
              it(@"makes an instance of a class with no arguments",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     id test_slim_instance = StatementExecutor_Instance(statementExecutor, "test_slim");
 
@@ -17,9 +25,7 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"makes an instance of a class with 1 argument",
                 ^{
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "starting param");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);
                     TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
 
@@ -27,10 +33,8 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"makes an instance of a class with 2 arguments",
                 ^{
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "first param");
                     SlimList_AddString(args, "second param");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);
                     TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
 
@@ -49,9 +53,6 @@ CONTEXT(StatementExecutor)
 //                }),
              it(@"makes a different instance of the same class",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Make(statementExecutor, "test_slim_2", "TestSlim", empty);
                     TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
@@ -63,8 +64,6 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"removes an instance when failing to create one of a different name",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Make(statementExecutor, "test_slim", "NoSuchClass", empty);
                     
@@ -74,8 +73,6 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"returns an error if the instance does not exists",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Call(statementExecutor, "missing_instance", "anyMethod", empty)];
                     
                     [expect(result) toBeEqualTo: @"__EXCEPTION__:message:<<The instance missing_instance. does not exist>>"];
@@ -83,9 +80,6 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"calls a function with no args",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Call(statementExecutor, "test_slim", "noArgs", args);
                     
@@ -94,9 +88,6 @@ CONTEXT(StatementExecutor)
                 }),
             it(@"returns what the method that takes no arguments returns",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
 
@@ -106,9 +97,6 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"returns an error if the function with no arguments does not exist",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Call(statementExecutor, "test_slim", "noSuchMethod", args)];
                     
@@ -116,10 +104,7 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"returns an error if calling a method with one agument, but it takes none",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "first");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
                     
@@ -128,10 +113,7 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"calls a function with a string argument",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "put the toilet seat down");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
                     
@@ -140,10 +122,7 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"returns an error if the function with one argument does not exist",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "put the toilet seat down");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Call(statementExecutor, "test_slim", "noOtherSuchMethod", args)];
                     
@@ -151,9 +130,6 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"calls a method with null if no arguments are given, but it takes one",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
                     
@@ -162,11 +138,8 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"calls a function with two string arguments",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "put the toilet seat down");
                     SlimList_AddString(args, "every time");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Call(statementExecutor, "test_slim", "withMultipleArgs", args);
                     
@@ -176,16 +149,11 @@ CONTEXT(StatementExecutor)
                 }),
             it(@"returns an error if the class is missing",
                ^{
-                   SlimList* empty = SlimList_Create();
-                   StatementExecutor* statementExecutor = StatementExecutor_Create();
-                   
                    NSString* result = [NSString stringWithFormat: @"%s", StatementExecutor_Make(statementExecutor, "test_slim", "NoSuchClass", empty)];
                    [expect(result) toBeEqualTo: @"__EXCEPTION__:message:<<NO_CLASS NoSuchClass.>>"];
                }),
             it(@"returns the return value of the called method with one argument",
                ^{
-                   SlimList* empty = SlimList_Create();
-                   SlimList* args = SlimList_Create();
                    SlimList_AddString(args, "call with and return this");
 
                    StatementExecutor* statementExecutor = StatementExecutor_Create();
@@ -196,8 +164,6 @@ CONTEXT(StatementExecutor)
                }),
              it(@"returns the return value of the called method with multiple arguments",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "first");
                     SlimList_AddString(args, "second");
                     
@@ -209,10 +175,7 @@ CONTEXT(StatementExecutor)
                 }),
             it(@"replaces a symbol with it's value",
                ^{
-                   SlimList* empty = SlimList_Create();
-                   SlimList* args = SlimList_Create();
                    SlimList_AddString(args, "hello $v");
-                   StatementExecutor* statementExecutor = StatementExecutor_Create();
                    StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
                    StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                    StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
@@ -222,10 +185,7 @@ CONTEXT(StatementExecutor)
                }),
              it(@"replaces a symbol in the middle",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "hello $v person");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_SetSymbol(statementExecutor, "v", "eric");
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
@@ -235,10 +195,7 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"replaces a symbol with other non-alphanumeric",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "$v=why");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_SetSymbol(statementExecutor, "v", "jim");
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
@@ -248,10 +205,7 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"replaces multiple different symbols",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "hi $v. Cost:  $12.32 from $e.");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
                     StatementExecutor_SetSymbol(statementExecutor, "e", "doug");
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
@@ -262,10 +216,7 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"does not replace a single dollar sign",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "$");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", empty);
                     StatementExecutor_Call(statementExecutor, "test_slim", "withStringArg", args);
@@ -275,8 +226,6 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"does not replace a dollar sign at the end of the string",
                 ^{
-                    SlimList* empty = SlimList_Create();
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "hi $v$");
                     StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_SetSymbol(statementExecutor, "v", "bob");
@@ -292,9 +241,7 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"creates an instance with one arg while replacing a symbol",
                 ^{
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "hello $person");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_SetSymbol(statementExecutor, "person", "bob");
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);
                     TestSlim* test_slim_instance = (TestSlim*)StatementExecutor_Instance(statementExecutor, "test_slim");
@@ -303,9 +250,7 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"creates an instance with one arg while replacing two symbols",
                 ^{
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "hello $person $animal");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_SetSymbol(statementExecutor, "person", "bob");
                     StatementExecutor_SetSymbol(statementExecutor, "animal", "dog");
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);
@@ -315,10 +260,8 @@ CONTEXT(StatementExecutor)
                 }),
              it(@"creates an instance with two args while replacing two symbols",
                 ^{
-                    SlimList* args = SlimList_Create();
                     SlimList_AddString(args, "hello $person $animal");
                     SlimList_AddString(args, "hello $animal");
-                    StatementExecutor* statementExecutor = StatementExecutor_Create();
                     StatementExecutor_SetSymbol(statementExecutor, "person", "bob");
                     StatementExecutor_SetSymbol(statementExecutor, "animal", "dog");
                     StatementExecutor_Make(statementExecutor, "test_slim", "TestSlim", args);

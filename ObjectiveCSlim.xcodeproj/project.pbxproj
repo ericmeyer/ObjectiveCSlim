@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F810715F148966C0001E16DF /* OCDSpecCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F810715A148966C0001E16DF /* OCDSpecCondition.m */; };
+		F8107160148966C0001E16DF /* OCDSpecPostCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F810715C148966C0001E16DF /* OCDSpecPostCondition.m */; };
+		F8107161148966C0001E16DF /* OCDSpecPreCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F810715E148966C0001E16DF /* OCDSpecPreCondition.m */; };
 		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F82102491448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F821024A1448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
@@ -72,6 +75,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8107159148966C0001E16DF /* OCDSpecCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecCondition.h; sourceTree = "<group>"; };
+		F810715A148966C0001E16DF /* OCDSpecCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecCondition.m; sourceTree = "<group>"; };
+		F810715B148966C0001E16DF /* OCDSpecPostCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecPostCondition.h; sourceTree = "<group>"; };
+		F810715C148966C0001E16DF /* OCDSpecPostCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecPostCondition.m; sourceTree = "<group>"; };
+		F810715D148966C0001E16DF /* OCDSpecPreCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecPreCondition.h; sourceTree = "<group>"; };
+		F810715E148966C0001E16DF /* OCDSpecPreCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecPreCondition.m; sourceTree = "<group>"; };
 		F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjAdderFixture.h; sourceTree = "<group>"; };
 		F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjAdderFixture.m; sourceTree = "<group>"; };
 		F82102471448DF420086919F /* Adder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adder.h; sourceTree = "<group>"; };
@@ -194,6 +203,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8107158148966C0001E16DF /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				F8107159148966C0001E16DF /* OCDSpecCondition.h */,
+				F810715A148966C0001E16DF /* OCDSpecCondition.m */,
+				F810715B148966C0001E16DF /* OCDSpecPostCondition.h */,
+				F810715C148966C0001E16DF /* OCDSpecPostCondition.m */,
+				F810715D148966C0001E16DF /* OCDSpecPreCondition.h */,
+				F810715E148966C0001E16DF /* OCDSpecPreCondition.m */,
+			);
+			name = Contract;
+			path = OCDSpec/OCDSpec/Contract;
+			sourceTree = SOURCE_ROOT;
+		};
 		F873F3CF1448BEF300FFCA02 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +251,7 @@
 				F8A425EF145209A000FD4ECA /* unitTestMain.m */,
 				F8A425D51452098500FD4ECA /* iPhone-Prefix.pch */,
 				F8A425D61452098500FD4ECA /* OCDSpec.h */,
+				F8107158148966C0001E16DF /* Contract */,
 				F8A425D71452098500FD4ECA /* OCDSpecDescription.h */,
 				F8A425D81452098500FD4ECA /* OCDSpecDescription.m */,
 				F8A425D91452098500FD4ECA /* OCDSpecDescriptionRunner.h */,
@@ -526,6 +550,9 @@
 				F8E09F6414521AF300C33534 /* TestSlim.m in Sources */,
 				F8543DA814672929001FC9E6 /* Fixtures.m in Sources */,
 				F8543DAB146748BA001FC9E6 /* TestSlimTwo.m in Sources */,
+				F810715F148966C0001E16DF /* OCDSpecCondition.m in Sources */,
+				F8107160148966C0001E16DF /* OCDSpecPostCondition.m in Sources */,
+				F8107161148966C0001E16DF /* OCDSpecPreCondition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
