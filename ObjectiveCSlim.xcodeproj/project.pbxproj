@@ -91,9 +91,7 @@
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
 		F873F3D71448C5F100FFCA02 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = fitnesse.jar; sourceTree = "<group>"; };
 		F8A425B0145208CC00FD4ECA /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8A425B2145208CC00FD4ECA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F8A425B4145208CC00FD4ECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F8A425B6145208CC00FD4ECA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F8A425BE145208CD00FD4ECA /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		F8A425D51452098500FD4ECA /* iPhone-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "iPhone-Prefix.pch"; path = "OCDSpec/OCDSpec/iPhone-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		F8A425D61452098500FD4ECA /* OCDSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDSpec.h; path = OCDSpec/OCDSpec/OCDSpec.h; sourceTree = SOURCE_ROOT; };
@@ -318,9 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				F8ED9F001448BDF900DCBB3F /* Cocoa.framework */,
-				F8A425B2145208CC00FD4ECA /* UIKit.framework */,
 				F8A425B4145208CC00FD4ECA /* Foundation.framework */,
-				F8A425B6145208CC00FD4ECA /* CoreGraphics.framework */,
 				F8ED9F021448BDF900DCBB3F /* Other Frameworks */,
 			);
 			name = Frameworks;
