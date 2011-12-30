@@ -278,6 +278,7 @@
 		F8A425F41452110700FD4ECA /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				F8FC52D314AE498900D714B4 /* Fixtures.m */,
 				F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */,
 				F8FC52F914AE515000D714B4 /* TestSlim.h */,
 				F8FC52FA14AE515000D714B4 /* TestSlim.m */,
@@ -292,7 +293,6 @@
 			children = (
 				F8FC52B714AE472600D714B4 /* cslim */,
 				F8A425B8145208CC00FD4ECA /* OCDSpec */,
-				F8ED9F311448BE4B00DCBB3F /* cslim_mine */,
 				F8A425F1145209F800FD4ECA /* UIKit.framework */,
 				F873F3CF1448BEF300FFCA02 /* Fixtures */,
 				F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */,
@@ -355,14 +355,6 @@
 				F8ED9F0F1448BDF900DCBB3F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F8ED9F311448BE4B00DCBB3F /* cslim_mine */ = {
-			isa = PBXGroup;
-			children = (
-				F8FC52D314AE498900D714B4 /* Fixtures.m */,
-			);
-			name = cslim_mine;
 			sourceTree = "<group>";
 		};
 		F8FC52B714AE472600D714B4 /* cslim */ = {
