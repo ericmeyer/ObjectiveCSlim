@@ -32,9 +32,10 @@ Soon to be replaced with a template for an acceptance test target.
   * src/Com
   * src/CSlim
   * src/ExecutorObjectiveC
-6. Start fitnesse and write some tests.  See http://fitnesse.org/FitNesse.UserGuide.SliM for help in writing and running Slim tests.
-7. Write new fixtures in Xcode, making sure to add them to the AcceptanceTests target.
-8. Run the tests in fitnesse.
+6. Download fitnesse.jar into the root of your project.
+7. Start fitnesse and write some tests.  See http://fitnesse.org/FitNesse.UserGuide.SliM for help in writing and running Slim tests.
+8. Write new fixtures in Xcode, making sure to add them to the AcceptanceTests target.
+9. Run the tests in fitnesse.
 
 Currently, the target AcceptanceTests will not actually run the tests.  Instead it just builds the fixtures.
 
