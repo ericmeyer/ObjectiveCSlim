@@ -43,6 +43,20 @@ Soon to be replaced with a template for an acceptance test target.
 
 Currently, the target AcceptanceTests will not actually run the tests.  Instead it just builds the fixtures.
 
+## Fitnesse Test Runner Options
+
+Use this as a starting point for the contents of your Fitnesse page that is your top level suite.  It has been copy pasted from http://localhost:8080/CslimFirstExamples?edit while fitnesse is running on your local machine.
+
+<pre>
+!contents -R2 -g -p -f -h
+
+
+!define TEST_SYSTEM {slim}
+!define TEST_RUNNER {build/Debug/AcceptanceTests.app/Contents/MacOS/AcceptanceTests}
+!define COMMAND_PATTERN {%m}
+!define SLIM_VERSION {0.0}
+</pre>
+
 ## Writing Fixtures
 
 Fixture methods that take one argument expect an NSString
