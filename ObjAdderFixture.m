@@ -12,12 +12,12 @@
 }
 -(NSString*) setFirst:(NSString *)first {
     self.adder.first = [first doubleValue];
-    return @"OK";
+    return nil;
 }
 
 -(NSString*) setSecond:(NSString *)second {
     self.adder.second = [second doubleValue];
-    return @"OK";
+    return nil;
 }
 
 -(NSString*) result {
