@@ -51,9 +51,9 @@ See Count for an example of a script table
 
 Converting Strings to number primitives:
 
-* [@"foo" intValue];
-* [@"foo" doubleValue];
-* [@"foo" floatValue];
+* [@"123" intValue];
+* [@"3.50" doubleValue];
+* [@"3.14" floatValue];
 
 
 Converting to an NSString
