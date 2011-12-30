@@ -1,3 +1,6 @@
 [submodule "OCDSpec"]
 	path = OCDSpec
 	url = git@github.com:ericmeyer/OCDSpec.git
+[submodule "cslim"]
+	path = cslim
+	url = git@github.com:dougbradbury/cslim.git
