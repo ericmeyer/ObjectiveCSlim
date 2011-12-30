@@ -14,7 +14,6 @@
 		F82102491448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F821024A1448DF420086919F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F82102481448DF420086919F /* Adder.m */; };
 		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
-		F8543DAB146748BA001FC9E6 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DAA146748BA001FC9E6 /* TestSlimTwo.m */; };
 		F8543DB414683673001FC9E6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
 		F8A425B5145208CC00FD4ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
@@ -28,9 +27,7 @@
 		F8A425EE1452098500FD4ECA /* OCDSpecSharedResults.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425E61452098500FD4ECA /* OCDSpecSharedResults.m */; };
 		F8A425F0145209A000FD4ECA /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425EF145209A000FD4ECA /* unitTestMain.m */; };
 		F8A425F2145209F800FD4ECA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425F1145209F800FD4ECA /* UIKit.framework */; };
-		F8E09F6414521AF300C33534 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F6314521AF300C33534 /* TestSlim.m */; };
 		F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
-		F8E91E2B146C579700D064A5 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E09F6314521AF300C33534 /* TestSlim.m */; };
 		F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
 		F8E91E31146E05E800D064A5 /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
 		F8E91E35146E060900D064A5 /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
@@ -70,6 +67,10 @@
 		F8FC52E814AE4DFA00D714B4 /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
 		F8FC52EA14AE4E2000D714B4 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
 		F8FC52EB14AE4E2000D714B4 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
+		F8FC52FD14AE515000D714B4 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
+		F8FC52FE14AE515000D714B4 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
+		F8FC52FF14AE515000D714B4 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
+		F8FC530014AE515000D714B4 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,8 +86,6 @@
 		F82102481448DF420086919F /* Adder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adder.m; sourceTree = "<group>"; };
 		F8543DA514671E11001FC9E6 /* Count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Count.h; sourceTree = "<group>"; };
 		F8543DA614671E11001FC9E6 /* Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Count.m; sourceTree = "<group>"; };
-		F8543DA9146748BA001FC9E6 /* TestSlimTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSlimTwo.h; sourceTree = "<group>"; };
-		F8543DAA146748BA001FC9E6 /* TestSlimTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSlimTwo.m; sourceTree = "<group>"; };
 		F8543DB214683673001FC9E6 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
 		F8543DB314683673001FC9E6 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
@@ -116,8 +115,6 @@
 		F8A425E61452098500FD4ECA /* OCDSpecSharedResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDSpecSharedResults.m; path = OCDSpec/OCDSpec/OCDSpecSharedResults.m; sourceTree = SOURCE_ROOT; };
 		F8A425EF145209A000FD4ECA /* unitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = unitTestMain.m; path = OCDSpec/OCDSpec/Programs/unitTestMain.m; sourceTree = SOURCE_ROOT; };
 		F8A425F1145209F800FD4ECA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F8E09F6214521AF300C33534 /* TestSlim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSlim.h; sourceTree = "<group>"; };
-		F8E09F6314521AF300C33534 /* TestSlim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSlim.m; sourceTree = "<group>"; };
 		F8E91E27146C2BE500D064A5 /* EchoFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoFixture.h; sourceTree = "<group>"; };
 		F8E91E28146C2BE500D064A5 /* EchoFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchoFixture.m; sourceTree = "<group>"; };
 		F8E91E2C146DC1CE00D064A5 /* TestQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuery.h; sourceTree = "<group>"; };
@@ -167,6 +164,10 @@
 		F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StatementExecutorSpec.m; path = cslim/tests/ObjectiveC/StatementExecutorSpec.m; sourceTree = "<group>"; };
 		F8FC52D314AE498900D714B4 /* Fixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixtures.m; sourceTree = "<group>"; };
 		F8FC52D614AE49B300D714B4 /* Fixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fixtures.h; path = cslim/include/CSlim/Fixtures.h; sourceTree = "<group>"; };
+		F8FC52F914AE515000D714B4 /* TestSlim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSlim.h; path = cslim/tests/ObjectiveC/TestSlim.h; sourceTree = "<group>"; };
+		F8FC52FA14AE515000D714B4 /* TestSlim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSlim.m; path = cslim/tests/ObjectiveC/TestSlim.m; sourceTree = "<group>"; };
+		F8FC52FB14AE515000D714B4 /* TestSlimTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSlimTwo.h; path = cslim/tests/ObjectiveC/TestSlimTwo.h; sourceTree = "<group>"; };
+		F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSlimTwo.m; path = cslim/tests/ObjectiveC/TestSlimTwo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,10 +281,10 @@
 			isa = PBXGroup;
 			children = (
 				F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */,
-				F8E09F6214521AF300C33534 /* TestSlim.h */,
-				F8E09F6314521AF300C33534 /* TestSlim.m */,
-				F8543DA9146748BA001FC9E6 /* TestSlimTwo.h */,
-				F8543DAA146748BA001FC9E6 /* TestSlimTwo.m */,
+				F8FC52F914AE515000D714B4 /* TestSlim.h */,
+				F8FC52FA14AE515000D714B4 /* TestSlim.m */,
+				F8FC52FB14AE515000D714B4 /* TestSlimTwo.h */,
+				F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -535,8 +536,6 @@
 				F8A425ED1452098500FD4ECA /* OCDSpecOutputter+RedirectOutput.m in Sources */,
 				F8A425EE1452098500FD4ECA /* OCDSpecSharedResults.m in Sources */,
 				F8A425F0145209A000FD4ECA /* unitTestMain.m in Sources */,
-				F8E09F6414521AF300C33534 /* TestSlim.m in Sources */,
-				F8543DAB146748BA001FC9E6 /* TestSlimTwo.m in Sources */,
 				F810715F148966C0001E16DF /* OCDSpecCondition.m in Sources */,
 				F8107160148966C0001E16DF /* OCDSpecPostCondition.m in Sources */,
 				F8107161148966C0001E16DF /* OCDSpecPreCondition.m in Sources */,
@@ -552,6 +551,8 @@
 				F8FC52E714AE4DFA00D714B4 /* SlimListDeserializer.c in Sources */,
 				F8FC52E814AE4DFA00D714B4 /* SlimListSerializer.c in Sources */,
 				F8FC52EA14AE4E2000D714B4 /* SlimUtil.c in Sources */,
+				F8FC52FE14AE515000D714B4 /* TestSlim.m in Sources */,
+				F8FC530014AE515000D714B4 /* TestSlimTwo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +577,6 @@
 				F8543DA714671E11001FC9E6 /* Count.m in Sources */,
 				F8543DB414683673001FC9E6 /* Math.m in Sources */,
 				F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */,
-				F8E91E2B146C579700D064A5 /* TestSlim.m in Sources */,
 				F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */,
 				F8E91E31146E05E800D064A5 /* TearDown.m in Sources */,
 				F8E91E35146E060900D064A5 /* PageDriver.m in Sources */,
@@ -593,6 +593,8 @@
 				F8FC52E514AE4DFA00D714B4 /* SlimListDeserializer.c in Sources */,
 				F8FC52E614AE4DFA00D714B4 /* SlimListSerializer.c in Sources */,
 				F8FC52EB14AE4E2000D714B4 /* SlimUtil.c in Sources */,
+				F8FC52FD14AE515000D714B4 /* TestSlim.m in Sources */,
+				F8FC52FF14AE515000D714B4 /* TestSlimTwo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
