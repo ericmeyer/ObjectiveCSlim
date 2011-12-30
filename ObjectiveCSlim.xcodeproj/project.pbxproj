@@ -138,7 +138,7 @@
 		F8ED9F121448BDF900DCBB3F /* ObjectiveCSlimAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCSlimAppDelegate.h; sourceTree = "<group>"; };
 		F8ED9F131448BDF900DCBB3F /* ObjectiveCSlimAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCSlimAppDelegate.m; sourceTree = "<group>"; };
 		F8ED9F161448BDF900DCBB3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		F8ED9F2E1448BE3200DCBB3F /* AcceptanceTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FC52B914AE475600D714B4 /* ListExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ListExecutor.h; path = cslim/include/CSlim/ListExecutor.h; sourceTree = "<group>"; };
 		F8FC52BA14AE475600D714B4 /* Slim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Slim.h; path = cslim/include/CSlim/Slim.h; sourceTree = "<group>"; };
 		F8FC52BB14AE475600D714B4 /* SlimConnectionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimConnectionHandler.h; path = cslim/include/CSlim/SlimConnectionHandler.h; sourceTree = "<group>"; };
@@ -306,7 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				F8ED9EFC1448BDF900DCBB3F /* ObjectiveCSlim.app */,
-				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTest.app */,
+				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */,
 				F8A425B0145208CC00FD4ECA /* Specs.app */,
 			);
 			name = Products;
@@ -423,9 +423,9 @@
 			productReference = F8ED9EFC1448BDF900DCBB3F /* ObjectiveCSlim.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F8ED9F211448BE3200DCBB3F /* AcceptanceTest */ = {
+		F8ED9F211448BE3200DCBB3F /* AcceptanceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8ED9F2B1448BE3200DCBB3F /* Build configuration list for PBXNativeTarget "AcceptanceTest" */;
+			buildConfigurationList = F8ED9F2B1448BE3200DCBB3F /* Build configuration list for PBXNativeTarget "AcceptanceTests" */;
 			buildPhases = (
 				F8ED9F221448BE3200DCBB3F /* Sources */,
 				F8ED9F251448BE3200DCBB3F /* Frameworks */,
@@ -435,9 +435,9 @@
 			);
 			dependencies = (
 			);
-			name = AcceptanceTest;
+			name = AcceptanceTests;
 			productName = ObjectiveCSlim;
-			productReference = F8ED9F2E1448BE3200DCBB3F /* AcceptanceTest.app */;
+			productReference = F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -458,7 +458,7 @@
 			projectRoot = "";
 			targets = (
 				F8ED9EFB1448BDF900DCBB3F /* ObjectiveCSlim */,
-				F8ED9F211448BE3200DCBB3F /* AcceptanceTest */,
+				F8ED9F211448BE3200DCBB3F /* AcceptanceTests */,
 				F8A425AF145208CC00FD4ECA /* Specs */,
 			);
 		};
@@ -731,7 +731,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectiveCSlim/ObjectiveCSlim-Prefix.pch";
 				INFOPLIST_FILE = "ObjectiveCSlim/ObjectiveCSlim-Info.plist";
-				PRODUCT_NAME = AcceptanceTest;
+				PRODUCT_NAME = AcceptanceTests;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -746,7 +746,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectiveCSlim/ObjectiveCSlim-Prefix.pch";
 				INFOPLIST_FILE = "ObjectiveCSlim/ObjectiveCSlim-Info.plist";
-				PRODUCT_NAME = AcceptanceTest;
+				PRODUCT_NAME = AcceptanceTests;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -781,7 +781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8ED9F2B1448BE3200DCBB3F /* Build configuration list for PBXNativeTarget "AcceptanceTest" */ = {
+		F8ED9F2B1448BE3200DCBB3F /* Build configuration list for PBXNativeTarget "AcceptanceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8ED9F2C1448BE3200DCBB3F /* Debug */,
