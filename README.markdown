@@ -1,3 +1,7 @@
+# Objective C Slim
+
+This provides a way to write acceptance tests for your iOS and other Objective C applications using Slim tables and fixtures written in Objective C.
+
 # Making Changes to Objective C Slim
 
 https://github.com/dougbradbury/cslim
