@@ -46,3 +46,20 @@ Fixture methods that take more than one argument expect an NSArray of NSString's
 All fixture methods return an NSString
 See ObjAdderFixture for an example of a decision table
 See Count for an example of a script table
+
+## Useful Methods
+
+Converting Strings to number primitives:
+
+* [@"foo" intValue];
+* [@"foo" doubleValue];
+* [@"foo" floatValue];
+
+
+Converting to an NSString
+
+* From an NSNumber
+  * NSNumber* number = [NSNumber numberWithInt: 1];
+  * [number stringValue];
+* General case
+  * [NSString stringWithFormat: @"%@, %@", @"Lastname", @"Firstname"];
