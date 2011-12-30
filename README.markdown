@@ -37,3 +37,11 @@ Soon to be replaced with a template for an acceptance test target.
 8. Run the tests in fitnesse.
 
 Currently, the target AcceptanceTests will not actually run the tests.  Instead it just builds the fixtures.
+
+## Writing Fixtures
+
+Fixture methods that take one argument expect an NSString
+Fixture methods that take more than one argument expect an NSArray of NSString's.
+All fixture methods return an NSString
+See ObjAdderFixture for an example of a decision table
+See Count for an example of a script table
