@@ -7,7 +7,7 @@
 
 -(id) initWithString: (NSString*) startingNumber;
 
--(NSString*) counter;
--(NSString*) count;
+-(int) counter;
+-(void) count;
 
 @end

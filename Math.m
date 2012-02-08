@@ -14,12 +14,12 @@
     return self;
 }
 
--(NSString*) sum {
+-(int) sum {
     int total = 0;
     for (NSNumber* number in self.numbers) {
         total += [number intValue];
     }
-    return [NSString stringWithFormat: @"%d", total];
+    return total;
 }
 
 -(NSString*) length {

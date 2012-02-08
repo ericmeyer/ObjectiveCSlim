@@ -3,11 +3,13 @@
 
 @interface ObjAdderFixture : NSObject {
     ObjAdder* adder;
+    NSNumber* first;
+    NSNumber* second;
 }
 @property (nonatomic, retain) ObjAdder* adder;
+@property (nonatomic, retain) NSNumber* first;
+@property (nonatomic, retain) NSNumber* second;
 
--(NSString*) setFirst:(NSString*) first;
--(NSString*) setSecond:(NSString*) second;
 -(NSString*) result;
 
 @end

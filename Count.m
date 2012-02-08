@@ -4,7 +4,7 @@
 
 @synthesize number;
 
--(id) initWithString:(NSString *)startingNumber {
+-(id) initWithString:(NSNumber *)startingNumber {
     if ((self = [super init])) {
         self.number = [startingNumber intValue];
     }
@@ -15,13 +15,12 @@
     return [self initWithString: @"0"];
 }
 
--(NSString*) counter {
-    return [NSString stringWithFormat: @"%d", self.number];
+-(int) counter {
+    return self.number;
 }
 
--(NSString*) count {
+-(void) count {
     self.number += 1;
-    return nil;
 }
 
 @end

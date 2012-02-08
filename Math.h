@@ -7,6 +7,6 @@
 
 -(id) initWithArray: (NSArray*) givenArray;
 
--(NSString*) sum;
+-(int) sum;
 
 @end
