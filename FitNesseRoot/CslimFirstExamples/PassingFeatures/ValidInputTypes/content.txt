@@ -1,0 +1,8 @@
+!|script           |ValidInputTypes        |
+|call with NSString|Hello World            |
+|check             |called with|Hello World|
+
+
+!|script|ValidInputTypes           |
+|call with zero args               |
+|ensure |call with zero args called|

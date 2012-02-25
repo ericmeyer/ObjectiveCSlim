@@ -1,0 +1,8 @@
+!|script|ValidReturnTypes                                                |
+|method returning void                                                   |
+|check  |method returning NSString                           |Hello World|
+|check  |method returning NSNumber                           |123        |
+|check  |method returning int                                |456        |
+|check  |method returning object that responds to stringValue|Some String|
+|ensure |method returning BOOL YES                                       |
+|reject |method returning BOOL NO                                        |

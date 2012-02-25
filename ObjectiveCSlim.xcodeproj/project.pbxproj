@@ -16,6 +16,15 @@
 		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
 		F8543DB414683673001FC9E6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
+		F88745BE14F86196003D2B3F /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */; };
+		F88745C114F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
+		F88745C214F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
+		F88745C514F862B4003D2B3F /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
+		F88745C614F862B4003D2B3F /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
+		F88745CB14F862BF003D2B3F /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
+		F88745CC14F862BF003D2B3F /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
+		F88745CD14F862BF003D2B3F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
+		F88745CE14F862BF003D2B3F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
 		F8A425B5145208CC00FD4ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		F8A425E71452098500FD4ECA /* OCDSpecDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425D81452098500FD4ECA /* OCDSpecDescription.m */; };
 		F8A425E81452098500FD4ECA /* OCDSpecDescriptionRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A425DA1452098500FD4ECA /* OCDSpecDescriptionRunner.m */; };
@@ -90,6 +99,15 @@
 		F8543DB314683673001FC9E6 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
 		F873F3D71448C5F100FFCA02 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = fitnesse.jar; sourceTree = "<group>"; };
+		F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValueSpec.m; path = cslim/tests/ObjectiveC/OCSReturnValueSpec.m; sourceTree = "<group>"; };
+		F88745BF14F8628C003D2B3F /* OCSReturnValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSReturnValue.h; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.h; sourceTree = "<group>"; };
+		F88745C014F8628C003D2B3F /* OCSReturnValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValue.m; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.m; sourceTree = "<group>"; };
+		F88745C314F862B4003D2B3F /* RespondsToStringValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RespondsToStringValue.h; path = cslim/tests/ObjectiveC/RespondsToStringValue.h; sourceTree = "<group>"; };
+		F88745C414F862B4003D2B3F /* RespondsToStringValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RespondsToStringValue.m; path = cslim/tests/ObjectiveC/RespondsToStringValue.m; sourceTree = "<group>"; };
+		F88745C714F862BF003D2B3F /* ValidInputTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValidInputTypes.h; path = cslim/tests/ObjectiveC/ValidInputTypes.h; sourceTree = "<group>"; };
+		F88745C814F862BF003D2B3F /* ValidInputTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValidInputTypes.m; path = cslim/tests/ObjectiveC/ValidInputTypes.m; sourceTree = "<group>"; };
+		F88745C914F862BF003D2B3F /* ValidReturnTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValidReturnTypes.h; path = cslim/tests/ObjectiveC/ValidReturnTypes.h; sourceTree = "<group>"; };
+		F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValidReturnTypes.m; path = cslim/tests/ObjectiveC/ValidReturnTypes.m; sourceTree = "<group>"; };
 		F8A425B0145208CC00FD4ECA /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A425B4145208CC00FD4ECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8A425BE145208CD00FD4ECA /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
@@ -214,6 +232,12 @@
 		F873F3CF1448BEF300FFCA02 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				F88745C714F862BF003D2B3F /* ValidInputTypes.h */,
+				F88745C814F862BF003D2B3F /* ValidInputTypes.m */,
+				F88745C914F862BF003D2B3F /* ValidReturnTypes.h */,
+				F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */,
+				F88745C314F862B4003D2B3F /* RespondsToStringValue.h */,
+				F88745C414F862B4003D2B3F /* RespondsToStringValue.m */,
 				F873F3D71448C5F100FFCA02 /* fitnesse.jar */,
 				F873F3D51448BF4F00FFCA02 /* Main.c */,
 				F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */,
@@ -278,6 +302,7 @@
 		F8A425F41452110700FD4ECA /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */,
 				F8FC52D314AE498900D714B4 /* Fixtures.m */,
 				F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */,
 				F8FC52F914AE515000D714B4 /* TestSlim.h */,
@@ -373,6 +398,8 @@
 				F8FC52C414AE47A500D714B4 /* ListExecutor.c */,
 				F8FC52D614AE49B300D714B4 /* Fixtures.h */,
 				F8FC52C514AE47A500D714B4 /* Slim.c */,
+				F88745BF14F8628C003D2B3F /* OCSReturnValue.h */,
+				F88745C014F8628C003D2B3F /* OCSReturnValue.m */,
 				F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */,
 				F8FC52C714AE47A500D714B4 /* SlimList.c */,
 				F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */,
@@ -541,6 +568,11 @@
 				F8FC52EA14AE4E2000D714B4 /* SlimUtil.c in Sources */,
 				F8FC52FE14AE515000D714B4 /* TestSlim.m in Sources */,
 				F8FC530014AE515000D714B4 /* TestSlimTwo.m in Sources */,
+				F88745BE14F86196003D2B3F /* OCSReturnValueSpec.m in Sources */,
+				F88745C214F8628C003D2B3F /* OCSReturnValue.m in Sources */,
+				F88745C614F862B4003D2B3F /* RespondsToStringValue.m in Sources */,
+				F88745CC14F862BF003D2B3F /* ValidInputTypes.m in Sources */,
+				F88745CE14F862BF003D2B3F /* ValidReturnTypes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +615,10 @@
 				F8FC52EB14AE4E2000D714B4 /* SlimUtil.c in Sources */,
 				F8FC52FD14AE515000D714B4 /* TestSlim.m in Sources */,
 				F8FC52FF14AE515000D714B4 /* TestSlimTwo.m in Sources */,
+				F88745C114F8628C003D2B3F /* OCSReturnValue.m in Sources */,
+				F88745C514F862B4003D2B3F /* RespondsToStringValue.m in Sources */,
+				F88745CB14F862BF003D2B3F /* ValidInputTypes.m in Sources */,
+				F88745CD14F862BF003D2B3F /* ValidReturnTypes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
