@@ -22,7 +22,21 @@
 		F88745CC14F862BF003D2B3F /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
 		F88745CD14F862BF003D2B3F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
 		F88745CE14F862BF003D2B3F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
-		F8A425B5145208CC00FD4ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
+		F8B5B1C7157037DF0049742E /* OCDSpecCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1A7157037DF0049742E /* OCDSpecCondition.m */; };
+		F8B5B1C8157037DF0049742E /* OCDSpecPostCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1A9157037DF0049742E /* OCDSpecPostCondition.m */; };
+		F8B5B1C9157037DF0049742E /* OCDSpecPreCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1AB157037DF0049742E /* OCDSpecPreCondition.m */; };
+		F8B5B1CA157037DF0049742E /* OCDSpecDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1AF157037DF0049742E /* OCDSpecDescription.m */; };
+		F8B5B1CB157037DF0049742E /* OCDSpecDescriptionRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B1157037DF0049742E /* OCDSpecDescriptionRunner.m */; };
+		F8B5B1CC157037DF0049742E /* OCDSpecExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B3157037DF0049742E /* OCDSpecExample.m */; };
+		F8B5B1CD157037DF0049742E /* OCDSpecExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B5157037DF0049742E /* OCDSpecExpectation.m */; };
+		F8B5B1CE157037DF0049742E /* OCDSpecFail.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B7157037DF0049742E /* OCDSpecFail.m */; };
+		F8B5B1CF157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B9157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m */; };
+		F8B5B1D0157037DF0049742E /* OCDSpecOutputter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BB157037DF0049742E /* OCDSpecOutputter.m */; };
+		F8B5B1D1157037DF0049742E /* OCDSpecSuiteRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */; };
+		F8B5B1D3157037DF0049742E /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = F8B5B1C1157037DF0049742E /* RunIPhoneUnitTest.sh */; };
+		F8B5B1D4157037DF0049742E /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1C2157037DF0049742E /* unitTestMain.m */; };
+		F8B5B1DC15703AAF0049742E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5B1DB15703AAF0049742E /* UIKit.framework */; };
+		F8B5B1DE15703AD10049742E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5B1DD15703AD10049742E /* Foundation.framework */; };
 		F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
 		F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
 		F8E91E31146E05E800D064A5 /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
@@ -91,6 +105,38 @@
 		F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValidReturnTypes.m; path = cslim/tests/ObjectiveC/ValidReturnTypes.m; sourceTree = "<group>"; };
 		F8A425B0145208CC00FD4ECA /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A425B4145208CC00FD4ECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8B5B1A6157037DF0049742E /* OCDSpecCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecCondition.h; sourceTree = "<group>"; };
+		F8B5B1A7157037DF0049742E /* OCDSpecCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecCondition.m; sourceTree = "<group>"; };
+		F8B5B1A8157037DF0049742E /* OCDSpecPostCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecPostCondition.h; sourceTree = "<group>"; };
+		F8B5B1A9157037DF0049742E /* OCDSpecPostCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecPostCondition.m; sourceTree = "<group>"; };
+		F8B5B1AA157037DF0049742E /* OCDSpecPreCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecPreCondition.h; sourceTree = "<group>"; };
+		F8B5B1AB157037DF0049742E /* OCDSpecPreCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecPreCondition.m; sourceTree = "<group>"; };
+		F8B5B1AC157037DF0049742E /* iPhone-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iPhone-Prefix.pch"; sourceTree = "<group>"; };
+		F8B5B1AD157037DF0049742E /* OCDSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpec.h; sourceTree = "<group>"; };
+		F8B5B1AE157037DF0049742E /* OCDSpecDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecDescription.h; sourceTree = "<group>"; };
+		F8B5B1AF157037DF0049742E /* OCDSpecDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecDescription.m; sourceTree = "<group>"; };
+		F8B5B1B0157037DF0049742E /* OCDSpecDescriptionRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecDescriptionRunner.h; sourceTree = "<group>"; };
+		F8B5B1B1157037DF0049742E /* OCDSpecDescriptionRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecDescriptionRunner.m; sourceTree = "<group>"; };
+		F8B5B1B2157037DF0049742E /* OCDSpecExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecExample.h; sourceTree = "<group>"; };
+		F8B5B1B3157037DF0049742E /* OCDSpecExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecExample.m; sourceTree = "<group>"; };
+		F8B5B1B4157037DF0049742E /* OCDSpecExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecExpectation.h; sourceTree = "<group>"; };
+		F8B5B1B5157037DF0049742E /* OCDSpecExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecExpectation.m; sourceTree = "<group>"; };
+		F8B5B1B6157037DF0049742E /* OCDSpecFail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecFail.h; sourceTree = "<group>"; };
+		F8B5B1B7157037DF0049742E /* OCDSpecFail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecFail.m; sourceTree = "<group>"; };
+		F8B5B1B8157037DF0049742E /* OCDSpecOutputter+RedirectOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCDSpecOutputter+RedirectOutput.h"; sourceTree = "<group>"; };
+		F8B5B1B9157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCDSpecOutputter+RedirectOutput.m"; sourceTree = "<group>"; };
+		F8B5B1BA157037DF0049742E /* OCDSpecOutputter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecOutputter.h; sourceTree = "<group>"; };
+		F8B5B1BB157037DF0049742E /* OCDSpecOutputter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecOutputter.m; sourceTree = "<group>"; };
+		F8B5B1BC157037DF0049742E /* OCDSpecResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecResults.h; sourceTree = "<group>"; };
+		F8B5B1BD157037DF0049742E /* OCDSpecSuiteRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecSuiteRunner.h; sourceTree = "<group>"; };
+		F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecSuiteRunner.m; sourceTree = "<group>"; };
+		F8B5B1C1157037DF0049742E /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunIPhoneUnitTest.sh; sourceTree = "<group>"; };
+		F8B5B1C2157037DF0049742E /* unitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = unitTestMain.m; sourceTree = "<group>"; };
+		F8B5B1C4157037DF0049742E /* DescriptionRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionRunner.h; sourceTree = "<group>"; };
+		F8B5B1C5157037DF0049742E /* Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example.h; sourceTree = "<group>"; };
+		F8B5B1C6157037DF0049742E /* VoidBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoidBlock.h; sourceTree = "<group>"; };
+		F8B5B1DB15703AAF0049742E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F8B5B1DD15703AD10049742E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F8E91E27146C2BE500D064A5 /* EchoFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoFixture.h; sourceTree = "<group>"; };
 		F8E91E28146C2BE500D064A5 /* EchoFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchoFixture.m; sourceTree = "<group>"; };
 		F8E91E2C146DC1CE00D064A5 /* TestQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuery.h; sourceTree = "<group>"; };
@@ -151,7 +197,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8A425B5145208CC00FD4ECA /* Foundation.framework in Frameworks */,
+				F8B5B1DE15703AD10049742E /* Foundation.framework in Frameworks */,
+				F8B5B1DC15703AAF0049742E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +257,7 @@
 		F8A425F41452110700FD4ECA /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				F8B5B1A4157037DF0049742E /* OCDSpec */,
 				F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */,
 				F8FC52D314AE498900D714B4 /* Fixtures.m */,
 				F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */,
@@ -221,9 +269,73 @@
 			name = Specs;
 			sourceTree = "<group>";
 		};
+		F8B5B1A4157037DF0049742E /* OCDSpec */ = {
+			isa = PBXGroup;
+			children = (
+				F8B5B1A5157037DF0049742E /* Contract */,
+				F8B5B1AC157037DF0049742E /* iPhone-Prefix.pch */,
+				F8B5B1AD157037DF0049742E /* OCDSpec.h */,
+				F8B5B1AE157037DF0049742E /* OCDSpecDescription.h */,
+				F8B5B1AF157037DF0049742E /* OCDSpecDescription.m */,
+				F8B5B1B0157037DF0049742E /* OCDSpecDescriptionRunner.h */,
+				F8B5B1B1157037DF0049742E /* OCDSpecDescriptionRunner.m */,
+				F8B5B1B2157037DF0049742E /* OCDSpecExample.h */,
+				F8B5B1B3157037DF0049742E /* OCDSpecExample.m */,
+				F8B5B1B4157037DF0049742E /* OCDSpecExpectation.h */,
+				F8B5B1B5157037DF0049742E /* OCDSpecExpectation.m */,
+				F8B5B1B6157037DF0049742E /* OCDSpecFail.h */,
+				F8B5B1B7157037DF0049742E /* OCDSpecFail.m */,
+				F8B5B1B8157037DF0049742E /* OCDSpecOutputter+RedirectOutput.h */,
+				F8B5B1B9157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m */,
+				F8B5B1BA157037DF0049742E /* OCDSpecOutputter.h */,
+				F8B5B1BB157037DF0049742E /* OCDSpecOutputter.m */,
+				F8B5B1BC157037DF0049742E /* OCDSpecResults.h */,
+				F8B5B1BD157037DF0049742E /* OCDSpecSuiteRunner.h */,
+				F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */,
+				F8B5B1BF157037DF0049742E /* Programs */,
+				F8B5B1C3157037DF0049742E /* Protocols */,
+				F8B5B1C6157037DF0049742E /* VoidBlock.h */,
+			);
+			name = OCDSpec;
+			path = OCDSpec/OCDSpec;
+			sourceTree = "<group>";
+		};
+		F8B5B1A5157037DF0049742E /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				F8B5B1A6157037DF0049742E /* OCDSpecCondition.h */,
+				F8B5B1A7157037DF0049742E /* OCDSpecCondition.m */,
+				F8B5B1A8157037DF0049742E /* OCDSpecPostCondition.h */,
+				F8B5B1A9157037DF0049742E /* OCDSpecPostCondition.m */,
+				F8B5B1AA157037DF0049742E /* OCDSpecPreCondition.h */,
+				F8B5B1AB157037DF0049742E /* OCDSpecPreCondition.m */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		F8B5B1BF157037DF0049742E /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+				F8B5B1C1157037DF0049742E /* RunIPhoneUnitTest.sh */,
+				F8B5B1C2157037DF0049742E /* unitTestMain.m */,
+			);
+			path = Programs;
+			sourceTree = "<group>";
+		};
+		F8B5B1C3157037DF0049742E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F8B5B1C4157037DF0049742E /* DescriptionRunner.h */,
+				F8B5B1C5157037DF0049742E /* Example.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F8ED9EF11448BDF900DCBB3F = {
 			isa = PBXGroup;
 			children = (
+				F8B5B1DD15703AD10049742E /* Foundation.framework */,
+				F8B5B1DB15703AAF0049742E /* UIKit.framework */,
 				F8FC52B714AE472600D714B4 /* cslim */,
 				F873F3CF1448BEF300FFCA02 /* Fixtures */,
 				F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */,
@@ -405,6 +517,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B5B1D3157037DF0049742E /* RunIPhoneUnitTest.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +583,18 @@
 				F88745C614F862B4003D2B3F /* RespondsToStringValue.m in Sources */,
 				F88745CC14F862BF003D2B3F /* ValidInputTypes.m in Sources */,
 				F88745CE14F862BF003D2B3F /* ValidReturnTypes.m in Sources */,
+				F8B5B1C7157037DF0049742E /* OCDSpecCondition.m in Sources */,
+				F8B5B1C8157037DF0049742E /* OCDSpecPostCondition.m in Sources */,
+				F8B5B1C9157037DF0049742E /* OCDSpecPreCondition.m in Sources */,
+				F8B5B1CA157037DF0049742E /* OCDSpecDescription.m in Sources */,
+				F8B5B1CB157037DF0049742E /* OCDSpecDescriptionRunner.m in Sources */,
+				F8B5B1CC157037DF0049742E /* OCDSpecExample.m in Sources */,
+				F8B5B1CD157037DF0049742E /* OCDSpecExpectation.m in Sources */,
+				F8B5B1CE157037DF0049742E /* OCDSpecFail.m in Sources */,
+				F8B5B1CF157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m in Sources */,
+				F8B5B1D0157037DF0049742E /* OCDSpecOutputter.m in Sources */,
+				F8B5B1D1157037DF0049742E /* OCDSpecSuiteRunner.m in Sources */,
+				F8B5B1D4157037DF0049742E /* unitTestMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +683,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_PREFIX_HEADER = "OCDSpec/Mac-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
 				INFOPLIST_FILE = "";
@@ -578,7 +703,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_PREFIX_HEADER = "OCDSpec/Mac-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
 				INFOPLIST_FILE = "";
