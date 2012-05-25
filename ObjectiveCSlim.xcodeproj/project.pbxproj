@@ -137,6 +137,7 @@
 		F8B5B1C6157037DF0049742E /* VoidBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoidBlock.h; sourceTree = "<group>"; };
 		F8B5B1DB15703AAF0049742E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F8B5B1DD15703AD10049742E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F8B5B1DF15703D280049742E /* Mac-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Mac-Prefix.pch"; path = "OCDSpec/Mac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		F8E91E27146C2BE500D064A5 /* EchoFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoFixture.h; sourceTree = "<group>"; };
 		F8E91E28146C2BE500D064A5 /* EchoFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchoFixture.m; sourceTree = "<group>"; };
 		F8E91E2C146DC1CE00D064A5 /* TestQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuery.h; sourceTree = "<group>"; };
@@ -272,6 +273,7 @@
 		F8B5B1A4157037DF0049742E /* OCDSpec */ = {
 			isa = PBXGroup;
 			children = (
+				F8B5B1DF15703D280049742E /* Mac-Prefix.pch */,
 				F8B5B1A5157037DF0049742E /* Contract */,
 				F8B5B1AC157037DF0049742E /* iPhone-Prefix.pch */,
 				F8B5B1AD157037DF0049742E /* OCDSpec.h */,
