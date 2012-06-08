@@ -15,7 +15,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8ED9F211448BE3200DCBB3F"
                BuildableName = "AcceptanceTests.app"
-               BlueprintName = "AcceptanceTests"
+               BlueprintName = "MacAcceptanceTests"
                ReferencedContainer = "container:ObjectiveCSlim.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,7 +33,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8ED9F211448BE3200DCBB3F"
             BuildableName = "AcceptanceTests.app"
-            BlueprintName = "AcceptanceTests"
+            BlueprintName = "MacAcceptanceTests"
             ReferencedContainer = "container:ObjectiveCSlim.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -53,7 +53,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8ED9F211448BE3200DCBB3F"
             BuildableName = "AcceptanceTests.app"
-            BlueprintName = "AcceptanceTests"
+            BlueprintName = "MacAcceptanceTests"
             ReferencedContainer = "container:ObjectiveCSlim.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -73,7 +73,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8ED9F211448BE3200DCBB3F"
             BuildableName = "AcceptanceTests.app"
-            BlueprintName = "AcceptanceTests"
+            BlueprintName = "MacAcceptanceTests"
             ReferencedContainer = "container:ObjectiveCSlim.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
