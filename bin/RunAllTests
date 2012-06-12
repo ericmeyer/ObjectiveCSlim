@@ -1,0 +1,29 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "Running Unit Tests..."
+echo ''
+xcodebuild -target Specs -sdk iphonesimulator4.3 -configuration Debug clean build
+SPEC_STATUS=$?
+
+echo "Done Running Unit Tests"
+
+if [[ $SPEC_STATUS != 0 ]]; then
+  echo 'Unit Tests Failed'
+  exit $SPEC_STATUS
+else
+  echo 'Unit Tests Passed'
+fi
+
+
+echo "Running Acceptance Tests..."
+$DIR/RunSlimTestsHeadless
+FAILING_TESTS=$?
+echo "Done Running Acceptance Tests"
+
+if [[ $FAILING_TESTS == 0 ]] ; then
+  echo 'All Tests Passed'
+  exit 0
+else
+  echo "$FAILING_TESTS Failing Tests!"
+  exit $FAILING_TESTS
+fi
