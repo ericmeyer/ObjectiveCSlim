@@ -1,3 +1,3 @@
 #! /bin/sh
 
-SLIM_PORT=$1 xcodebuild -workspace "ObjectiveCSlim.xcodeproj/project.xcworkspace/" -scheme "iOSAcceptanceTests" -sdk iphonesimulator4.3 -configuration Debug clean build
+SLIM_PORT=$1 xcodebuild -workspace "ObjectiveCSlim.xcodeproj/project.xcworkspace/" -scheme "iOSAcceptanceTests" -sdk iphonesimulator5.0 -configuration Debug clean build
