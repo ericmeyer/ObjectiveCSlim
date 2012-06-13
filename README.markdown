@@ -10,17 +10,16 @@ This project is an example project using the cslim project as a dependency via a
 
 # Running These Examples
 
-Note: Some of the examples intentionally give errors.
+Note: Some of the examples intentionally give errors or warnings.
 
 1. Clone this project.
 2. Run `git submodule init`
 3. Run `git submodule update`
 4. Open the project in Xcode.
-5. Build the AcceptanceTests target.
-6. Run `./bin/start_fitnesse`
-7. Open a browser to http://localhost:8080/CslimFirstExamples
-8. Click "Suite" near the top left corner.
-9. See results.
+5. Run `./bin/StartFitnesse`
+6. Open a browser to http://localhost:8080/CslimFirstExamples
+7. Click "Suite" near the top left corner.
+8. See results.
 
 # Getting Started with Tests for Xcode
 
