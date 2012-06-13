@@ -759,6 +759,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectiveCSlim/ObjectiveCSlimIOS-Prefix.pch";
 				INFOPLIST_FILE = "ObjectiveCSlim-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = iOSAcceptanceTests;
 				SDKROOT = iphoneos;
@@ -777,6 +778,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectiveCSlim/ObjectiveCSlimIOS-Prefix.pch";
 				INFOPLIST_FILE = "ObjectiveCSlim-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = iOSAcceptanceTests;
 				SDKROOT = iphoneos;
