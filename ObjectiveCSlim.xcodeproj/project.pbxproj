@@ -131,7 +131,7 @@
 		F88745C814F862BF003D2B3F /* ValidInputTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValidInputTypes.m; path = cslim/tests/ObjectiveC/ValidInputTypes.m; sourceTree = "<group>"; };
 		F88745C914F862BF003D2B3F /* ValidReturnTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValidReturnTypes.h; path = cslim/tests/ObjectiveC/ValidReturnTypes.h; sourceTree = "<group>"; };
 		F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValidReturnTypes.m; path = cslim/tests/ObjectiveC/ValidReturnTypes.m; sourceTree = "<group>"; };
-		F8A425B0145208CC00FD4ECA /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A425B0145208CC00FD4ECA /* iOSSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A425B4145208CC00FD4ECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8B5B1A6157037DF0049742E /* OCDSpecCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecCondition.h; sourceTree = "<group>"; };
 		F8B5B1A7157037DF0049742E /* OCDSpecCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecCondition.m; sourceTree = "<group>"; };
@@ -382,7 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */,
-				F8A425B0145208CC00FD4ECA /* Specs.app */,
+				F8A425B0145208CC00FD4ECA /* iOSSpecs.app */,
 				F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */,
 			);
 			name = Products;
@@ -497,9 +497,9 @@
 			productReference = F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F8A425AF145208CC00FD4ECA /* Specs */ = {
+		F8A425AF145208CC00FD4ECA /* iOSSpecs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8A425D2145208CD00FD4ECA /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildConfigurationList = F8A425D2145208CD00FD4ECA /* Build configuration list for PBXNativeTarget "iOSSpecs" */;
 			buildPhases = (
 				F8A425AC145208CC00FD4ECA /* Sources */,
 				F8A425AD145208CC00FD4ECA /* Frameworks */,
@@ -510,9 +510,9 @@
 			);
 			dependencies = (
 			);
-			name = Specs;
+			name = iOSSpecs;
 			productName = Specs;
-			productReference = F8A425B0145208CC00FD4ECA /* Specs.app */;
+			productReference = F8A425B0145208CC00FD4ECA /* iOSSpecs.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */ = {
@@ -553,7 +553,7 @@
 			projectRoot = "";
 			targets = (
 				F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */,
-				F8A425AF145208CC00FD4ECA /* Specs */,
+				F8A425AF145208CC00FD4ECA /* iOSSpecs */,
 				F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */,
 			);
 		};
@@ -903,7 +903,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8A425D2145208CD00FD4ECA /* Build configuration list for PBXNativeTarget "Specs" */ = {
+		F8A425D2145208CD00FD4ECA /* Build configuration list for PBXNativeTarget "iOSSpecs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8A425D3145208CD00FD4ECA /* Debug */,
