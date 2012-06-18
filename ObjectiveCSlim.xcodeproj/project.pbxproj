@@ -76,7 +76,6 @@
 		F87E7FCC158FDFB300675E34 /* OCDSpecSuiteRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */; };
 		F87E7FCF158FDFB300675E34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5B1DD15703AD10049742E /* Foundation.framework */; };
 		F87E8030158FE19600675E34 /* macMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F87E802F158FE19600675E34 /* macMain.m */; };
-		F87E8031158FE1DB00675E34 /* Mac-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = F8B5B1DF15703D280049742E /* Mac-Prefix.pch */; };
 		F88745BE14F86196003D2B3F /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */; };
 		F88745C114F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
 		F88745C214F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
@@ -637,7 +636,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F87E8031158FE1DB00675E34 /* Mac-Prefix.pch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,7 +960,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec/Mac-Prefix.pch";
+				GCC_PREFIX_HEADER = "OCDSpec/OCDSpec/iPhone-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
 				INFOPLIST_FILE = "";
@@ -982,7 +980,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec/Mac-Prefix.pch";
+				GCC_PREFIX_HEADER = "OCDSpec/OCDSpec/iPhone-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
 				INFOPLIST_FILE = "";
