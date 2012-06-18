@@ -44,6 +44,39 @@
 		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
 		F8543DB414683673001FC9E6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
+		F87E7FAF158FDFB300675E34 /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */; };
+		F87E7FB0158FDFB300675E34 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
+		F87E7FB1158FDFB300675E34 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
+		F87E7FB2158FDFB300675E34 /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
+		F87E7FB3158FDFB300675E34 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
+		F87E7FB4158FDFB300675E34 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
+		F87E7FB5158FDFB300675E34 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
+		F87E7FB6158FDFB300675E34 /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
+		F87E7FB7158FDFB300675E34 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
+		F87E7FB8158FDFB300675E34 /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
+		F87E7FB9158FDFB300675E34 /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
+		F87E7FBA158FDFB300675E34 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
+		F87E7FBB158FDFB300675E34 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
+		F87E7FBC158FDFB300675E34 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
+		F87E7FBD158FDFB300675E34 /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */; };
+		F87E7FBE158FDFB300675E34 /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
+		F87E7FBF158FDFB300675E34 /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
+		F87E7FC0158FDFB300675E34 /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
+		F87E7FC1158FDFB300675E34 /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
+		F87E7FC2158FDFB300675E34 /* OCDSpecCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1A7157037DF0049742E /* OCDSpecCondition.m */; };
+		F87E7FC3158FDFB300675E34 /* OCDSpecPostCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1A9157037DF0049742E /* OCDSpecPostCondition.m */; };
+		F87E7FC4158FDFB300675E34 /* OCDSpecPreCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1AB157037DF0049742E /* OCDSpecPreCondition.m */; };
+		F87E7FC5158FDFB300675E34 /* OCDSpecDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1AF157037DF0049742E /* OCDSpecDescription.m */; };
+		F87E7FC6158FDFB300675E34 /* OCDSpecDescriptionRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B1157037DF0049742E /* OCDSpecDescriptionRunner.m */; };
+		F87E7FC7158FDFB300675E34 /* OCDSpecExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B3157037DF0049742E /* OCDSpecExample.m */; };
+		F87E7FC8158FDFB300675E34 /* OCDSpecExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B5157037DF0049742E /* OCDSpecExpectation.m */; };
+		F87E7FC9158FDFB300675E34 /* OCDSpecFail.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B7157037DF0049742E /* OCDSpecFail.m */; };
+		F87E7FCA158FDFB300675E34 /* OCDSpecOutputter+RedirectOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B9157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m */; };
+		F87E7FCB158FDFB300675E34 /* OCDSpecOutputter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BB157037DF0049742E /* OCDSpecOutputter.m */; };
+		F87E7FCC158FDFB300675E34 /* OCDSpecSuiteRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */; };
+		F87E7FCF158FDFB300675E34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5B1DD15703AD10049742E /* Foundation.framework */; };
+		F87E8030158FE19600675E34 /* macMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F87E802F158FE19600675E34 /* macMain.m */; };
+		F87E8031158FE1DB00675E34 /* Mac-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = F8B5B1DF15703D280049742E /* Mac-Prefix.pch */; };
 		F88745BE14F86196003D2B3F /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */; };
 		F88745C114F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
 		F88745C214F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
@@ -122,6 +155,8 @@
 		F8543DB314683673001FC9E6 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
 		F873F3D71448C5F100FFCA02 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = fitnesse.jar; sourceTree = "<group>"; };
+		F87E7FD7158FDFB300675E34 /* MacSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87E802F158FE19600675E34 /* macMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = macMain.m; sourceTree = "<group>"; };
 		F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValueSpec.m; path = cslim/tests/ObjectiveC/OCSReturnValueSpec.m; sourceTree = "<group>"; };
 		F88745BF14F8628C003D2B3F /* OCSReturnValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSReturnValue.h; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.h; sourceTree = "<group>"; };
 		F88745C014F8628C003D2B3F /* OCSReturnValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValue.m; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.m; sourceTree = "<group>"; };
@@ -229,6 +264,14 @@
 			files = (
 				F81E7F811582B1AA004C029E /* Foundation.framework in Frameworks */,
 				F81E7F801582B1A1004C029E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87E7FCE158FDFB300675E34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87E7FCF158FDFB300675E34 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				F8B5B1C1157037DF0049742E /* RunIPhoneUnitTest.sh */,
+				F87E802F158FE19600675E34 /* macMain.m */,
 				F8B5B1C2157037DF0049742E /* unitTestMain.m */,
 			);
 			path = Programs;
@@ -384,6 +428,7 @@
 				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */,
 				F8A425B0145208CC00FD4ECA /* iOSSpecs.app */,
 				F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */,
+				F87E7FD7158FDFB300675E34 /* MacSpecs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -497,6 +542,24 @@
 			productReference = F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F87E7FAD158FDFB300675E34 /* MacSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87E7FD4158FDFB300675E34 /* Build configuration list for PBXNativeTarget "MacSpecs" */;
+			buildPhases = (
+				F87E7FAE158FDFB300675E34 /* Sources */,
+				F87E7FCE158FDFB300675E34 /* Frameworks */,
+				F87E7FD1158FDFB300675E34 /* Resources */,
+				F87E7FD3158FDFB300675E34 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacSpecs;
+			productName = Specs;
+			productReference = F87E7FD7158FDFB300675E34 /* MacSpecs.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F8A425AF145208CC00FD4ECA /* iOSSpecs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8A425D2145208CD00FD4ECA /* Build configuration list for PBXNativeTarget "iOSSpecs" */;
@@ -555,6 +618,7 @@
 				F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */,
 				F8A425AF145208CC00FD4ECA /* iOSSpecs */,
 				F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */,
+				F87E7FAD158FDFB300675E34 /* MacSpecs */,
 			);
 		};
 /* End PBXProject section */
@@ -566,6 +630,14 @@
 			files = (
 				F81E7F6E1582AAF6004C029E /* InfoPlist.strings in Resources */,
 				F81E7F6F1582AAF6004C029E /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87E7FD1158FDFB300675E34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87E8031158FE1DB00675E34 /* Mac-Prefix.pch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +673,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = ./bin/RunSlimTests;
+		};
+		F87E7FD3158FDFB300675E34 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $TARGET_BUILD_DIR/$EXECUTABLE_PATH;
 		};
 		F8A425F314520A0600FD4ECA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -650,6 +735,44 @@
 				F81E7F691582AAF6004C029E /* ValidInputTypes.m in Sources */,
 				F81E7F6A1582AAF6004C029E /* ValidReturnTypes.m in Sources */,
 				F81E7F7F1582B0F1004C029E /* Adder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87E7FAE158FDFB300675E34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87E7FAF158FDFB300675E34 /* StatementExecutorSpec.m in Sources */,
+				F87E7FB0158FDFB300675E34 /* StatementExecutor.m in Sources */,
+				F87E7FB1158FDFB300675E34 /* Fixtures.m in Sources */,
+				F87E7FB2158FDFB300675E34 /* SocketServer.c in Sources */,
+				F87E7FB3158FDFB300675E34 /* TcpComLink.c in Sources */,
+				F87E7FB4158FDFB300675E34 /* ListExecutor.c in Sources */,
+				F87E7FB5158FDFB300675E34 /* Slim.c in Sources */,
+				F87E7FB6158FDFB300675E34 /* SlimConnectionHandler.c in Sources */,
+				F87E7FB7158FDFB300675E34 /* SlimList.c in Sources */,
+				F87E7FB8158FDFB300675E34 /* SlimListDeserializer.c in Sources */,
+				F87E7FB9158FDFB300675E34 /* SlimListSerializer.c in Sources */,
+				F87E7FBA158FDFB300675E34 /* SlimUtil.c in Sources */,
+				F87E7FBB158FDFB300675E34 /* TestSlim.m in Sources */,
+				F87E7FBC158FDFB300675E34 /* TestSlimTwo.m in Sources */,
+				F87E7FBD158FDFB300675E34 /* OCSReturnValueSpec.m in Sources */,
+				F87E7FBE158FDFB300675E34 /* OCSReturnValue.m in Sources */,
+				F87E7FBF158FDFB300675E34 /* RespondsToStringValue.m in Sources */,
+				F87E7FC0158FDFB300675E34 /* ValidInputTypes.m in Sources */,
+				F87E7FC1158FDFB300675E34 /* ValidReturnTypes.m in Sources */,
+				F87E7FC2158FDFB300675E34 /* OCDSpecCondition.m in Sources */,
+				F87E7FC3158FDFB300675E34 /* OCDSpecPostCondition.m in Sources */,
+				F87E7FC4158FDFB300675E34 /* OCDSpecPreCondition.m in Sources */,
+				F87E7FC5158FDFB300675E34 /* OCDSpecDescription.m in Sources */,
+				F87E7FC6158FDFB300675E34 /* OCDSpecDescriptionRunner.m in Sources */,
+				F87E7FC7158FDFB300675E34 /* OCDSpecExample.m in Sources */,
+				F87E7FC8158FDFB300675E34 /* OCDSpecExpectation.m in Sources */,
+				F87E7FC9158FDFB300675E34 /* OCDSpecFail.m in Sources */,
+				F87E7FCA158FDFB300675E34 /* OCDSpecOutputter+RedirectOutput.m in Sources */,
+				F87E7FCB158FDFB300675E34 /* OCDSpecOutputter.m in Sources */,
+				F87E7FCC158FDFB300675E34 /* OCDSpecSuiteRunner.m in Sources */,
+				F87E8030158FE19600675E34 /* macMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,6 +909,50 @@
 			};
 			name = Release;
 		};
+		F87E7FD5158FDFB300675E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCDSpec/Mac-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = MacSpecs;
+				SDKROOT = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F87E7FD6158FDFB300675E34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCDSpec/Mac-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = MacSpecs;
+				SDKROOT = macosx;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		F8A425D3145208CD00FD4ECA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -899,6 +1066,15 @@
 			buildConfigurations = (
 				F81E7F721582AAF6004C029E /* Debug */,
 				F81E7F731582AAF6004C029E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87E7FD4158FDFB300675E34 /* Build configuration list for PBXNativeTarget "MacSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87E7FD5158FDFB300675E34 /* Debug */,
+				F87E7FD6158FDFB300675E34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
