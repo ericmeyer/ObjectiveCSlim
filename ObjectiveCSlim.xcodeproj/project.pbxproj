@@ -600,7 +600,7 @@
 		F8ED9EF31448BDF900DCBB3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = F8ED9EF61448BDF900DCBB3F /* Build configuration list for PBXProject "ObjectiveCSlim" */;
 			compatibilityVersion = "Xcode 3.2";
