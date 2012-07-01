@@ -1,29 +1,58 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-echo "Running Unit Tests..."
+echo "Running iOS Unit Tests..."
 echo ''
 xcodebuild -target iOSSpecs -sdk iphonesimulator5.1 -configuration Debug clean build
-SPEC_STATUS=$?
+IOS_SPEC_STATUS=$?
 
-echo "Done Running Unit Tests"
+echo "Done Running iOS Unit Tests"
 
-if [[ $SPEC_STATUS != 0 ]]; then
-  echo 'Unit Tests Failed'
-  exit $SPEC_STATUS
+if [[ $IOS_SPEC_STATUS != 0 ]]; then
+  echo 'iOS Unit Tests Failed'
+  exit $IOS_SPEC_STATUS
 else
-  echo 'Unit Tests Passed'
+  echo 'iOS Unit Tests Passed'
 fi
 
 
-echo "Running Acceptance Tests..."
-$DIR/RunSlimTestsHeadless
-FAILING_TESTS=$?
-echo "Done Running Acceptance Tests"
+echo "Running Mac Unit Tests..."
+echo ''
+xcodebuild -target MacSpecs -sdk macosx10.7 -configuration Debug clean build
+MAC_SPEC_STATUS=$?
 
-if [[ $FAILING_TESTS == 0 ]] ; then
-  echo 'All Tests Passed'
+echo "Done Running Mac Unit Tests"
+
+if [[ $MAC_SPEC_STATUS != 0 ]]; then
+  echo 'Mac Unit Tests Failed'
+  exit $MAC_SPEC_STATUS
+else
+  echo 'Mac Unit Tests Passed'
+fi
+
+
+echo "Running iOS Acceptance Tests..."
+$DIR/iOS/RunSlimTestsHeadless
+FAILING_IOS_ACCEPTANCE_TESTS=$?
+echo "Done Running iOS Acceptance Tests"
+
+if [[ $FAILING_IOS_ACCEPTANCE_TESTS == 0 ]] ; then
+  echo 'All iOS Acceptance Tests Passed'
   exit 0
 else
-  echo "$FAILING_TESTS Failing Tests!"
-  exit $FAILING_TESTS
+  echo "$FAILING_IOS_ACCEPTANCE_TESTS Failing iOS Acceptance Tests!"
+  exit $FAILING_IOS_ACCEPTANCE_TESTS
+fi
+
+
+echo "Running Mac Acceptance Tests..."
+$DIR/Mac/RunSlimTestsHeadless
+FAILING_MAC_ACCEPTANCE_TESTS=$?
+echo "Done Running Mac Acceptance Tests"
+
+if [[ $FAILING_MAC_ACCEPTANCE_TESTS == 0 ]] ; then
+  echo 'All Mac Acceptance Tests Passed'
+  exit 0
+else
+  echo "$FAILING_MAC_ACCEPTANCE_TESTS Failing Mac Acceptance Tests!"
+  exit $FAILING_MAC_ACCEPTANCE_TESTS
 fi
