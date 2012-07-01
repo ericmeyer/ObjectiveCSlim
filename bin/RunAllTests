@@ -37,7 +37,6 @@ echo "Done Running iOS Acceptance Tests"
 
 if [[ $FAILING_IOS_ACCEPTANCE_TESTS == 0 ]] ; then
   echo 'All iOS Acceptance Tests Passed'
-  exit 0
 else
   echo "$FAILING_IOS_ACCEPTANCE_TESTS Failing iOS Acceptance Tests!"
   exit $FAILING_IOS_ACCEPTANCE_TESTS
