@@ -2,7 +2,7 @@
 
 
 !define TEST_SYSTEM {slim}
-define TEST_RUNNER {DerivedData/ObjectiveCSlim/Build/Products/Debug/AcceptanceTests.app/Contents/MacOS/AcceptanceTests}
-!define TEST_RUNNER {bin/RunSlimTestsTargetWithSlimPort}
+!define TEST_RUNNER {DerivedData/ObjectiveCSlim/Build/Products/Debug/AcceptanceTests.app/Contents/MacOS/AcceptanceTests}
+define TEST_RUNNER {bin/RunSlimTestsTargetWithSlimPort}
 !define COMMAND_PATTERN {%m}
 !define SLIM_VERSION {0.0}

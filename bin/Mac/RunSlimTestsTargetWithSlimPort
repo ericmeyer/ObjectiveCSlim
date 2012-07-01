@@ -1,0 +1,3 @@
+#! /bin/sh
+
+SLIM_PORT=$1 xcodebuild -workspace "ObjectiveCSlim.xcodeproj/project.xcworkspace/" -scheme "MacAcceptanceTests" -sdk macosx10.7 -configuration Debug clean build

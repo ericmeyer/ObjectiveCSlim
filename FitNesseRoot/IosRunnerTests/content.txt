@@ -1,0 +1,6 @@
+!contents -R2 -g -p -f -h
+
+!define TEST_SYSTEM {slim}
+!define TEST_RUNNER {bin/iOS/RunSlimTestsTargetWithSlimPort}
+!define COMMAND_PATTERN {%m}
+!define SLIM_VERSION {0.0}

@@ -584,6 +584,7 @@
 				F8ED9F221448BE3200DCBB3F /* Sources */,
 				F8ED9F251448BE3200DCBB3F /* Frameworks */,
 				F8ED9F271448BE3200DCBB3F /* Resources */,
+				07B7CB4515A0D50600B2898C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -659,6 +660,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		07B7CB4515A0D50600B2898C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./bin/Mac/RunSlimTests;
+		};
 		F81E7F821582B4EE004C029E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -670,7 +684,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = ./bin/RunSlimTests;
+			shellScript = ./bin/iOS/RunSlimTests;
 		};
 		F87E7FD3158FDFB300675E34 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
