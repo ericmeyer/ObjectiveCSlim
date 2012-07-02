@@ -143,7 +143,6 @@
 		F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjAdderFixture.h; sourceTree = "<group>"; };
 		F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjAdderFixture.m; sourceTree = "<group>"; };
 		F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F81E7F761582AAF6004C029E /* ObjectiveCSlim-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjectiveCSlim-Info.plist"; path = "/Users/ericmeyer/Projects/8thlight/ObjectiveCSlim/ObjectiveCSlim-Info.plist"; sourceTree = "<absolute>"; };
 		F81E7F771582AC15004C029E /* ObjectiveCSlimIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjectiveCSlimIOS-Prefix.pch"; sourceTree = "<group>"; };
 		F81E7F7C1582B0F1004C029E /* Adder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adder.h; sourceTree = "<group>"; };
 		F81E7F7D1582B0F1004C029E /* Adder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adder.m; sourceTree = "<group>"; };
@@ -412,7 +411,6 @@
 				F8A425F41452110700FD4ECA /* Specs */,
 				F8ED9EFF1448BDF900DCBB3F /* Frameworks */,
 				F8ED9EFD1448BDF900DCBB3F /* Products */,
-				F81E7F761582AAF6004C029E /* ObjectiveCSlim-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
