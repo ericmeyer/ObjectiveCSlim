@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072E0CEE15A11F8F009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
+		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
+		072E0CF415A1209E009615B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
+		072E0CF515A12138009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
+		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F81E7F4F1582AAF6004C029E /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
 		F81E7F511582AAF6004C029E /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
@@ -39,8 +44,6 @@
 		F81E7F6F1582AAF6004C029E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F0F1448BDF900DCBB3F /* Credits.rtf */; };
 		F81E7F7E1582B0F1004C029E /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
 		F81E7F7F1582B0F1004C029E /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
-		F81E7F801582B1A1004C029E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5B1DB15703AAF0049742E /* UIKit.framework */; };
-		F81E7F811582B1AA004C029E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5B1DD15703AD10049742E /* Foundation.framework */; };
 		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
 		F8543DB414683673001FC9E6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
 		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
@@ -74,7 +77,6 @@
 		F87E7FCA158FDFB300675E34 /* OCDSpecOutputter+RedirectOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B9157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m */; };
 		F87E7FCB158FDFB300675E34 /* OCDSpecOutputter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BB157037DF0049742E /* OCDSpecOutputter.m */; };
 		F87E7FCC158FDFB300675E34 /* OCDSpecSuiteRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */; };
-		F87E7FCF158FDFB300675E34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5B1DD15703AD10049742E /* Foundation.framework */; };
 		F87E8030158FE19600675E34 /* macMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F87E802F158FE19600675E34 /* macMain.m */; };
 		F88745BE14F86196003D2B3F /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */; };
 		F88745C114F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
@@ -98,8 +100,6 @@
 		F8B5B1D1157037DF0049742E /* OCDSpecSuiteRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */; };
 		F8B5B1D3157037DF0049742E /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = F8B5B1C1157037DF0049742E /* RunIPhoneUnitTest.sh */; };
 		F8B5B1D4157037DF0049742E /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1C2157037DF0049742E /* unitTestMain.m */; };
-		F8B5B1DC15703AAF0049742E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5B1DB15703AAF0049742E /* UIKit.framework */; };
-		F8B5B1DE15703AD10049742E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B5B1DD15703AD10049742E /* Foundation.framework */; };
 		F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
 		F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
 		F8E91E31146E05E800D064A5 /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
@@ -139,10 +139,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjAdderFixture.h; sourceTree = "<group>"; };
 		F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjAdderFixture.m; sourceTree = "<group>"; };
-		F81E7F311582AA38004C029E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F81E7F341582AA38004C029E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81E7F761582AAF6004C029E /* ObjectiveCSlim-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObjectiveCSlim-Info.plist"; path = "/Users/ericmeyer/Projects/8thlight/ObjectiveCSlim/ObjectiveCSlim-Info.plist"; sourceTree = "<absolute>"; };
 		F81E7F771582AC15004C029E /* ObjectiveCSlimIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjectiveCSlimIOS-Prefix.pch"; sourceTree = "<group>"; };
@@ -197,8 +196,6 @@
 		F8B5B1C4157037DF0049742E /* DescriptionRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionRunner.h; sourceTree = "<group>"; };
 		F8B5B1C5157037DF0049742E /* Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example.h; sourceTree = "<group>"; };
 		F8B5B1C6157037DF0049742E /* VoidBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoidBlock.h; sourceTree = "<group>"; };
-		F8B5B1DB15703AAF0049742E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F8B5B1DD15703AD10049742E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F8B5B1DF15703D280049742E /* Mac-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Mac-Prefix.pch"; path = "OCDSpec/Mac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		F8E91E27146C2BE500D064A5 /* EchoFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoFixture.h; sourceTree = "<group>"; };
 		F8E91E28146C2BE500D064A5 /* EchoFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchoFixture.m; sourceTree = "<group>"; };
@@ -261,8 +258,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F81E7F811582B1AA004C029E /* Foundation.framework in Frameworks */,
-				F81E7F801582B1A1004C029E /* UIKit.framework in Frameworks */,
+				072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */,
+				072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +267,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F87E7FCF158FDFB300675E34 /* Foundation.framework in Frameworks */,
+				072E0CF415A1209E009615B6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +275,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B5B1DE15703AD10049742E /* Foundation.framework in Frameworks */,
-				F8B5B1DC15703AAF0049742E /* UIKit.framework in Frameworks */,
+				072E0CF515A12138009615B6 /* Foundation.framework in Frameworks */,
+				072E0CEE15A11F8F009615B6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,8 +406,6 @@
 		F8ED9EF11448BDF900DCBB3F = {
 			isa = PBXGroup;
 			children = (
-				F8B5B1DD15703AD10049742E /* Foundation.framework */,
-				F8B5B1DB15703AAF0049742E /* UIKit.framework */,
 				F8FC52B714AE472600D714B4 /* cslim */,
 				F873F3CF1448BEF300FFCA02 /* Fixtures */,
 				F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */,
@@ -435,10 +430,9 @@
 		F8ED9EFF1448BDF900DCBB3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				072E0CED15A11F8F009615B6 /* UIKit.framework */,
 				F8ED9F001448BDF900DCBB3F /* Cocoa.framework */,
 				F8A425B4145208CC00FD4ECA /* Foundation.framework */,
-				F81E7F311582AA38004C029E /* UIKit.framework */,
-				F81E7F341582AA38004C029E /* CoreGraphics.framework */,
 				F8ED9F021448BDF900DCBB3F /* Other Frameworks */,
 			);
 			name = Frameworks;
