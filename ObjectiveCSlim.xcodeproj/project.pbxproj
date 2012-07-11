@@ -6,6 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		07381AEB15ADAF63000B0A38 /* AllTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 07381AEE15ADAF63000B0A38 /* Build configuration list for PBXAggregateTarget "AllTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				07381AF115ADAF73000B0A38 /* PBXTargetDependency */,
+				07381AF315ADAF73000B0A38 /* PBXTargetDependency */,
+				07381AF515ADAF73000B0A38 /* PBXTargetDependency */,
+				07381AF715ADAF73000B0A38 /* PBXTargetDependency */,
+			);
+			name = AllTests;
+			productName = AllTests;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		072E0CEE15A11F8F009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
@@ -137,6 +154,37 @@
 		F8FC52FF14AE515000D714B4 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
 		F8FC530014AE515000D714B4 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07381AF015ADAF73000B0A38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8ED9F211448BE3200DCBB3F;
+			remoteInfo = MacAcceptanceTests;
+		};
+		07381AF215ADAF73000B0A38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A425AF145208CC00FD4ECA;
+			remoteInfo = iOSSpecs;
+		};
+		07381AF415ADAF73000B0A38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F81E7F4C1582AAF6004C029E;
+			remoteInfo = iOSAcceptanceTests;
+		};
+		07381AF615ADAF73000B0A38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F87E7FAD158FDFB300675E34;
+			remoteInfo = MacSpecs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -611,6 +659,7 @@
 				F8A425AF145208CC00FD4ECA /* iOSSpecs */,
 				F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */,
 				F87E7FAD158FDFB300675E34 /* MacSpecs */,
+				07381AEB15ADAF63000B0A38 /* AllTests */,
 			);
 		};
 /* End PBXProject section */
@@ -855,6 +904,29 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		07381AF115ADAF73000B0A38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */;
+			targetProxy = 07381AF015ADAF73000B0A38 /* PBXContainerItemProxy */;
+		};
+		07381AF315ADAF73000B0A38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8A425AF145208CC00FD4ECA /* iOSSpecs */;
+			targetProxy = 07381AF215ADAF73000B0A38 /* PBXContainerItemProxy */;
+		};
+		07381AF515ADAF73000B0A38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */;
+			targetProxy = 07381AF415ADAF73000B0A38 /* PBXContainerItemProxy */;
+		};
+		07381AF715ADAF73000B0A38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F87E7FAD158FDFB300675E34 /* MacSpecs */;
+			targetProxy = 07381AF615ADAF73000B0A38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		F8ED9F091448BDF900DCBB3F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -875,6 +947,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		07381AEC15ADAF63000B0A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07381AED15ADAF63000B0A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F81E7F721582AAF6004C029E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1065,6 +1151,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07381AEE15ADAF63000B0A38 /* Build configuration list for PBXAggregateTarget "AllTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07381AEC15ADAF63000B0A38 /* Debug */,
+				07381AED15ADAF63000B0A38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F81E7F711582AAF6004C029E /* Build configuration list for PBXNativeTarget "iOSAcceptanceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
