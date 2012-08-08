@@ -23,7 +23,7 @@
 }
 
 -(NSString*) length {
-    return [NSString stringWithFormat :@"%d", [self.numbers count] ];
+    return [NSString stringWithFormat: @"%i", (int)[self.numbers count] ];
 }
 
 -(NSString*) max {

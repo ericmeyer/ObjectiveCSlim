@@ -29,41 +29,41 @@
 		072E0CF415A1209E009615B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
 		072E0CF515A12138009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
-		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
-		F81E7F4F1582AAF6004C029E /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
-		F81E7F511582AAF6004C029E /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
-		F81E7F521582AAF6004C029E /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
-		F81E7F531582AAF6004C029E /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
-		F81E7F541582AAF6004C029E /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
-		F81E7F551582AAF6004C029E /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
-		F81E7F561582AAF6004C029E /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
-		F81E7F571582AAF6004C029E /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
-		F81E7F581582AAF6004C029E /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
-		F81E7F591582AAF6004C029E /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
-		F81E7F5A1582AAF6004C029E /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
-		F81E7F5B1582AAF6004C029E /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
-		F81E7F5C1582AAF6004C029E /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
-		F81E7F5D1582AAF6004C029E /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
-		F81E7F5E1582AAF6004C029E /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
-		F81E7F5F1582AAF6004C029E /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
-		F81E7F601582AAF6004C029E /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
-		F81E7F611582AAF6004C029E /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
-		F81E7F621582AAF6004C029E /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
-		F81E7F631582AAF6004C029E /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
-		F81E7F641582AAF6004C029E /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
-		F81E7F651582AAF6004C029E /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
-		F81E7F661582AAF6004C029E /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
-		F81E7F671582AAF6004C029E /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
-		F81E7F681582AAF6004C029E /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
-		F81E7F691582AAF6004C029E /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
-		F81E7F6A1582AAF6004C029E /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
+		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F4F1582AAF6004C029E /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F511582AAF6004C029E /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F521582AAF6004C029E /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F531582AAF6004C029E /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F541582AAF6004C029E /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F551582AAF6004C029E /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F561582AAF6004C029E /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F571582AAF6004C029E /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F581582AAF6004C029E /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F591582AAF6004C029E /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F5A1582AAF6004C029E /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F5B1582AAF6004C029E /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F5C1582AAF6004C029E /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F5D1582AAF6004C029E /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F5E1582AAF6004C029E /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F5F1582AAF6004C029E /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F601582AAF6004C029E /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F611582AAF6004C029E /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F621582AAF6004C029E /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F631582AAF6004C029E /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F641582AAF6004C029E /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F651582AAF6004C029E /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F661582AAF6004C029E /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F671582AAF6004C029E /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F681582AAF6004C029E /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F691582AAF6004C029E /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F6A1582AAF6004C029E /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F81E7F6E1582AAF6004C029E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F091448BDF900DCBB3F /* InfoPlist.strings */; };
 		F81E7F6F1582AAF6004C029E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F0F1448BDF900DCBB3F /* Credits.rtf */; };
 		F81E7F7E1582B0F1004C029E /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
-		F81E7F7F1582B0F1004C029E /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
-		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
-		F8543DB414683673001FC9E6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
-		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
+		F81E7F7F1582B0F1004C029E /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8543DB414683673001FC9E6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F87E7FAF158FDFB300675E34 /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */; };
 		F87E7FB0158FDFB300675E34 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
 		F87E7FB1158FDFB300675E34 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
@@ -117,9 +117,9 @@
 		F8B5B1D1157037DF0049742E /* OCDSpecSuiteRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */; };
 		F8B5B1D3157037DF0049742E /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = F8B5B1C1157037DF0049742E /* RunIPhoneUnitTest.sh */; };
 		F8B5B1D4157037DF0049742E /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1C2157037DF0049742E /* unitTestMain.m */; };
-		F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
-		F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
-		F8E91E31146E05E800D064A5 /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
+		F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8E91E31146E05E800D064A5 /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F8E91E35146E060900D064A5 /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
 		F8E91E38146E061E00D064A5 /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
 		F8E91E3B14706A9B00D064A5 /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
@@ -641,7 +641,7 @@
 		F8ED9EF31448BDF900DCBB3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = F8ED9EF61448BDF900DCBB3F /* Build configuration list for PBXProject "ObjectiveCSlim" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -950,6 +950,7 @@
 		07381AEC15ADAF63000B0A38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -957,6 +958,7 @@
 		07381AED15ADAF63000B0A38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -966,6 +968,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -985,6 +988,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1005,6 +1009,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1026,6 +1031,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1122,6 +1128,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1137,6 +1144,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1158,6 +1166,7 @@
 				07381AED15ADAF63000B0A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F81E7F711582AAF6004C029E /* Build configuration list for PBXNativeTarget "iOSAcceptanceTests" */ = {
 			isa = XCConfigurationList;
