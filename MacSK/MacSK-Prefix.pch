@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MacSK' target in the 'MacSK' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

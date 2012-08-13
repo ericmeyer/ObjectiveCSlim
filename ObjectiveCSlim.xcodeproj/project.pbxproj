@@ -13,10 +13,10 @@
 			buildPhases = (
 			);
 			dependencies = (
+				07F1C36E15D9B80700ECBC7F /* PBXTargetDependency */,
+				07F1C37015D9B80700ECBC7F /* PBXTargetDependency */,
 				07381AF115ADAF73000B0A38 /* PBXTargetDependency */,
-				07381AF315ADAF73000B0A38 /* PBXTargetDependency */,
 				07381AF515ADAF73000B0A38 /* PBXTargetDependency */,
-				07381AF715ADAF73000B0A38 /* PBXTargetDependency */,
 			);
 			name = AllTests;
 			productName = AllTests;
@@ -24,135 +24,136 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		072E0CEE15A11F8F009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
-		072E0CF415A1209E009615B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
-		072E0CF515A12138009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
-		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F4F1582AAF6004C029E /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F511582AAF6004C029E /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F521582AAF6004C029E /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F531582AAF6004C029E /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F541582AAF6004C029E /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F551582AAF6004C029E /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F561582AAF6004C029E /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F571582AAF6004C029E /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F581582AAF6004C029E /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F591582AAF6004C029E /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C2F315D9B17000ECBC7F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
+		07F1C2F615D9B17000ECBC7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2F515D9B17000ECBC7F /* main.m */; };
+		07F1C2FD15D9B1DB00ECBC7F /* libSpecKitMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0795B2CD15D9A1DE000D3DD4 /* libSpecKitMac.a */; };
+		07F1C2FE15D9B1E300ECBC7F /* StatementExecutorSpecKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpecKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C31B15D9B3B400ECBC7F /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
+		07F1C31C15D9B3B400ECBC7F /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
+		07F1C31D15D9B3B400ECBC7F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C31E15D9B3B400ECBC7F /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
+		07F1C31F15D9B3B400ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
+		07F1C32015D9B3B400ECBC7F /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
+		07F1C32115D9B3B400ECBC7F /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
+		07F1C32215D9B3B400ECBC7F /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
+		07F1C32315D9B3B400ECBC7F /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C32415D9B3B400ECBC7F /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
+		07F1C32515D9B3B400ECBC7F /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
+		07F1C32615D9B3B400ECBC7F /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
+		07F1C32715D9B3B400ECBC7F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
+		07F1C32815D9B3B400ECBC7F /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
+		07F1C32915D9B3B400ECBC7F /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
+		07F1C32A15D9B3B400ECBC7F /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
+		07F1C32B15D9B3B400ECBC7F /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
+		07F1C32C15D9B3B400ECBC7F /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
+		07F1C32D15D9B3B400ECBC7F /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
+		07F1C32E15D9B3B400ECBC7F /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
+		07F1C32F15D9B3B400ECBC7F /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
+		07F1C33015D9B3B400ECBC7F /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
+		07F1C33115D9B3B400ECBC7F /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
+		07F1C33215D9B3B400ECBC7F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
+		07F1C33315D9B3B400ECBC7F /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
+		07F1C33415D9B3B400ECBC7F /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
+		07F1C33515D9B3B400ECBC7F /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
+		07F1C33715D9B69600ECBC7F /* OCSReturnValueSpecKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpecKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C33F15D9B77D00ECBC7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
+		07F1C34015D9B77D00ECBC7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
+		07F1C34115D9B77D00ECBC7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */; };
+		07F1C34715D9B77D00ECBC7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07F1C34515D9B77D00ECBC7F /* InfoPlist.strings */; };
+		07F1C34915D9B77D00ECBC7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C34815D9B77D00ECBC7F /* main.m */; };
+		07F1C34E15D9B78500ECBC7F /* libSpecKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0795B2CB15D9A1DE000D3DD4 /* libSpecKit.a */; };
+		07F1C34F15D9B7C100ECBC7F /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
+		07F1C35015D9B7C100ECBC7F /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
+		07F1C35115D9B7C100ECBC7F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C35215D9B7C100ECBC7F /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
+		07F1C35315D9B7C100ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
+		07F1C35415D9B7C100ECBC7F /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
+		07F1C35515D9B7C100ECBC7F /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
+		07F1C35615D9B7C100ECBC7F /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
+		07F1C35715D9B7C100ECBC7F /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C35815D9B7C100ECBC7F /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
+		07F1C35915D9B7C100ECBC7F /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
+		07F1C35A15D9B7C100ECBC7F /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
+		07F1C35B15D9B7C100ECBC7F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
+		07F1C35C15D9B7C100ECBC7F /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
+		07F1C35E15D9B7C100ECBC7F /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
+		07F1C35F15D9B7C100ECBC7F /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
+		07F1C36015D9B7C100ECBC7F /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
+		07F1C36115D9B7C100ECBC7F /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
+		07F1C36215D9B7C100ECBC7F /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
+		07F1C36315D9B7C100ECBC7F /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
+		07F1C36415D9B7C100ECBC7F /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
+		07F1C36515D9B7C100ECBC7F /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
+		07F1C36615D9B7C100ECBC7F /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
+		07F1C36715D9B7C100ECBC7F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
+		07F1C36815D9B7C100ECBC7F /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
+		07F1C36915D9B7C100ECBC7F /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
+		07F1C36A15D9B7C100ECBC7F /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
+		07F1C36B15D9B7C100ECBC7F /* StatementExecutorSpecKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpecKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C36C15D9B7C100ECBC7F /* OCSReturnValueSpecKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpecKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C37115D9B8BE00ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
+		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
+		F81E7F4F1582AAF6004C029E /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
+		F81E7F511582AAF6004C029E /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
+		F81E7F521582AAF6004C029E /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
+		F81E7F531582AAF6004C029E /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
+		F81E7F541582AAF6004C029E /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
+		F81E7F551582AAF6004C029E /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
+		F81E7F561582AAF6004C029E /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
+		F81E7F571582AAF6004C029E /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
+		F81E7F581582AAF6004C029E /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
+		F81E7F591582AAF6004C029E /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
 		F81E7F5A1582AAF6004C029E /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F5B1582AAF6004C029E /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F5C1582AAF6004C029E /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F5D1582AAF6004C029E /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F5E1582AAF6004C029E /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F5F1582AAF6004C029E /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F601582AAF6004C029E /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F611582AAF6004C029E /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F621582AAF6004C029E /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F631582AAF6004C029E /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F641582AAF6004C029E /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F651582AAF6004C029E /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F661582AAF6004C029E /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F5B1582AAF6004C029E /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
+		F81E7F5C1582AAF6004C029E /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
+		F81E7F5D1582AAF6004C029E /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
+		F81E7F5E1582AAF6004C029E /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
+		F81E7F5F1582AAF6004C029E /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
+		F81E7F601582AAF6004C029E /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
+		F81E7F621582AAF6004C029E /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
+		F81E7F631582AAF6004C029E /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
+		F81E7F641582AAF6004C029E /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
+		F81E7F651582AAF6004C029E /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
+		F81E7F661582AAF6004C029E /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
 		F81E7F671582AAF6004C029E /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F681582AAF6004C029E /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F691582AAF6004C029E /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F81E7F6A1582AAF6004C029E /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F81E7F681582AAF6004C029E /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
+		F81E7F691582AAF6004C029E /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
+		F81E7F6A1582AAF6004C029E /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
 		F81E7F6E1582AAF6004C029E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F091448BDF900DCBB3F /* InfoPlist.strings */; };
 		F81E7F6F1582AAF6004C029E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F0F1448BDF900DCBB3F /* Credits.rtf */; };
 		F81E7F7E1582B0F1004C029E /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
-		F81E7F7F1582B0F1004C029E /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F8543DB414683673001FC9E6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F87E7FAF158FDFB300675E34 /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */; };
-		F87E7FB0158FDFB300675E34 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
-		F87E7FB1158FDFB300675E34 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
-		F87E7FB2158FDFB300675E34 /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
-		F87E7FB3158FDFB300675E34 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
-		F87E7FB4158FDFB300675E34 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
-		F87E7FB5158FDFB300675E34 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
-		F87E7FB6158FDFB300675E34 /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
-		F87E7FB7158FDFB300675E34 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
-		F87E7FB8158FDFB300675E34 /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
-		F87E7FB9158FDFB300675E34 /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
-		F87E7FBA158FDFB300675E34 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
-		F87E7FBB158FDFB300675E34 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
-		F87E7FBC158FDFB300675E34 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
-		F87E7FBD158FDFB300675E34 /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */; };
-		F87E7FBE158FDFB300675E34 /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
-		F87E7FBF158FDFB300675E34 /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
-		F87E7FC0158FDFB300675E34 /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
-		F87E7FC1158FDFB300675E34 /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
-		F87E7FC2158FDFB300675E34 /* OCDSpecCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1A7157037DF0049742E /* OCDSpecCondition.m */; };
-		F87E7FC3158FDFB300675E34 /* OCDSpecPostCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1A9157037DF0049742E /* OCDSpecPostCondition.m */; };
-		F87E7FC4158FDFB300675E34 /* OCDSpecPreCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1AB157037DF0049742E /* OCDSpecPreCondition.m */; };
-		F87E7FC5158FDFB300675E34 /* OCDSpecDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1AF157037DF0049742E /* OCDSpecDescription.m */; };
-		F87E7FC6158FDFB300675E34 /* OCDSpecDescriptionRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B1157037DF0049742E /* OCDSpecDescriptionRunner.m */; };
-		F87E7FC7158FDFB300675E34 /* OCDSpecExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B3157037DF0049742E /* OCDSpecExample.m */; };
-		F87E7FC8158FDFB300675E34 /* OCDSpecExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B5157037DF0049742E /* OCDSpecExpectation.m */; };
-		F87E7FC9158FDFB300675E34 /* OCDSpecFail.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B7157037DF0049742E /* OCDSpecFail.m */; };
-		F87E7FCA158FDFB300675E34 /* OCDSpecOutputter+RedirectOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B9157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m */; };
-		F87E7FCB158FDFB300675E34 /* OCDSpecOutputter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BB157037DF0049742E /* OCDSpecOutputter.m */; };
-		F87E7FCC158FDFB300675E34 /* OCDSpecSuiteRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */; };
-		F87E8030158FE19600675E34 /* macMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F87E802F158FE19600675E34 /* macMain.m */; };
-		F88745BE14F86196003D2B3F /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */; };
-		F88745C114F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
-		F88745C214F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; };
+		F81E7F7F1582B0F1004C029E /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
+		F8543DA714671E11001FC9E6 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
+		F8543DB414683673001FC9E6 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
+		F873F3D61448BF4F00FFCA02 /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
+		F88745C114F8628C003D2B3F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F88745C514F862B4003D2B3F /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
-		F88745C614F862B4003D2B3F /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
 		F88745CB14F862BF003D2B3F /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
-		F88745CC14F862BF003D2B3F /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
 		F88745CD14F862BF003D2B3F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
-		F88745CE14F862BF003D2B3F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
-		F8B5B1C7157037DF0049742E /* OCDSpecCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1A7157037DF0049742E /* OCDSpecCondition.m */; };
-		F8B5B1C8157037DF0049742E /* OCDSpecPostCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1A9157037DF0049742E /* OCDSpecPostCondition.m */; };
-		F8B5B1C9157037DF0049742E /* OCDSpecPreCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1AB157037DF0049742E /* OCDSpecPreCondition.m */; };
-		F8B5B1CA157037DF0049742E /* OCDSpecDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1AF157037DF0049742E /* OCDSpecDescription.m */; };
-		F8B5B1CB157037DF0049742E /* OCDSpecDescriptionRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B1157037DF0049742E /* OCDSpecDescriptionRunner.m */; };
-		F8B5B1CC157037DF0049742E /* OCDSpecExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B3157037DF0049742E /* OCDSpecExample.m */; };
-		F8B5B1CD157037DF0049742E /* OCDSpecExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B5157037DF0049742E /* OCDSpecExpectation.m */; };
-		F8B5B1CE157037DF0049742E /* OCDSpecFail.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B7157037DF0049742E /* OCDSpecFail.m */; };
-		F8B5B1CF157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1B9157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m */; };
-		F8B5B1D0157037DF0049742E /* OCDSpecOutputter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BB157037DF0049742E /* OCDSpecOutputter.m */; };
-		F8B5B1D1157037DF0049742E /* OCDSpecSuiteRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1BE157037DF0049742E /* OCDSpecSuiteRunner.m */; };
-		F8B5B1D3157037DF0049742E /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = F8B5B1C1157037DF0049742E /* RunIPhoneUnitTest.sh */; };
-		F8B5B1D4157037DF0049742E /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B5B1C2157037DF0049742E /* unitTestMain.m */; };
-		F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F8E91E31146E05E800D064A5 /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8E91E29146C2BE500D064A5 /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
+		F8E91E2E146DC1CE00D064A5 /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
+		F8E91E31146E05E800D064A5 /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
 		F8E91E35146E060900D064A5 /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
 		F8E91E38146E061E00D064A5 /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
 		F8E91E3B14706A9B00D064A5 /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
 		F8ED9F261448BE3200DCBB3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
 		F8ED9F281448BE3200DCBB3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F091448BDF900DCBB3F /* InfoPlist.strings */; };
 		F8ED9F291448BE3200DCBB3F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8ED9F0F1448BDF900DCBB3F /* Credits.rtf */; };
-		F8FC52D014AE480100D714B4 /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */; };
-		F8FC52D114AE484D00D714B4 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
-		F8FC52D214AE484D00D714B4 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
+		F8FC52D214AE484D00D714B4 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F8FC52D414AE498900D714B4 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
-		F8FC52D514AE498900D714B4 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
 		F8FC52D714AE4AAC00D714B4 /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
-		F8FC52D814AE4AAC00D714B4 /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
 		F8FC52D914AE4B3500D714B4 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
-		F8FC52DA14AE4B3500D714B4 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
-		F8FC52DB14AE4B9A00D714B4 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
 		F8FC52DC14AE4B9A00D714B4 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
 		F8FC52DD14AE4BF900D714B4 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
-		F8FC52DE14AE4BF900D714B4 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
 		F8FC52DF14AE4C9700D714B4 /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
-		F8FC52E014AE4C9900D714B4 /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
 		F8FC52E314AE4D7D00D714B4 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
-		F8FC52E414AE4D7D00D714B4 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
 		F8FC52E514AE4DFA00D714B4 /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
 		F8FC52E614AE4DFA00D714B4 /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
-		F8FC52E714AE4DFA00D714B4 /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
-		F8FC52E814AE4DFA00D714B4 /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
-		F8FC52EA14AE4E2000D714B4 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
 		F8FC52EB14AE4E2000D714B4 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
 		F8FC52FD14AE515000D714B4 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
-		F8FC52FE14AE515000D714B4 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
 		F8FC52FF14AE515000D714B4 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
-		F8FC530014AE515000D714B4 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,13 +164,6 @@
 			remoteGlobalIDString = F8ED9F211448BE3200DCBB3F;
 			remoteInfo = MacAcceptanceTests;
 		};
-		07381AF215ADAF73000B0A38 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F8A425AF145208CC00FD4ECA;
-			remoteInfo = iOSSpecs;
-		};
 		07381AF415ADAF73000B0A38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
@@ -177,17 +171,66 @@
 			remoteGlobalIDString = F81E7F4C1582AAF6004C029E;
 			remoteInfo = iOSAcceptanceTests;
 		};
-		07381AF615ADAF73000B0A38 /* PBXContainerItemProxy */ = {
+		0795B2CA15D9A1DE000D3DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94A6BA5A15BB2DE7003F22B6;
+			remoteInfo = SpecKit;
+		};
+		0795B2CC15D9A1DE000D3DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 942AAEEC15BBB3760006C241;
+			remoteInfo = SpecKitMac;
+		};
+		0795B2CE15D9A1DE000D3DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 947F6C2515BC39A200C7CF3B;
+			remoteInfo = SpecKitTests;
+		};
+		0795B2D015D9A1DE000D3DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 944FBF4E15C168C100BF85FC;
+			remoteInfo = SpecKitAcceptanceTest;
+		};
+		07F1C36D15D9B80700ECBC7F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F87E7FAD158FDFB300675E34;
-			remoteInfo = MacSpecs;
+			remoteGlobalIDString = 07F1C2F015D9B17000ECBC7F;
+			remoteInfo = MacSK;
+		};
+		07F1C36F15D9B80700ECBC7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F1C33C15D9B77D00ECBC7F;
+			remoteInfo = iOSSpecKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
+		07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpecKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatementExecutorSpecKit.m; path = cslim/tests/ObjectiveC/StatementExecutorSpecKit.m; sourceTree = "<group>"; };
+		07F1C2E515D9B14200ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07F1C2E815D9B14200ECBC7F /* MacSpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSpecKit-Prefix.pch"; sourceTree = "<group>"; };
+		07F1C2F115D9B17000ECBC7F /* MacSK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacSK; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F1C2F515D9B17000ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07F1C2F815D9B17000ECBC7F /* MacSK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSK-Prefix.pch"; sourceTree = "<group>"; };
+		07F1C33615D9B69600ECBC7F /* OCSReturnValueSpecKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValueSpecKit.m; path = cslim/tests/ObjectiveC/OCSReturnValueSpecKit.m; sourceTree = "<group>"; };
+		07F1C33D15D9B77D00ECBC7F /* iOSSpecKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSpecKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F1C34415D9B77D00ECBC7F /* iOSSpecKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSSpecKit-Info.plist"; sourceTree = "<group>"; };
+		07F1C34615D9B77D00ECBC7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07F1C34815D9B77D00ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07F1C34A15D9B77D00ECBC7F /* iOSSpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSpecKit-Prefix.pch"; sourceTree = "<group>"; };
 		F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjAdderFixture.h; sourceTree = "<group>"; };
 		F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjAdderFixture.m; sourceTree = "<group>"; };
 		F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,9 +243,7 @@
 		F8543DB314683673001FC9E6 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
 		F873F3D51448BF4F00FFCA02 /* Main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Main.c; sourceTree = "<group>"; };
 		F873F3D71448C5F100FFCA02 /* fitnesse.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = fitnesse.jar; sourceTree = "<group>"; };
-		F87E7FD7158FDFB300675E34 /* MacSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87E802F158FE19600675E34 /* macMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = macMain.m; sourceTree = "<group>"; };
-		F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValueSpec.m; path = cslim/tests/ObjectiveC/OCSReturnValueSpec.m; sourceTree = "<group>"; };
 		F88745BF14F8628C003D2B3F /* OCSReturnValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSReturnValue.h; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.h; sourceTree = "<group>"; };
 		F88745C014F8628C003D2B3F /* OCSReturnValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValue.m; path = cslim/src/ExecutorObjectiveC/OCSReturnValue.m; sourceTree = "<group>"; };
 		F88745C314F862B4003D2B3F /* RespondsToStringValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RespondsToStringValue.h; path = cslim/tests/ObjectiveC/RespondsToStringValue.h; sourceTree = "<group>"; };
@@ -211,7 +252,6 @@
 		F88745C814F862BF003D2B3F /* ValidInputTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValidInputTypes.m; path = cslim/tests/ObjectiveC/ValidInputTypes.m; sourceTree = "<group>"; };
 		F88745C914F862BF003D2B3F /* ValidReturnTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValidReturnTypes.h; path = cslim/tests/ObjectiveC/ValidReturnTypes.h; sourceTree = "<group>"; };
 		F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValidReturnTypes.m; path = cslim/tests/ObjectiveC/ValidReturnTypes.m; sourceTree = "<group>"; };
-		F8A425B0145208CC00FD4ECA /* iOSSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A425B4145208CC00FD4ECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F8B5B1A6157037DF0049742E /* OCDSpecCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecCondition.h; sourceTree = "<group>"; };
 		F8B5B1A7157037DF0049742E /* OCDSpecCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecCondition.m; sourceTree = "<group>"; };
@@ -291,7 +331,6 @@
 		F8FC52CC14AE47B200D714B4 /* SocketServer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SocketServer.c; path = cslim/src/Com/SocketServer.c; sourceTree = "<group>"; };
 		F8FC52CD14AE47B200D714B4 /* TcpComLink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = TcpComLink.c; path = cslim/src/Com/TcpComLink.c; sourceTree = "<group>"; };
 		F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StatementExecutor.m; path = cslim/src/ExecutorObjectiveC/StatementExecutor.m; sourceTree = "<group>"; };
-		F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StatementExecutorSpec.m; path = cslim/tests/ObjectiveC/StatementExecutorSpec.m; sourceTree = "<group>"; };
 		F8FC52D314AE498900D714B4 /* Fixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixtures.m; sourceTree = "<group>"; };
 		F8FC52D614AE49B300D714B4 /* Fixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fixtures.h; path = cslim/include/CSlim/Fixtures.h; sourceTree = "<group>"; };
 		F8FC52F914AE515000D714B4 /* TestSlim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSlim.h; path = cslim/tests/ObjectiveC/TestSlim.h; sourceTree = "<group>"; };
@@ -301,29 +340,32 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07F1C2EE15D9B17000ECBC7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F1C2F315D9B17000ECBC7F /* Cocoa.framework in Frameworks */,
+				07F1C2FD15D9B1DB00ECBC7F /* libSpecKitMac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F1C33915D9B77D00ECBC7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F1C33F15D9B77D00ECBC7F /* UIKit.framework in Frameworks */,
+				07F1C34015D9B77D00ECBC7F /* Foundation.framework in Frameworks */,
+				07F1C34115D9B77D00ECBC7F /* CoreGraphics.framework in Frameworks */,
+				07F1C34E15D9B78500ECBC7F /* libSpecKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F81E7F6B1582AAF6004C029E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */,
 				072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F87E7FCE158FDFB300675E34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				072E0CF415A1209E009615B6 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8A425AD145208CC00FD4ECA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				072E0CF515A12138009615B6 /* Foundation.framework in Frameworks */,
-				072E0CEE15A11F8F009615B6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +380,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0795B2C115D9A1DE000D3DD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0795B2CB15D9A1DE000D3DD4 /* libSpecKit.a */,
+				0795B2CD15D9A1DE000D3DD4 /* libSpecKitMac.a */,
+				0795B2CF15D9A1DE000D3DD4 /* SpecKitTests.octest */,
+				0795B2D115D9A1DE000D3DD4 /* SpecKitAcceptanceTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07F1C2E415D9B14200ECBC7F /* MacSpecKit */ = {
+			isa = PBXGroup;
+			children = (
+				07F1C2E515D9B14200ECBC7F /* main.m */,
+				07F1C2E715D9B14200ECBC7F /* Supporting Files */,
+			);
+			path = MacSpecKit;
+			sourceTree = "<group>";
+		};
+		07F1C2E715D9B14200ECBC7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07F1C2E815D9B14200ECBC7F /* MacSpecKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07F1C2F415D9B17000ECBC7F /* MacSK */ = {
+			isa = PBXGroup;
+			children = (
+				07F1C2F515D9B17000ECBC7F /* main.m */,
+				07F1C2F715D9B17000ECBC7F /* Supporting Files */,
+			);
+			path = MacSK;
+			sourceTree = "<group>";
+		};
+		07F1C2F715D9B17000ECBC7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07F1C2F815D9B17000ECBC7F /* MacSK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07F1C34215D9B77D00ECBC7F /* iOSSpecKit */ = {
+			isa = PBXGroup;
+			children = (
+				07F1C34315D9B77D00ECBC7F /* Supporting Files */,
+			);
+			path = iOSSpecKit;
+			sourceTree = "<group>";
+		};
+		07F1C34315D9B77D00ECBC7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07F1C34415D9B77D00ECBC7F /* iOSSpecKit-Info.plist */,
+				07F1C34515D9B77D00ECBC7F /* InfoPlist.strings */,
+				07F1C34815D9B77D00ECBC7F /* main.m */,
+				07F1C34A15D9B77D00ECBC7F /* iOSSpecKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F873F3CF1448BEF300FFCA02 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,13 +481,13 @@
 			isa = PBXGroup;
 			children = (
 				F8B5B1A4157037DF0049742E /* OCDSpec */,
-				F88745BD14F86196003D2B3F /* OCSReturnValueSpec.m */,
 				F8FC52D314AE498900D714B4 /* Fixtures.m */,
-				F8FC52CF14AE47E800D714B4 /* StatementExecutorSpec.m */,
 				F8FC52F914AE515000D714B4 /* TestSlim.h */,
 				F8FC52FA14AE515000D714B4 /* TestSlim.m */,
 				F8FC52FB14AE515000D714B4 /* TestSlimTwo.h */,
 				F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */,
+				07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpecKit.m */,
+				07F1C33615D9B69600ECBC7F /* OCSReturnValueSpecKit.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -453,10 +559,14 @@
 		F8ED9EF11448BDF900DCBB3F = {
 			isa = PBXGroup;
 			children = (
+				0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */,
 				F8FC52B714AE472600D714B4 /* cslim */,
 				F873F3CF1448BEF300FFCA02 /* Fixtures */,
 				F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */,
 				F8A425F41452110700FD4ECA /* Specs */,
+				07F1C2E415D9B14200ECBC7F /* MacSpecKit */,
+				07F1C2F415D9B17000ECBC7F /* MacSK */,
+				07F1C34215D9B77D00ECBC7F /* iOSSpecKit */,
 				F8ED9EFF1448BDF900DCBB3F /* Frameworks */,
 				F8ED9EFD1448BDF900DCBB3F /* Products */,
 			);
@@ -466,9 +576,9 @@
 			isa = PBXGroup;
 			children = (
 				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */,
-				F8A425B0145208CC00FD4ECA /* iOSSpecs.app */,
 				F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */,
-				F87E7FD7158FDFB300675E34 /* MacSpecs.app */,
+				07F1C2F115D9B17000ECBC7F /* MacSK */,
+				07F1C33D15D9B77D00ECBC7F /* iOSSpecKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -479,6 +589,7 @@
 				072E0CED15A11F8F009615B6 /* UIKit.framework */,
 				F8ED9F001448BDF900DCBB3F /* Cocoa.framework */,
 				F8A425B4145208CC00FD4ECA /* Foundation.framework */,
+				07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */,
 				F8ED9F021448BDF900DCBB3F /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -563,6 +674,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		07F1C2F015D9B17000ECBC7F /* MacSK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSK" */;
+			buildPhases = (
+				07F1C2ED15D9B17000ECBC7F /* Sources */,
+				07F1C2EE15D9B17000ECBC7F /* Frameworks */,
+				07F1C2EF15D9B17000ECBC7F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacSK;
+			productName = MacSK;
+			productReference = 07F1C2F115D9B17000ECBC7F /* MacSK */;
+			productType = "com.apple.product-type.tool";
+		};
+		07F1C33C15D9B77D00ECBC7F /* iOSSpecKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F1C34B15D9B77D00ECBC7F /* Build configuration list for PBXNativeTarget "iOSSpecKit" */;
+			buildPhases = (
+				07F1C33815D9B77D00ECBC7F /* Sources */,
+				07F1C33915D9B77D00ECBC7F /* Frameworks */,
+				07F1C33A15D9B77D00ECBC7F /* Resources */,
+				07F1C33B15D9B77D00ECBC7F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSSpecKit;
+			productName = iOSSpecKit;
+			productReference = 07F1C33D15D9B77D00ECBC7F /* iOSSpecKit.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F81E7F711582AAF6004C029E /* Build configuration list for PBXNativeTarget "iOSAcceptanceTests" */;
@@ -579,42 +725,6 @@
 			name = iOSAcceptanceTests;
 			productName = ObjectiveCSlim;
 			productReference = F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */;
-			productType = "com.apple.product-type.application";
-		};
-		F87E7FAD158FDFB300675E34 /* MacSpecs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F87E7FD4158FDFB300675E34 /* Build configuration list for PBXNativeTarget "MacSpecs" */;
-			buildPhases = (
-				F87E7FAE158FDFB300675E34 /* Sources */,
-				F87E7FCE158FDFB300675E34 /* Frameworks */,
-				F87E7FD1158FDFB300675E34 /* Resources */,
-				F87E7FD3158FDFB300675E34 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MacSpecs;
-			productName = Specs;
-			productReference = F87E7FD7158FDFB300675E34 /* MacSpecs.app */;
-			productType = "com.apple.product-type.application";
-		};
-		F8A425AF145208CC00FD4ECA /* iOSSpecs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F8A425D2145208CD00FD4ECA /* Build configuration list for PBXNativeTarget "iOSSpecs" */;
-			buildPhases = (
-				F8A425AC145208CC00FD4ECA /* Sources */,
-				F8A425AD145208CC00FD4ECA /* Frameworks */,
-				F8A425AE145208CC00FD4ECA /* Resources */,
-				F8A425F314520A0600FD4ECA /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iOSSpecs;
-			productName = Specs;
-			productReference = F8A425B0145208CC00FD4ECA /* iOSSpecs.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */ = {
@@ -653,39 +763,69 @@
 			mainGroup = F8ED9EF11448BDF900DCBB3F;
 			productRefGroup = F8ED9EFD1448BDF900DCBB3F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0795B2C115D9A1DE000D3DD4 /* Products */;
+					ProjectRef = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */,
-				F8A425AF145208CC00FD4ECA /* iOSSpecs */,
 				F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */,
-				F87E7FAD158FDFB300675E34 /* MacSpecs */,
+				07F1C2F015D9B17000ECBC7F /* MacSK */,
+				07F1C33C15D9B77D00ECBC7F /* iOSSpecKit */,
 				07381AEB15ADAF63000B0A38 /* AllTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		0795B2CB15D9A1DE000D3DD4 /* libSpecKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpecKit.a;
+			remoteRef = 0795B2CA15D9A1DE000D3DD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0795B2CD15D9A1DE000D3DD4 /* libSpecKitMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpecKitMac.a;
+			remoteRef = 0795B2CC15D9A1DE000D3DD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0795B2CF15D9A1DE000D3DD4 /* SpecKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpecKitTests.octest;
+			remoteRef = 0795B2CE15D9A1DE000D3DD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0795B2D115D9A1DE000D3DD4 /* SpecKitAcceptanceTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpecKitAcceptanceTest.octest;
+			remoteRef = 0795B2D015D9A1DE000D3DD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		07F1C33A15D9B77D00ECBC7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F1C34715D9B77D00ECBC7F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F81E7F6D1582AAF6004C029E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F81E7F6E1582AAF6004C029E /* InfoPlist.strings in Resources */,
 				F81E7F6F1582AAF6004C029E /* Credits.rtf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F87E7FD1158FDFB300675E34 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8A425AE145208CC00FD4ECA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8B5B1D3157037DF0049742E /* RunIPhoneUnitTest.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +854,32 @@
 			shellPath = /bin/sh;
 			shellScript = ./bin/Mac/RunSlimTests;
 		};
+		07F1C2EF15D9B17000ECBC7F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $TARGET_BUILD_DIR/$EXECUTABLE_PATH;
+		};
+		07F1C33B15D9B77D00ECBC7F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n#  RunIPhoneUnitTest.sh\n#  Copyright 2008 Google Inc.\n#\n#  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not\n#  use this file except in compliance with the License.  You may obtain a copy\n#  of the License at\n#\n#  http://www.apache.org/licenses/LICENSE-2.0\n#\n#  Unless required by applicable law or agreed to in writing, software\n#  distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\n#  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the\n#  License for the specific language governing permissions and limitations under\n#  the License.\n#\n#  Runs all unittests through the iPhone simulator. We don't handle running them\n#  on the device. To run on the device just choose \"run\".\n\nset -o errexit\nset -o nounset\nset -o verbose\n\n#  Controlling environment variables:\n# GTM_DISABLE_ZOMBIES -\n#   Set to a non-zero value to turn on zombie checks. You will probably\n#   want to turn this off if you enable leaks.\nGTM_DISABLE_ZOMBIES=${GTM_DISABLE_ZOMBIES:=1}\n\n# GTM_ENABLE_LEAKS -\n#   Set to a non-zero value to turn on the leaks check. You will probably want\n#   to disable zombies, otherwise you will get a lot of false positives.\n\n# GTM_DISABLE_TERMINATION\n#   Set to a non-zero value so that the app doesn't terminate when it's finished\n#   running tests. This is useful when using it with external tools such\n#   as Instruments.\n\n# GTM_LEAKS_SYMBOLS_TO_IGNORE\n#   List of comma separated symbols that leaks should ignore. Mainly to control\n#   leaks in frameworks you don't have control over.\n#   Search this file for GTM_LEAKS_SYMBOLS_TO_IGNORE to see examples.\n#   Please feel free to add other symbols as you find them but make sure to\n#   reference Radars or other bug systems so we can track them.\n\n# GTM_REMOVE_GCOV_DATA\n#   Before starting the test, remove any *.gcda files for the current run so\n#   you won't get failures when the source file has changed and the data can't\n#   be merged.\n#\nGTM_REMOVE_GCOV_DATA=${GTM_REMOVE_GCOV_DATA:=0}\n\n# GTM_DISABLE_USERDIR_SETUP\n#   Controls whether or not CFFIXED_USER_HOME is erased and set up from scratch\n#   for you each time the script is run. In some cases you may have a wrapper\n#   script calling this one that takes care of that for us so you can set up\n#   a certain user configuration.\nGTM_DISABLE_USERDIR_SETUP=${GTM_DISABLE_USERDIR_SETUP:=0}\n\n# GTM_DISABLE_IPHONE_LAUNCH_DAEMONS\n#   Controls whether or not we launch up the iPhone Launch Daemons before\n#   we start testing. You need Launch Daemons to test anything that interacts\n#   with security.\nGTM_DISABLE_IPHONE_LAUNCH_DAEMONS=1 #${GTM_DISABLE_IPHONE_LAUNCH_DAEMONS:=0}\n\nScriptDir=$(dirname \"$(echo $0 | sed -e \"s,^\\([^/]\\),$(pwd)/\\1,\")\")\nScriptName=$(basename \"$0\")\nThisScript=\"${ScriptDir}/${ScriptName}\"\n\nGTMXcodeNote() {\n    echo ${ThisScript}:${1}: note: GTM ${2}\n}\n\nif [ \"$PLATFORM_NAME\" == \"iphonesimulator\" ]; then\n  # We kill the iPhone simulator because otherwise we run into issues where\n  # the unittests fail becuase the simulator is currently running, and\n  # at this time the iPhone SDK won't allow two simulators running at the same\n  # time.\n  set +e\n  /usr/bin/killall \"iPhone Simulator\"\n  set -e\n\n  if [ $GTM_REMOVE_GCOV_DATA -ne 0 ]; then\n    if [ \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" != \"-\" ]; then\n      if [ -d \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" ]; then\n        GTMXcodeNote ${LINENO} \"Removing any .gcda files\"\n        (cd \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" && \\\n            find . -type f -name \"*.gcda\" -print0 | xargs -0 rm -f )\n      fi\n    fi\n  fi\n\n  export DYLD_ROOT_PATH=\"$SDKROOT\"\n  export DYLD_FRAMEWORK_PATH=\"$CONFIGURATION_BUILD_DIR\"\n  export IPHONE_SIMULATOR_ROOT=\"$SDKROOT\"\n  export CFFIXED_USER_HOME=\"$TEMP_FILES_DIR/iPhone Simulator User Dir\"\n\n  # See http://developer.apple.com/technotes/tn2004/tn2124.html for an\n  # explanation of these environment variables.\n\n  #export MallocScribble=YES\n  export MallocPreScribble=YES\n  #export MallocGuardEdges=YES\n  #export MallocStackLogging=YES\n  export NSAutoreleaseFreedObjectCheckEnabled=YES\n\n  # Turn on the mostly undocumented OBJC_DEBUG stuff.\n  export OBJC_DEBUG_FRAGILE_SUPERCLASSES=YES\n  export OBJC_DEBUG_UNLOAD=YES\n  # Turned off due to the amount of false positives from NS classes.\n  # export OBJC_DEBUG_FINALIZERS=YES\n  export OBJC_DEBUG_NIL_SYNC=YES\n  export OBJC_PRINT_REPLACED_METHODS=NO\n\n  if [ $GTM_DISABLE_ZOMBIES -eq 0 ]; then\n    GTMXcodeNote ${LINENO} \"Enabling zombies\"\n    export CFZombieLevel=3\n    export NSZombieEnabled=YES\n  fi\n\n  if [ $GTM_DISABLE_USERDIR_SETUP -eq 0 ]; then\n    # Cleanup user home directory\n    if [ -d \"$CFFIXED_USER_HOME\" ]; then\n      rm -rf \"$CFFIXED_USER_HOME\"\n    fi\n    mkdir \"$CFFIXED_USER_HOME\"\n    mkdir \"$CFFIXED_USER_HOME/Documents\"\n    mkdir -p \"$CFFIXED_USER_HOME/Library/Caches\"\n  fi\n\n  # 6251475 iPhone simulator leaks @ CFHTTPCookieStore shutdown if\n  #         CFFIXED_USER_HOME empty\n  GTM_LEAKS_SYMBOLS_TO_IGNORE=\"CFHTTPCookieStore\"\n\n  if [ $GTM_DISABLE_IPHONE_LAUNCH_DAEMONS -eq 0 ]; then\n    # If we want to test anything that interacts with the keychain, we need\n    # securityd up and running. See RunIPhoneLaunchDaemons.sh for details.\n    launchctl submit -l RunIPhoneLaunchDaemons -- \"${ScriptDir}/RunIPhoneLaunchDaemons.sh\" $IPHONE_SIMULATOR_ROOT $CFFIXED_USER_HOME\n    # No matter how we exit, we want to shut down our launchctl job.\n    trap \"launchctl remove RunIPhoneLaunchDaemons\" INT TERM EXIT\n  fi\n\n  # Start our app.\n  \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\" -RegisterForSystemEvents\n\nelse\n  GTMXcodeNote ${LINENO} \"Skipping running of unittests for device build.\"\nfi\nexit 0";
+		};
 		F81E7F821582B4EE004C029E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -727,39 +893,88 @@
 			shellPath = /bin/sh;
 			shellScript = ./bin/iOS/RunSlimTests;
 		};
-		F87E7FD3158FDFB300675E34 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = $TARGET_BUILD_DIR/$EXECUTABLE_PATH;
-		};
-		F8A425F314520A0600FD4ECA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = ./OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		07F1C2ED15D9B17000ECBC7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F1C31D15D9B3B400ECBC7F /* OCSReturnValue.m in Sources */,
+				07F1C32315D9B3B400ECBC7F /* StatementExecutor.m in Sources */,
+				07F1C31B15D9B3B400ECBC7F /* ListExecutor.c in Sources */,
+				07F1C31C15D9B3B400ECBC7F /* Slim.c in Sources */,
+				07F1C31E15D9B3B400ECBC7F /* SlimConnectionHandler.c in Sources */,
+				07F1C31F15D9B3B400ECBC7F /* SlimList.c in Sources */,
+				07F1C32015D9B3B400ECBC7F /* SlimListDeserializer.c in Sources */,
+				07F1C32115D9B3B400ECBC7F /* SlimListSerializer.c in Sources */,
+				07F1C32215D9B3B400ECBC7F /* SlimUtil.c in Sources */,
+				07F1C32415D9B3B400ECBC7F /* SocketServer.c in Sources */,
+				07F1C32515D9B3B400ECBC7F /* TcpComLink.c in Sources */,
+				07F1C32615D9B3B400ECBC7F /* ValidInputTypes.m in Sources */,
+				07F1C32715D9B3B400ECBC7F /* ValidReturnTypes.m in Sources */,
+				07F1C32815D9B3B400ECBC7F /* RespondsToStringValue.m in Sources */,
+				07F1C32915D9B3B400ECBC7F /* ObjAdderFixture.m in Sources */,
+				07F1C32A15D9B3B400ECBC7F /* Count.m in Sources */,
+				07F1C32B15D9B3B400ECBC7F /* Math.m in Sources */,
+				07F1C32C15D9B3B400ECBC7F /* EchoFixture.m in Sources */,
+				07F1C32D15D9B3B400ECBC7F /* TestQuery.m in Sources */,
+				07F1C32E15D9B3B400ECBC7F /* TearDown.m in Sources */,
+				07F1C32F15D9B3B400ECBC7F /* PageDriver.m in Sources */,
+				07F1C33015D9B3B400ECBC7F /* SetUp.m in Sources */,
+				07F1C33115D9B3B400ECBC7F /* Uncle.m in Sources */,
+				07F1C33215D9B3B400ECBC7F /* Adder.m in Sources */,
+				07F1C33315D9B3B400ECBC7F /* Fixtures.m in Sources */,
+				07F1C33415D9B3B400ECBC7F /* TestSlim.m in Sources */,
+				07F1C33515D9B3B400ECBC7F /* TestSlimTwo.m in Sources */,
+				07F1C2F615D9B17000ECBC7F /* main.m in Sources */,
+				07F1C2FE15D9B1E300ECBC7F /* StatementExecutorSpecKit.m in Sources */,
+				07F1C33715D9B69600ECBC7F /* OCSReturnValueSpecKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F1C33815D9B77D00ECBC7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F1C34F15D9B7C100ECBC7F /* ListExecutor.c in Sources */,
+				07F1C35015D9B7C100ECBC7F /* Slim.c in Sources */,
+				07F1C35115D9B7C100ECBC7F /* OCSReturnValue.m in Sources */,
+				07F1C35215D9B7C100ECBC7F /* SlimConnectionHandler.c in Sources */,
+				07F1C35315D9B7C100ECBC7F /* SlimList.c in Sources */,
+				07F1C35415D9B7C100ECBC7F /* SlimListDeserializer.c in Sources */,
+				07F1C35515D9B7C100ECBC7F /* SlimListSerializer.c in Sources */,
+				07F1C35615D9B7C100ECBC7F /* SlimUtil.c in Sources */,
+				07F1C35715D9B7C100ECBC7F /* StatementExecutor.m in Sources */,
+				07F1C35815D9B7C100ECBC7F /* SocketServer.c in Sources */,
+				07F1C35915D9B7C100ECBC7F /* TcpComLink.c in Sources */,
+				07F1C35A15D9B7C100ECBC7F /* ValidInputTypes.m in Sources */,
+				07F1C35B15D9B7C100ECBC7F /* ValidReturnTypes.m in Sources */,
+				07F1C35C15D9B7C100ECBC7F /* RespondsToStringValue.m in Sources */,
+				07F1C35E15D9B7C100ECBC7F /* ObjAdderFixture.m in Sources */,
+				07F1C35F15D9B7C100ECBC7F /* Count.m in Sources */,
+				07F1C36015D9B7C100ECBC7F /* Math.m in Sources */,
+				07F1C36115D9B7C100ECBC7F /* EchoFixture.m in Sources */,
+				07F1C36215D9B7C100ECBC7F /* TestQuery.m in Sources */,
+				07F1C36315D9B7C100ECBC7F /* TearDown.m in Sources */,
+				07F1C36415D9B7C100ECBC7F /* PageDriver.m in Sources */,
+				07F1C36515D9B7C100ECBC7F /* SetUp.m in Sources */,
+				07F1C36615D9B7C100ECBC7F /* Uncle.m in Sources */,
+				07F1C36715D9B7C100ECBC7F /* Adder.m in Sources */,
+				07F1C36815D9B7C100ECBC7F /* Fixtures.m in Sources */,
+				07F1C36915D9B7C100ECBC7F /* TestSlim.m in Sources */,
+				07F1C36A15D9B7C100ECBC7F /* TestSlimTwo.m in Sources */,
+				07F1C36B15D9B7C100ECBC7F /* StatementExecutorSpecKit.m in Sources */,
+				07F1C36C15D9B7C100ECBC7F /* OCSReturnValueSpecKit.m in Sources */,
+				07F1C34915D9B77D00ECBC7F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F81E7F4D1582AAF6004C029E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F1C37115D9B8BE00ECBC7F /* SlimList.c in Sources */,
 				F81E7F4F1582AAF6004C029E /* Main.c in Sources */,
 				F81E7F511582AAF6004C029E /* ObjAdderFixture.m in Sources */,
 				F81E7F521582AAF6004C029E /* Count.m in Sources */,
@@ -777,7 +992,6 @@
 				F81E7F5E1582AAF6004C029E /* ListExecutor.c in Sources */,
 				F81E7F5F1582AAF6004C029E /* Slim.c in Sources */,
 				F81E7F601582AAF6004C029E /* SlimConnectionHandler.c in Sources */,
-				F81E7F611582AAF6004C029E /* SlimList.c in Sources */,
 				F81E7F621582AAF6004C029E /* SlimListDeserializer.c in Sources */,
 				F81E7F631582AAF6004C029E /* SlimListSerializer.c in Sources */,
 				F81E7F641582AAF6004C029E /* SlimUtil.c in Sources */,
@@ -788,82 +1002,6 @@
 				F81E7F691582AAF6004C029E /* ValidInputTypes.m in Sources */,
 				F81E7F6A1582AAF6004C029E /* ValidReturnTypes.m in Sources */,
 				F81E7F7F1582B0F1004C029E /* Adder.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F87E7FAE158FDFB300675E34 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F87E7FAF158FDFB300675E34 /* StatementExecutorSpec.m in Sources */,
-				F87E7FB0158FDFB300675E34 /* StatementExecutor.m in Sources */,
-				F87E7FB1158FDFB300675E34 /* Fixtures.m in Sources */,
-				F87E7FB2158FDFB300675E34 /* SocketServer.c in Sources */,
-				F87E7FB3158FDFB300675E34 /* TcpComLink.c in Sources */,
-				F87E7FB4158FDFB300675E34 /* ListExecutor.c in Sources */,
-				F87E7FB5158FDFB300675E34 /* Slim.c in Sources */,
-				F87E7FB6158FDFB300675E34 /* SlimConnectionHandler.c in Sources */,
-				F87E7FB7158FDFB300675E34 /* SlimList.c in Sources */,
-				F87E7FB8158FDFB300675E34 /* SlimListDeserializer.c in Sources */,
-				F87E7FB9158FDFB300675E34 /* SlimListSerializer.c in Sources */,
-				F87E7FBA158FDFB300675E34 /* SlimUtil.c in Sources */,
-				F87E7FBB158FDFB300675E34 /* TestSlim.m in Sources */,
-				F87E7FBC158FDFB300675E34 /* TestSlimTwo.m in Sources */,
-				F87E7FBD158FDFB300675E34 /* OCSReturnValueSpec.m in Sources */,
-				F87E7FBE158FDFB300675E34 /* OCSReturnValue.m in Sources */,
-				F87E7FBF158FDFB300675E34 /* RespondsToStringValue.m in Sources */,
-				F87E7FC0158FDFB300675E34 /* ValidInputTypes.m in Sources */,
-				F87E7FC1158FDFB300675E34 /* ValidReturnTypes.m in Sources */,
-				F87E7FC2158FDFB300675E34 /* OCDSpecCondition.m in Sources */,
-				F87E7FC3158FDFB300675E34 /* OCDSpecPostCondition.m in Sources */,
-				F87E7FC4158FDFB300675E34 /* OCDSpecPreCondition.m in Sources */,
-				F87E7FC5158FDFB300675E34 /* OCDSpecDescription.m in Sources */,
-				F87E7FC6158FDFB300675E34 /* OCDSpecDescriptionRunner.m in Sources */,
-				F87E7FC7158FDFB300675E34 /* OCDSpecExample.m in Sources */,
-				F87E7FC8158FDFB300675E34 /* OCDSpecExpectation.m in Sources */,
-				F87E7FC9158FDFB300675E34 /* OCDSpecFail.m in Sources */,
-				F87E7FCA158FDFB300675E34 /* OCDSpecOutputter+RedirectOutput.m in Sources */,
-				F87E7FCB158FDFB300675E34 /* OCDSpecOutputter.m in Sources */,
-				F87E7FCC158FDFB300675E34 /* OCDSpecSuiteRunner.m in Sources */,
-				F87E8030158FE19600675E34 /* macMain.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8A425AC145208CC00FD4ECA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8FC52D014AE480100D714B4 /* StatementExecutorSpec.m in Sources */,
-				F8FC52D114AE484D00D714B4 /* StatementExecutor.m in Sources */,
-				F8FC52D514AE498900D714B4 /* Fixtures.m in Sources */,
-				F8FC52D814AE4AAC00D714B4 /* SocketServer.c in Sources */,
-				F8FC52DA14AE4B3500D714B4 /* TcpComLink.c in Sources */,
-				F8FC52DB14AE4B9A00D714B4 /* ListExecutor.c in Sources */,
-				F8FC52DE14AE4BF900D714B4 /* Slim.c in Sources */,
-				F8FC52E014AE4C9900D714B4 /* SlimConnectionHandler.c in Sources */,
-				F8FC52E414AE4D7D00D714B4 /* SlimList.c in Sources */,
-				F8FC52E714AE4DFA00D714B4 /* SlimListDeserializer.c in Sources */,
-				F8FC52E814AE4DFA00D714B4 /* SlimListSerializer.c in Sources */,
-				F8FC52EA14AE4E2000D714B4 /* SlimUtil.c in Sources */,
-				F8FC52FE14AE515000D714B4 /* TestSlim.m in Sources */,
-				F8FC530014AE515000D714B4 /* TestSlimTwo.m in Sources */,
-				F88745BE14F86196003D2B3F /* OCSReturnValueSpec.m in Sources */,
-				F88745C214F8628C003D2B3F /* OCSReturnValue.m in Sources */,
-				F88745C614F862B4003D2B3F /* RespondsToStringValue.m in Sources */,
-				F88745CC14F862BF003D2B3F /* ValidInputTypes.m in Sources */,
-				F88745CE14F862BF003D2B3F /* ValidReturnTypes.m in Sources */,
-				F8B5B1C7157037DF0049742E /* OCDSpecCondition.m in Sources */,
-				F8B5B1C8157037DF0049742E /* OCDSpecPostCondition.m in Sources */,
-				F8B5B1C9157037DF0049742E /* OCDSpecPreCondition.m in Sources */,
-				F8B5B1CA157037DF0049742E /* OCDSpecDescription.m in Sources */,
-				F8B5B1CB157037DF0049742E /* OCDSpecDescriptionRunner.m in Sources */,
-				F8B5B1CC157037DF0049742E /* OCDSpecExample.m in Sources */,
-				F8B5B1CD157037DF0049742E /* OCDSpecExpectation.m in Sources */,
-				F8B5B1CE157037DF0049742E /* OCDSpecFail.m in Sources */,
-				F8B5B1CF157037DF0049742E /* OCDSpecOutputter+RedirectOutput.m in Sources */,
-				F8B5B1D0157037DF0049742E /* OCDSpecOutputter.m in Sources */,
-				F8B5B1D1157037DF0049742E /* OCDSpecSuiteRunner.m in Sources */,
-				F8B5B1D4157037DF0049742E /* unitTestMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,24 +1048,32 @@
 			target = F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */;
 			targetProxy = 07381AF015ADAF73000B0A38 /* PBXContainerItemProxy */;
 		};
-		07381AF315ADAF73000B0A38 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F8A425AF145208CC00FD4ECA /* iOSSpecs */;
-			targetProxy = 07381AF215ADAF73000B0A38 /* PBXContainerItemProxy */;
-		};
 		07381AF515ADAF73000B0A38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */;
 			targetProxy = 07381AF415ADAF73000B0A38 /* PBXContainerItemProxy */;
 		};
-		07381AF715ADAF73000B0A38 /* PBXTargetDependency */ = {
+		07F1C36E15D9B80700ECBC7F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F87E7FAD158FDFB300675E34 /* MacSpecs */;
-			targetProxy = 07381AF615ADAF73000B0A38 /* PBXContainerItemProxy */;
+			target = 07F1C2F015D9B17000ECBC7F /* MacSK */;
+			targetProxy = 07F1C36D15D9B80700ECBC7F /* PBXContainerItemProxy */;
+		};
+		07F1C37015D9B80700ECBC7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F1C33C15D9B77D00ECBC7F /* iOSSpecKit */;
+			targetProxy = 07F1C36F15D9B80700ECBC7F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		07F1C34515D9B77D00ECBC7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F1C34615D9B77D00ECBC7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F8ED9F091448BDF900DCBB3F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -960,6 +1106,105 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07F1C2FA15D9B17000ECBC7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacSK/MacSK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = SpecKit;
+				INFOPLIST_FILE = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07F1C2FB15D9B17000ECBC7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacSK/MacSK-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = SpecKit;
+				INFOPLIST_FILE = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07F1C34C15D9B77D00ECBC7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSSpecKit/iOSSpecKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = SpecKit;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07F1C34D15D9B77D00ECBC7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSSpecKit/iOSSpecKit-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = SpecKit;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -1003,95 +1248,6 @@
 			};
 			name = Release;
 		};
-		F87E7FD5158FDFB300675E34 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec/Mac-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = MacSpecs;
-				SDKROOT = macosx;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		F87E7FD6158FDFB300675E34 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec/Mac-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = MacSpecs;
-				SDKROOT = macosx;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		F8A425D3145208CD00FD4ECA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec/OCDSpec/iPhone-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		F8A425D4145208CD00FD4ECA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDSpec/OCDSpec/iPhone-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		F8ED9F181448BDF900DCBB3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1128,6 +1284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1144,6 +1301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1168,29 +1326,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F1C2FA15D9B17000ECBC7F /* Debug */,
+				07F1C2FB15D9B17000ECBC7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07F1C34B15D9B77D00ECBC7F /* Build configuration list for PBXNativeTarget "iOSSpecKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F1C34C15D9B77D00ECBC7F /* Debug */,
+				07F1C34D15D9B77D00ECBC7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F81E7F711582AAF6004C029E /* Build configuration list for PBXNativeTarget "iOSAcceptanceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F81E7F721582AAF6004C029E /* Debug */,
 				F81E7F731582AAF6004C029E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F87E7FD4158FDFB300675E34 /* Build configuration list for PBXNativeTarget "MacSpecs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F87E7FD5158FDFB300675E34 /* Debug */,
-				F87E7FD6158FDFB300675E34 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F8A425D2145208CD00FD4ECA /* Build configuration list for PBXNativeTarget "iOSSpecs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F8A425D3145208CD00FD4ECA /* Debug */,
-				F8A425D4145208CD00FD4ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

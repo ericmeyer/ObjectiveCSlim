@@ -24,9 +24,4 @@
     return self.string;
 }
 
--(void) dealloc {
-    [self.string release];
-    [super dealloc];
-}
-
 @end

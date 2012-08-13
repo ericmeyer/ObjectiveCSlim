@@ -17,11 +17,4 @@
     return [NSString stringWithFormat: @"%g", [self.adder result]];
 }
 
--(void) dealloc {
-    [second release];
-    [first release];
-    [adder release];
-    [super dealloc];
-}
-
 @end
