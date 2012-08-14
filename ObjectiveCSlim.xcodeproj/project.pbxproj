@@ -690,9 +690,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07F1C2F015D9B17000ECBC7F /* MacSK */ = {
+		07F1C2F015D9B17000ECBC7F /* MacSpecs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSK" */;
+			buildConfigurationList = 07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSpecs" */;
 			buildPhases = (
 				07F1C2ED15D9B17000ECBC7F /* Sources */,
 				07F1C2EE15D9B17000ECBC7F /* Frameworks */,
@@ -702,14 +702,14 @@
 			);
 			dependencies = (
 			);
-			name = MacSK;
+			name = MacSpecs;
 			productName = MacSK;
 			productReference = 07F1C2F115D9B17000ECBC7F /* MacSK */;
 			productType = "com.apple.product-type.tool";
 		};
-		07F1C33C15D9B77D00ECBC7F /* iOSSpecKit */ = {
+		07F1C33C15D9B77D00ECBC7F /* iOSSpecs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07F1C34B15D9B77D00ECBC7F /* Build configuration list for PBXNativeTarget "iOSSpecKit" */;
+			buildConfigurationList = 07F1C34B15D9B77D00ECBC7F /* Build configuration list for PBXNativeTarget "iOSSpecs" */;
 			buildPhases = (
 				07F1C33815D9B77D00ECBC7F /* Sources */,
 				07F1C33915D9B77D00ECBC7F /* Frameworks */,
@@ -720,7 +720,7 @@
 			);
 			dependencies = (
 			);
-			name = iOSSpecKit;
+			name = iOSSpecs;
 			productName = iOSSpecKit;
 			productReference = 07F1C33D15D9B77D00ECBC7F /* iOSSpecKit.app */;
 			productType = "com.apple.product-type.application";
@@ -789,8 +789,8 @@
 			targets = (
 				F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */,
 				F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */,
-				07F1C2F015D9B17000ECBC7F /* MacSK */,
-				07F1C33C15D9B77D00ECBC7F /* iOSSpecKit */,
+				07F1C2F015D9B17000ECBC7F /* MacSpecs */,
+				07F1C33C15D9B77D00ECBC7F /* iOSSpecs */,
 				07381AEB15ADAF63000B0A38 /* AllTests */,
 			);
 		};
@@ -1083,12 +1083,12 @@
 		};
 		07F1C36E15D9B80700ECBC7F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07F1C2F015D9B17000ECBC7F /* MacSK */;
+			target = 07F1C2F015D9B17000ECBC7F /* MacSpecs */;
 			targetProxy = 07F1C36D15D9B80700ECBC7F /* PBXContainerItemProxy */;
 		};
 		07F1C37015D9B80700ECBC7F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07F1C33C15D9B77D00ECBC7F /* iOSSpecKit */;
+			target = 07F1C33C15D9B77D00ECBC7F /* iOSSpecs */;
 			targetProxy = 07F1C36F15D9B80700ECBC7F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1354,7 +1354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSK" */ = {
+		07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSpecs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07F1C2FA15D9B17000ECBC7F /* Debug */,
@@ -1363,7 +1363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07F1C34B15D9B77D00ECBC7F /* Build configuration list for PBXNativeTarget "iOSSpecKit" */ = {
+		07F1C34B15D9B77D00ECBC7F /* Build configuration list for PBXNativeTarget "iOSSpecs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07F1C34C15D9B77D00ECBC7F /* Debug */,
