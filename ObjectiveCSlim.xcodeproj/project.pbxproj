@@ -28,6 +28,10 @@
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
 		079CCEDA15DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
+		079CCEDD15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
+		079CCEDE15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
+		079CCEDF15DAFB99003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
+		079CCEE015DAFB9A003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
 		07EEC09015DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09115DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09215DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
@@ -233,6 +237,8 @@
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
 		079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutorSpec.m; path = cslim/tests/ObjectiveC/OCSStatementExecutorSpec.m; sourceTree = "<group>"; };
+		079CCEDB15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSObjectiveCtoCBridge.h; path = cslim/include/ExecutorObjectiveC/OCSObjectiveCtoCBridge.h; sourceTree = "<group>"; };
+		079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSObjectiveCtoCBridge.m; path = cslim/src/ExecutorObjectiveC/OCSObjectiveCtoCBridge.m; sourceTree = "<group>"; };
 		07EEC08A15DAB37C0012CA03 /* OCSException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSException.h; path = cslim/include/ExecutorObjectiveC/OCSException.h; sourceTree = "<group>"; };
 		07EEC08B15DAB37C0012CA03 /* OCSStatementExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSStatementExecutor.h; path = cslim/include/ExecutorObjectiveC/OCSStatementExecutor.h; sourceTree = "<group>"; };
 		07EEC08C15DAB37C0012CA03 /* OCSSymbolDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSSymbolDictionary.h; path = cslim/include/ExecutorObjectiveC/OCSSymbolDictionary.h; sourceTree = "<group>"; };
@@ -579,6 +585,8 @@
 				F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */,
 				F8FC52CC14AE47B200D714B4 /* SocketServer.c */,
 				F8FC52CD14AE47B200D714B4 /* TcpComLink.c */,
+				079CCEDB15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.h */,
+				079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */,
 			);
 			name = cslim;
 			sourceTree = "<group>";
@@ -846,6 +854,7 @@
 				07EEC09615DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
 				07EEC09A15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
 				079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */,
+				079CCEDD15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,6 +896,7 @@
 				07EEC09715DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
 				07EEC09B15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
 				079CCEDA15DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */,
+				079CCEDE15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,6 +935,7 @@
 				07EEC09115DAB3960012CA03 /* OCSException.m in Sources */,
 				07EEC09515DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
 				07EEC09915DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
+				079CCEDF15DAFB99003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,6 +974,7 @@
 				07EEC09015DAB3960012CA03 /* OCSException.m in Sources */,
 				07EEC09415DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
 				07EEC09815DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
+				079CCEE015DAFB9A003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
