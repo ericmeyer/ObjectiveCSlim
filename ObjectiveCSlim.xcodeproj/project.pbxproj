@@ -238,8 +238,6 @@
 		07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSymbolDictionary.m; path = cslim/src/ExecutorObjectiveC/OCSSymbolDictionary.m; sourceTree = "<group>"; };
 		07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatementExecutorSpec.m; path = cslim/tests/ObjectiveC/StatementExecutorSpec.m; sourceTree = "<group>"; };
-		07F1C2E515D9B14200ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		07F1C2E815D9B14200ECBC7F /* MacSpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSpecKit-Prefix.pch"; sourceTree = "<group>"; };
 		07F1C2F115D9B17000ECBC7F /* MacSK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = MacSK; path = MacSpecs; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F1C2F515D9B17000ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07F1C2F815D9B17000ECBC7F /* MacSK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSK-Prefix.pch"; sourceTree = "<group>"; };
@@ -373,29 +371,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07F1C2E415D9B14200ECBC7F /* MacSpecKit */ = {
-			isa = PBXGroup;
-			children = (
-				07F1C2E515D9B14200ECBC7F /* main.m */,
-				07F1C2E715D9B14200ECBC7F /* Supporting Files */,
-			);
-			path = MacSpecKit;
-			sourceTree = "<group>";
-		};
-		07F1C2E715D9B14200ECBC7F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				07F1C2E815D9B14200ECBC7F /* MacSpecKit-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		07F1C2F415D9B17000ECBC7F /* MacSK */ = {
+		07F1C2F415D9B17000ECBC7F /* MacSpecKit */ = {
 			isa = PBXGroup;
 			children = (
 				07F1C2F515D9B17000ECBC7F /* main.m */,
 				07F1C2F715D9B17000ECBC7F /* Supporting Files */,
 			);
+			name = MacSpecKit;
 			path = MacSK;
 			sourceTree = "<group>";
 		};
@@ -462,6 +444,8 @@
 		F8A425F41452110700FD4ECA /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				07F1C34215D9B77D00ECBC7F /* iOSSpecKit */,
+				07F1C2F415D9B17000ECBC7F /* MacSpecKit */,
 				F8FC52D314AE498900D714B4 /* Fixtures.m */,
 				F8FC52F914AE515000D714B4 /* TestSlim.h */,
 				F8FC52FA14AE515000D714B4 /* TestSlim.m */,
@@ -481,9 +465,6 @@
 				F873F3CF1448BEF300FFCA02 /* Fixtures */,
 				F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */,
 				F8A425F41452110700FD4ECA /* Specs */,
-				07F1C2E415D9B14200ECBC7F /* MacSpecKit */,
-				07F1C2F415D9B17000ECBC7F /* MacSK */,
-				07F1C34215D9B77D00ECBC7F /* iOSSpecKit */,
 				F8ED9EFF1448BDF900DCBB3F /* Frameworks */,
 				F8ED9EFD1448BDF900DCBB3F /* Products */,
 			);
