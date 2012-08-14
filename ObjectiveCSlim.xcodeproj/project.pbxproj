@@ -26,6 +26,8 @@
 /* Begin PBXBuildFile section */
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
+		079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
+		079CCEDA15DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
 		07EEC09015DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09115DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09215DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
@@ -230,6 +232,7 @@
 /* Begin PBXFileReference section */
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
+		079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutorSpec.m; path = cslim/tests/ObjectiveC/OCSStatementExecutorSpec.m; sourceTree = "<group>"; };
 		07EEC08A15DAB37C0012CA03 /* OCSException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSException.h; path = cslim/include/ExecutorObjectiveC/OCSException.h; sourceTree = "<group>"; };
 		07EEC08B15DAB37C0012CA03 /* OCSStatementExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSStatementExecutor.h; path = cslim/include/ExecutorObjectiveC/OCSStatementExecutor.h; sourceTree = "<group>"; };
 		07EEC08C15DAB37C0012CA03 /* OCSSymbolDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSSymbolDictionary.h; path = cslim/include/ExecutorObjectiveC/OCSSymbolDictionary.h; sourceTree = "<group>"; };
@@ -371,6 +374,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		079CCED715DABB3C003C8A31 /* MockFixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC52F914AE515000D714B4 /* TestSlim.h */,
+				F8FC52FA14AE515000D714B4 /* TestSlim.m */,
+				F8FC52FB14AE515000D714B4 /* TestSlimTwo.h */,
+				F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */,
+			);
+			name = MockFixtures;
+			sourceTree = "<group>";
+		};
 		07F1C2F415D9B17000ECBC7F /* MacSpecKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,13 +458,11 @@
 		F8A425F41452110700FD4ECA /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				079CCED715DABB3C003C8A31 /* MockFixtures */,
 				07F1C34215D9B77D00ECBC7F /* iOSSpecKit */,
 				07F1C2F415D9B17000ECBC7F /* MacSpecKit */,
 				F8FC52D314AE498900D714B4 /* Fixtures.m */,
-				F8FC52F914AE515000D714B4 /* TestSlim.h */,
-				F8FC52FA14AE515000D714B4 /* TestSlim.m */,
-				F8FC52FB14AE515000D714B4 /* TestSlimTwo.h */,
-				F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */,
+				079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */,
 				07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */,
 				07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */,
 			);
@@ -833,6 +845,7 @@
 				07EEC09215DAB3960012CA03 /* OCSException.m in Sources */,
 				07EEC09615DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
 				07EEC09A15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
+				079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,6 +886,7 @@
 				07EEC09315DAB3960012CA03 /* OCSException.m in Sources */,
 				07EEC09715DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
 				07EEC09B15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
+				079CCEDA15DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
