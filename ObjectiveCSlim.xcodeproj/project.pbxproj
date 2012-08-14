@@ -69,7 +69,7 @@
 		07F1C33315D9B3B400ECBC7F /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
 		07F1C33415D9B3B400ECBC7F /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
 		07F1C33515D9B3B400ECBC7F /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
-		07F1C33715D9B69600ECBC7F /* OCSReturnValueSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpecs.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C33715D9B69600ECBC7F /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07F1C33F15D9B77D00ECBC7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		07F1C34015D9B77D00ECBC7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		07F1C34115D9B77D00ECBC7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */; };
@@ -104,7 +104,7 @@
 		07F1C36915D9B7C100ECBC7F /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
 		07F1C36A15D9B7C100ECBC7F /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
 		07F1C36B15D9B7C100ECBC7F /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07F1C36C15D9B7C100ECBC7F /* OCSReturnValueSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpecs.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F1C36C15D9B7C100ECBC7F /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07F1C37115D9B8BE00ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
 		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F81E7F4F1582AAF6004C029E /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
@@ -240,11 +240,11 @@
 		07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatementExecutorSpec.m; path = cslim/tests/ObjectiveC/StatementExecutorSpec.m; sourceTree = "<group>"; };
 		07F1C2E515D9B14200ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07F1C2E815D9B14200ECBC7F /* MacSpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSpecKit-Prefix.pch"; sourceTree = "<group>"; };
-		07F1C2F115D9B17000ECBC7F /* MacSK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacSK; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F1C2F115D9B17000ECBC7F /* MacSK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = MacSK; path = MacSpecs; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F1C2F515D9B17000ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07F1C2F815D9B17000ECBC7F /* MacSK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSK-Prefix.pch"; sourceTree = "<group>"; };
-		07F1C33615D9B69600ECBC7F /* OCSReturnValueSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValueSpecs.m; path = cslim/tests/ObjectiveC/OCSReturnValueSpecs.m; sourceTree = "<group>"; };
-		07F1C33D15D9B77D00ECBC7F /* iOSSpecKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSpecKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValueSpec.m; path = cslim/tests/ObjectiveC/OCSReturnValueSpec.m; sourceTree = "<group>"; };
+		07F1C33D15D9B77D00ECBC7F /* iOSSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F1C34415D9B77D00ECBC7F /* iOSSpecKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSSpecKit-Info.plist"; sourceTree = "<group>"; };
 		07F1C34615D9B77D00ECBC7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07F1C34815D9B77D00ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -468,7 +468,7 @@
 				F8FC52FB14AE515000D714B4 /* TestSlimTwo.h */,
 				F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */,
 				07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */,
-				07F1C33615D9B69600ECBC7F /* OCSReturnValueSpecs.m */,
+				07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -495,7 +495,7 @@
 				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */,
 				F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */,
 				07F1C2F115D9B17000ECBC7F /* MacSK */,
-				07F1C33D15D9B77D00ECBC7F /* iOSSpecKit.app */,
+				07F1C33D15D9B77D00ECBC7F /* iOSSpecs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -625,7 +625,7 @@
 			);
 			name = iOSSpecs;
 			productName = iOSSpecKit;
-			productReference = 07F1C33D15D9B77D00ECBC7F /* iOSSpecKit.app */;
+			productReference = 07F1C33D15D9B77D00ECBC7F /* iOSSpecs.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */ = {
@@ -848,7 +848,7 @@
 				07F1C33515D9B3B400ECBC7F /* TestSlimTwo.m in Sources */,
 				07F1C2F615D9B17000ECBC7F /* main.m in Sources */,
 				07F1C2FE15D9B1E300ECBC7F /* StatementExecutorSpec.m in Sources */,
-				07F1C33715D9B69600ECBC7F /* OCSReturnValueSpecs.m in Sources */,
+				07F1C33715D9B69600ECBC7F /* OCSReturnValueSpec.m in Sources */,
 				07EEC09215DAB3960012CA03 /* OCSException.m in Sources */,
 				07EEC09615DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
 				07EEC09A15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
@@ -887,7 +887,7 @@
 				07F1C36915D9B7C100ECBC7F /* TestSlim.m in Sources */,
 				07F1C36A15D9B7C100ECBC7F /* TestSlimTwo.m in Sources */,
 				07F1C36B15D9B7C100ECBC7F /* StatementExecutorSpec.m in Sources */,
-				07F1C36C15D9B7C100ECBC7F /* OCSReturnValueSpecs.m in Sources */,
+				07F1C36C15D9B7C100ECBC7F /* OCSReturnValueSpec.m in Sources */,
 				07F1C34915D9B77D00ECBC7F /* main.m in Sources */,
 				07EEC09315DAB3960012CA03 /* OCSException.m in Sources */,
 				07EEC09715DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
