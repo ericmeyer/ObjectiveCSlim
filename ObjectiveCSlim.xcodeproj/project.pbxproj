@@ -306,10 +306,6 @@
 		F8ED9F101448BDF900DCBB3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F160131587A4250092AA09 /* RunAllTests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RunAllTests; path = bin/RunAllTests; sourceTree = "<group>"; };
-		F8F160141587A4250092AA09 /* RunSlimTests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RunSlimTests; path = bin/RunSlimTests; sourceTree = "<group>"; };
-		F8F160151587A4250092AA09 /* RunSlimTestsHeadless */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RunSlimTestsHeadless; path = bin/RunSlimTestsHeadless; sourceTree = "<group>"; };
-		F8F160161587A4250092AA09 /* RunSlimTestsOnSimulator */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = RunSlimTestsOnSimulator; path = bin/RunSlimTestsOnSimulator; sourceTree = "<group>"; };
-		F8F160171587A4250092AA09 /* RunSlimTestsTargetWithSlimPort */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = RunSlimTestsTargetWithSlimPort; path = bin/RunSlimTestsTargetWithSlimPort; sourceTree = "<group>"; };
 		F8F160181587A4250092AA09 /* StartFitNesse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = StartFitNesse; path = bin/StartFitNesse; sourceTree = "<group>"; };
 		F8FC52B914AE475600D714B4 /* ListExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ListExecutor.h; path = cslim/include/CSlim/ListExecutor.h; sourceTree = "<group>"; };
 		F8FC52BA14AE475600D714B4 /* Slim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Slim.h; path = cslim/include/CSlim/Slim.h; sourceTree = "<group>"; };
@@ -631,10 +627,6 @@
 			isa = PBXGroup;
 			children = (
 				F8F160131587A4250092AA09 /* RunAllTests */,
-				F8F160141587A4250092AA09 /* RunSlimTests */,
-				F8F160151587A4250092AA09 /* RunSlimTestsHeadless */,
-				F8F160161587A4250092AA09 /* RunSlimTestsOnSimulator */,
-				F8F160171587A4250092AA09 /* RunSlimTestsTargetWithSlimPort */,
 				F8F160181587A4250092AA09 /* StartFitNesse */,
 			);
 			name = bin;
