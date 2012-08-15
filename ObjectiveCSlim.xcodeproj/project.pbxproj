@@ -36,14 +36,18 @@
 		07CAF35215DB3CB2008FCC0C /* OCSInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstance.m */; };
 		07CAF35315DB3CB2008FCC0C /* OCSInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstance.m */; };
 		07CAF35415DB3CB2008FCC0C /* OCSInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstance.m */; };
+		07CAF35715DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07CAF35815DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07CAF35915DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07CAF35A15DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07EEC09015DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09115DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09215DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09315DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
-		07EEC09415DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07EEC09515DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07EEC09615DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07EEC09715DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07EEC09415DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
+		07EEC09515DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
+		07EEC09615DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
+		07EEC09715DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
 		07EEC09815DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
 		07EEC09915DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
 		07EEC09A15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
@@ -245,6 +249,8 @@
 		079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSObjectiveCtoCBridge.m; path = cslim/src/ExecutorObjectiveC/OCSObjectiveCtoCBridge.m; sourceTree = "<group>"; };
 		07CAF34F15DB3CB2008FCC0C /* OCSInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSInstance.h; path = cslim/include/ExecutorObjectiveC/OCSInstance.h; sourceTree = "<group>"; };
 		07CAF35015DB3CB2008FCC0C /* OCSInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInstance.m; path = cslim/src/ExecutorObjectiveC/OCSInstance.m; sourceTree = "<group>"; };
+		07CAF35515DB4861008FCC0C /* OCSMethodCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSMethodCaller.h; path = cslim/include/ExecutorObjectiveC/OCSMethodCaller.h; sourceTree = "<group>"; };
+		07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCaller.m; path = cslim/src/ExecutorObjectiveC/OCSMethodCaller.m; sourceTree = "<group>"; };
 		07EEC08A15DAB37C0012CA03 /* OCSException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSException.h; path = cslim/include/ExecutorObjectiveC/OCSException.h; sourceTree = "<group>"; };
 		07EEC08B15DAB37C0012CA03 /* OCSStatementExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSStatementExecutor.h; path = cslim/include/ExecutorObjectiveC/OCSStatementExecutor.h; sourceTree = "<group>"; };
 		07EEC08C15DAB37C0012CA03 /* OCSSymbolDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSSymbolDictionary.h; path = cslim/include/ExecutorObjectiveC/OCSSymbolDictionary.h; sourceTree = "<group>"; };
@@ -253,7 +259,7 @@
 		07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSymbolDictionary.m; path = cslim/src/ExecutorObjectiveC/OCSSymbolDictionary.m; sourceTree = "<group>"; };
 		07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatementExecutorSpec.m; path = cslim/tests/ObjectiveC/StatementExecutorSpec.m; sourceTree = "<group>"; };
-		07F1C2F115D9B17000ECBC7F /* MacSK */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = MacSK; path = MacSpecs; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F1C2F115D9B17000ECBC7F /* MacSpecs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacSpecs; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F1C2F515D9B17000ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07F1C2F815D9B17000ECBC7F /* MacSK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSK-Prefix.pch"; sourceTree = "<group>"; };
 		07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValueSpec.m; path = cslim/tests/ObjectiveC/OCSReturnValueSpec.m; sourceTree = "<group>"; };
@@ -499,7 +505,7 @@
 			children = (
 				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */,
 				F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */,
-				07F1C2F115D9B17000ECBC7F /* MacSK */,
+				07F1C2F115D9B17000ECBC7F /* MacSpecs */,
 				07F1C33D15D9B77D00ECBC7F /* iOSSpecs.app */,
 			);
 			name = Products;
@@ -595,6 +601,8 @@
 				079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */,
 				07CAF34F15DB3CB2008FCC0C /* OCSInstance.h */,
 				07CAF35015DB3CB2008FCC0C /* OCSInstance.m */,
+				07CAF35515DB4861008FCC0C /* OCSMethodCaller.h */,
+				07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */,
 			);
 			name = cslim;
 			sourceTree = "<group>";
@@ -616,7 +624,7 @@
 			);
 			name = MacSpecs;
 			productName = MacSK;
-			productReference = 07F1C2F115D9B17000ECBC7F /* MacSK */;
+			productReference = 07F1C2F115D9B17000ECBC7F /* MacSpecs */;
 			productType = "com.apple.product-type.tool";
 		};
 		07F1C33C15D9B77D00ECBC7F /* iOSSpecs */ = {
@@ -864,6 +872,7 @@
 				079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */,
 				079CCEDD15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 				07CAF35315DB3CB2008FCC0C /* OCSInstance.m in Sources */,
+				07CAF35915DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,6 +916,7 @@
 				079CCEDA15DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */,
 				079CCEDE15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 				07CAF35415DB3CB2008FCC0C /* OCSInstance.m in Sources */,
+				07CAF35A15DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,6 +957,7 @@
 				07EEC09915DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
 				079CCEDF15DAFB99003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 				07CAF35215DB3CB2008FCC0C /* OCSInstance.m in Sources */,
+				07CAF35815DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,6 +998,7 @@
 				07EEC09815DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
 				079CCEE015DAFB9A003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 				07CAF35115DB3CB2008FCC0C /* OCSInstance.m in Sources */,
+				07CAF35715DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
