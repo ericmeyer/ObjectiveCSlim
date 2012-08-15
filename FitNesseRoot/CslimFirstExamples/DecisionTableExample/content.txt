@@ -10,6 +10,10 @@
 |12           |3             |$second_result=|
 |$first_result|$second_result|23             |
 
+!|ObjAdderFixture    |
+|frist|second|result?|
+|1    |2     |3      |
+
 !|script|Count  |$first_result|
 |check  |counter|8            |
 |count                        |
@@ -19,3 +23,4 @@
 |something|else?|
 |1        |2    |
 |3        |4    |
+
