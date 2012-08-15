@@ -21,6 +21,18 @@
 			name = AllTests;
 			productName = AllTests;
 		};
+		077CE42815DC08BE00512830 /* AllSpecs */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 077CE42915DC08BE00512830 /* Build configuration list for PBXAggregateTarget "AllSpecs" */;
+			buildPhases = (
+			);
+			dependencies = (
+				077CE42D15DC08C700512830 /* PBXTargetDependency */,
+				077CE42F15DC08C700512830 /* PBXTargetDependency */,
+			);
+			name = AllSpecs;
+			productName = AllSpecs;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -196,6 +208,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = F81E7F4C1582AAF6004C029E;
 			remoteInfo = iOSAcceptanceTests;
+		};
+		077CE42C15DC08C700512830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F1C2F015D9B17000ECBC7F;
+			remoteInfo = MacSpecs;
+		};
+		077CE42E15DC08C700512830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F1C33C15D9B77D00ECBC7F;
+			remoteInfo = iOSSpecs;
 		};
 		0795B2CA15D9A1DE000D3DD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -712,6 +738,7 @@
 				07F1C2F015D9B17000ECBC7F /* MacSpecs */,
 				07F1C33C15D9B77D00ECBC7F /* iOSSpecs */,
 				07381AEB15ADAF63000B0A38 /* AllTests */,
+				077CE42815DC08BE00512830 /* AllSpecs */,
 			);
 		};
 /* End PBXProject section */
@@ -1015,6 +1042,16 @@
 			target = F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */;
 			targetProxy = 07381AF415ADAF73000B0A38 /* PBXContainerItemProxy */;
 		};
+		077CE42D15DC08C700512830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F1C2F015D9B17000ECBC7F /* MacSpecs */;
+			targetProxy = 077CE42C15DC08C700512830 /* PBXContainerItemProxy */;
+		};
+		077CE42F15DC08C700512830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F1C33C15D9B77D00ECBC7F /* iOSSpecs */;
+			targetProxy = 077CE42E15DC08C700512830 /* PBXContainerItemProxy */;
+		};
 		07F1C36E15D9B80700ECBC7F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 07F1C2F015D9B17000ECBC7F /* MacSpecs */;
@@ -1067,6 +1104,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		077CE42A15DC08BE00512830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		077CE42B15DC08BE00512830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1287,6 +1338,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		077CE42915DC08BE00512830 /* Build configuration list for PBXAggregateTarget "AllSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077CE42A15DC08BE00512830 /* Debug */,
+				077CE42B15DC08BE00512830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSpecs" */ = {
 			isa = XCConfigurationList;
