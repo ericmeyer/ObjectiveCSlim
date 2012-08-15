@@ -38,6 +38,8 @@
 /* Begin PBXBuildFile section */
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
+		077CE43115DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
+		077CE43215DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
 		079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
 		079CCEDA15DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
 		079CCEDD15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
@@ -269,6 +271,7 @@
 
 /* Begin PBXFileReference section */
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCallerSpec.m; path = cslim/tests/ObjectiveC/OCSMethodCallerSpec.m; sourceTree = "<group>"; };
 		0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
 		079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutorSpec.m; path = cslim/tests/ObjectiveC/OCSStatementExecutorSpec.m; sourceTree = "<group>"; };
 		079CCEDB15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSObjectiveCtoCBridge.h; path = cslim/include/ExecutorObjectiveC/OCSObjectiveCtoCBridge.h; sourceTree = "<group>"; };
@@ -509,6 +512,7 @@
 				079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */,
 				07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */,
 				07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */,
+				077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -900,6 +904,7 @@
 				079CCEDD15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 				07CAF35315DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
 				07CAF35915DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
+				077CE43115DC152B00512830 /* OCSMethodCallerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,6 +949,7 @@
 				079CCEDE15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 				07CAF35415DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
 				07CAF35A15DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
+				077CE43215DC152B00512830 /* OCSMethodCallerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
