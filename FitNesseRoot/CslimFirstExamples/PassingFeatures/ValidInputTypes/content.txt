@@ -6,3 +6,8 @@
 !|script|ValidInputTypes           |
 |call with zero args               |
 |ensure |call with zero args called|
+
+!|script  |ValidInputTypes              |
+|call with|123       |and second arg|456|
+|check    |first arg |123               |
+|check    |second arg|456               |

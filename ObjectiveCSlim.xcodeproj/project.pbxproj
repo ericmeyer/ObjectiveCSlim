@@ -194,6 +194,10 @@
 		F8FC52EB14AE4E2000D714B4 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
 		F8FC52FD14AE515000D714B4 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
 		F8FC52FF14AE515000D714B4 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
+		F8FC52FF14AE515000D714B6 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
+		F8FC52FF14AE515000D714B7 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
+		F8FC52FF14AE515000D714B8 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
+		F8FC52FF14AE515000D714B9 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -367,6 +371,8 @@
 		F8FC52FA14AE515000D714B4 /* TestSlim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSlim.m; path = cslim/tests/ObjectiveC/TestSlim.m; sourceTree = "<group>"; };
 		F8FC52FB14AE515000D714B4 /* TestSlimTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestSlimTwo.h; path = cslim/tests/ObjectiveC/TestSlimTwo.h; sourceTree = "<group>"; };
 		F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSlimTwo.m; path = cslim/tests/ObjectiveC/TestSlimTwo.m; sourceTree = "<group>"; };
+		F8FC52FF14AE515000D714B5 /* OCSInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInvocation.m; path = cslim/src/ExecutorObjectiveC/OCSInvocation.m; sourceTree = "<group>"; };
+		F8FC52FF14AE515000D714BA /* OCSInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSInvocation.h; path = cslim/include/ExecutorObjectiveC/OCSInvocation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -611,10 +617,12 @@
 				F8FC52C414AE47A500D714B4 /* ListExecutor.c */,
 				F8FC52D614AE49B300D714B4 /* Fixtures.h */,
 				F8FC52C514AE47A500D714B4 /* Slim.c */,
+				F8FC52FF14AE515000D714BA /* OCSInvocation.h */,
 				07EEC08A15DAB37C0012CA03 /* OCSException.h */,
 				07EEC08B15DAB37C0012CA03 /* OCSStatementExecutor.h */,
 				07EEC08C15DAB37C0012CA03 /* OCSSymbolDictionary.h */,
 				F88745BF14F8628C003D2B3F /* OCSReturnValue.h */,
+				F8FC52FF14AE515000D714B5 /* OCSInvocation.m */,
 				F88745C014F8628C003D2B3F /* OCSReturnValue.m */,
 				07EEC08D15DAB3960012CA03 /* OCSException.m */,
 				07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */,
@@ -905,6 +913,7 @@
 				07CAF35315DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
 				07CAF35915DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 				077CE43115DC152B00512830 /* OCSMethodCallerSpec.m in Sources */,
+				F8FC52FF14AE515000D714B8 /* OCSInvocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -950,6 +959,7 @@
 				07CAF35415DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
 				07CAF35A15DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 				077CE43215DC152B00512830 /* OCSMethodCallerSpec.m in Sources */,
+				F8FC52FF14AE515000D714B9 /* OCSInvocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -991,6 +1001,7 @@
 				079CCEDF15DAFB99003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 				07CAF35215DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
 				07CAF35815DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
+				F8FC52FF14AE515000D714B7 /* OCSInvocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1032,6 +1043,7 @@
 				079CCEE015DAFB9A003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
 				07CAF35115DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
 				07CAF35715DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
+				F8FC52FF14AE515000D714B6 /* OCSInvocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
