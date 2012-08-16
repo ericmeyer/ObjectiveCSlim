@@ -12,7 +12,7 @@ http://fitnesse.org/FitNesse.UserGuide.SliM has more information about what Slim
 
 https://github.com/dougbradbury/cslim
 
-This project is an example project using the cslim project as a dependency via a git submodule.  If you make changes/additions to Objective C Slim, make sure to make those in the cslim project.
+This project is an example project using the cslim project as a dependency via a git submodule.  If you make changes/additions to Objective C Slim, make sure to push those to the cslim project.  Also, new files should typically be added to the cslim submodule.
 
 # Running These Examples
 
