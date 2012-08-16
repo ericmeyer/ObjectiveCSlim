@@ -1,6 +1,12 @@
-# Objective C Slim
+# Using Objective C Slim
+
+## See here for installation/setup instructions: https://github.com/ericmeyer/OCSlim-Templates
+
+# What is Objective C Slim?
 
 This provides a way to write acceptance tests for your iOS and other Objective C applications using Slim tables and fixtures written in Objective C.
+
+http://fitnesse.org/FitNesse.UserGuide.SliM has more information about what Slim is.
 
 # Making Changes to Objective C Slim
 
