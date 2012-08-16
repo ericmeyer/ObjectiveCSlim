@@ -1352,6 +1352,7 @@
 				077CE42B15DC08BE00512830 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSpecs" */ = {
 			isa = XCConfigurationList;
