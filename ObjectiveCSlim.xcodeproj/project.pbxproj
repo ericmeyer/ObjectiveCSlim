@@ -50,10 +50,10 @@
 		07CAF35215DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */; };
 		07CAF35315DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */; };
 		07CAF35415DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */; };
-		07CAF35715DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07CAF35815DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07CAF35915DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07CAF35A15DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07CAF35715DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
+		07CAF35815DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
+		07CAF35915DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
+		07CAF35A15DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
 		07EEC09015DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09115DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09215DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
