@@ -44,6 +44,8 @@
 		07572D2315DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */; };
 		07572D2515DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */; };
 		07572D2615DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */; };
+		07572D2C15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */; };
+		07572D2D15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */; };
 		077CE43115DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
 		077CE43215DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
 		079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
@@ -284,6 +286,7 @@
 		07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInvocationSpec.m; path = cslim/tests/ObjectiveC/OCSInvocationSpec.m; sourceTree = "<group>"; };
 		07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSymbolDictionarySpec.m; path = cslim/tests/ObjectiveC/OCSSymbolDictionarySpec.m; sourceTree = "<group>"; };
 		07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSExceptionSpec.m; path = cslim/tests/ObjectiveC/OCSExceptionSpec.m; sourceTree = "<group>"; };
+		07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSObjectiveCtoCBridgeSpec.m; path = cslim/tests/ObjectiveC/OCSObjectiveCtoCBridgeSpec.m; sourceTree = "<group>"; };
 		077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCallerSpec.m; path = cslim/tests/ObjectiveC/OCSMethodCallerSpec.m; sourceTree = "<group>"; };
 		0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
 		079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutorSpec.m; path = cslim/tests/ObjectiveC/OCSStatementExecutorSpec.m; sourceTree = "<group>"; };
@@ -425,6 +428,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07572D2715DEAC5B007B0FDF /* Objective C */ = {
+			isa = PBXGroup;
+			children = (
+				07572D2815DEAC90007B0FDF /* include */,
+				07572D2915DEACA3007B0FDF /* src */,
+			);
+			name = "Objective C";
+			sourceTree = "<group>";
+		};
+		07572D2815DEAC90007B0FDF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC52FF14AE515000D714BA /* OCSInvocation.h */,
+				07EEC08A15DAB37C0012CA03 /* OCSException.h */,
+				07EEC08B15DAB37C0012CA03 /* OCSStatementExecutor.h */,
+				07EEC08C15DAB37C0012CA03 /* OCSSymbolDictionary.h */,
+				F88745BF14F8628C003D2B3F /* OCSReturnValue.h */,
+				079CCEDB15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.h */,
+				07CAF34F15DB3CB2008FCC0C /* OCSInstanceCreator.h */,
+				07CAF35515DB4861008FCC0C /* OCSMethodCaller.h */,
+				F8FC52C014AE475600D714B4 /* StatementExecutor.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		07572D2915DEACA3007B0FDF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC52FF14AE515000D714B5 /* OCSInvocation.m */,
+				F88745C014F8628C003D2B3F /* OCSReturnValue.m */,
+				07EEC08D15DAB3960012CA03 /* OCSException.m */,
+				07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */,
+				07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */,
+				079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */,
+				07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */,
+				07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */,
+				F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		07572D2A15DEACBF007B0FDF /* c */ = {
+			isa = PBXGroup;
+			children = (
+				F8FC52B914AE475600D714B4 /* ListExecutor.h */,
+				F8FC52BA14AE475600D714B4 /* Slim.h */,
+				F8FC52BB14AE475600D714B4 /* SlimConnectionHandler.h */,
+				F8FC52BC14AE475600D714B4 /* SlimList.h */,
+				F8FC52BD14AE475600D714B4 /* SlimListDeserializer.h */,
+				F8FC52C214AE478F00D714B4 /* SocketServer.h */,
+				F8FC52C314AE478F00D714B4 /* TcpComLink.h */,
+				F8FC52BE14AE475600D714B4 /* SlimListSerializer.h */,
+				F8FC52BF14AE475600D714B4 /* SlimUtil.h */,
+				F8FC52C414AE47A500D714B4 /* ListExecutor.c */,
+				F8FC52D614AE49B300D714B4 /* Fixtures.h */,
+				F8FC52C514AE47A500D714B4 /* Slim.c */,
+				F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */,
+				F8FC52C714AE47A500D714B4 /* SlimList.c */,
+				F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */,
+				F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */,
+				F8FC52CA14AE47A500D714B4 /* SlimUtil.c */,
+				F8FC52CC14AE47B200D714B4 /* SocketServer.c */,
+				F8FC52CD14AE47B200D714B4 /* TcpComLink.c */,
+			);
+			name = c;
+			sourceTree = "<group>";
+		};
 		0795B2C115D9A1DE000D3DD4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,13 +594,14 @@
 				07F1C34215D9B77D00ECBC7F /* iOSSpecKit */,
 				07F1C2F415D9B17000ECBC7F /* MacSpecKit */,
 				F8FC52D314AE498900D714B4 /* Fixtures.m */,
-				079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */,
 				07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */,
+				079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */,
 				07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */,
 				07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */,
 				077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */,
 				07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */,
 				07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */,
+				07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -615,44 +686,9 @@
 		F8FC52B714AE472600D714B4 /* cslim */ = {
 			isa = PBXGroup;
 			children = (
+				07572D2A15DEACBF007B0FDF /* c */,
+				07572D2715DEAC5B007B0FDF /* Objective C */,
 				F8F160111587A3DB0092AA09 /* bin */,
-				F8FC52B914AE475600D714B4 /* ListExecutor.h */,
-				F8FC52BA14AE475600D714B4 /* Slim.h */,
-				F8FC52BB14AE475600D714B4 /* SlimConnectionHandler.h */,
-				F8FC52BC14AE475600D714B4 /* SlimList.h */,
-				F8FC52BD14AE475600D714B4 /* SlimListDeserializer.h */,
-				F8FC52C214AE478F00D714B4 /* SocketServer.h */,
-				F8FC52C314AE478F00D714B4 /* TcpComLink.h */,
-				F8FC52BE14AE475600D714B4 /* SlimListSerializer.h */,
-				F8FC52BF14AE475600D714B4 /* SlimUtil.h */,
-				F8FC52C014AE475600D714B4 /* StatementExecutor.h */,
-				F8FC52C414AE47A500D714B4 /* ListExecutor.c */,
-				F8FC52D614AE49B300D714B4 /* Fixtures.h */,
-				F8FC52C514AE47A500D714B4 /* Slim.c */,
-				F8FC52FF14AE515000D714BA /* OCSInvocation.h */,
-				07EEC08A15DAB37C0012CA03 /* OCSException.h */,
-				07EEC08B15DAB37C0012CA03 /* OCSStatementExecutor.h */,
-				07EEC08C15DAB37C0012CA03 /* OCSSymbolDictionary.h */,
-				F88745BF14F8628C003D2B3F /* OCSReturnValue.h */,
-				F8FC52FF14AE515000D714B5 /* OCSInvocation.m */,
-				F88745C014F8628C003D2B3F /* OCSReturnValue.m */,
-				07EEC08D15DAB3960012CA03 /* OCSException.m */,
-				07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */,
-				07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */,
-				F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */,
-				F8FC52C714AE47A500D714B4 /* SlimList.c */,
-				F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */,
-				F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */,
-				F8FC52CA14AE47A500D714B4 /* SlimUtil.c */,
-				F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */,
-				F8FC52CC14AE47B200D714B4 /* SocketServer.c */,
-				F8FC52CD14AE47B200D714B4 /* TcpComLink.c */,
-				079CCEDB15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.h */,
-				079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */,
-				07CAF34F15DB3CB2008FCC0C /* OCSInstanceCreator.h */,
-				07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */,
-				07CAF35515DB4861008FCC0C /* OCSMethodCaller.h */,
-				07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */,
 			);
 			name = cslim;
 			sourceTree = "<group>";
@@ -929,6 +965,7 @@
 				07572D1F15DE6919007B0FDF /* OCSInvocationSpec.m in Sources */,
 				07572D2215DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */,
 				07572D2515DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */,
+				07572D2C15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -978,6 +1015,7 @@
 				07572D2015DE6919007B0FDF /* OCSInvocationSpec.m in Sources */,
 				07572D2315DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */,
 				07572D2615DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */,
+				07572D2D15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
