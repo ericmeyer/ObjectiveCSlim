@@ -38,6 +38,12 @@
 /* Begin PBXBuildFile section */
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
+		07572D1F15DE6919007B0FDF /* OCSInvocationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */; };
+		07572D2015DE6919007B0FDF /* OCSInvocationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */; };
+		07572D2215DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */; };
+		07572D2315DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */; };
+		07572D2515DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */; };
+		07572D2615DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */; };
 		077CE43115DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
 		077CE43215DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
 		079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
@@ -275,6 +281,9 @@
 
 /* Begin PBXFileReference section */
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInvocationSpec.m; path = cslim/tests/ObjectiveC/OCSInvocationSpec.m; sourceTree = "<group>"; };
+		07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSymbolDictionarySpec.m; path = cslim/tests/ObjectiveC/OCSSymbolDictionarySpec.m; sourceTree = "<group>"; };
+		07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSExceptionSpec.m; path = cslim/tests/ObjectiveC/OCSExceptionSpec.m; sourceTree = "<group>"; };
 		077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCallerSpec.m; path = cslim/tests/ObjectiveC/OCSMethodCallerSpec.m; sourceTree = "<group>"; };
 		0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
 		079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutorSpec.m; path = cslim/tests/ObjectiveC/OCSStatementExecutorSpec.m; sourceTree = "<group>"; };
@@ -517,8 +526,11 @@
 				F8FC52D314AE498900D714B4 /* Fixtures.m */,
 				079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */,
 				07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */,
+				07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */,
 				07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */,
 				077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */,
+				07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */,
+				07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -914,6 +926,9 @@
 				07CAF35915DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 				077CE43115DC152B00512830 /* OCSMethodCallerSpec.m in Sources */,
 				F8FC52FF14AE515000D714B8 /* OCSInvocation.m in Sources */,
+				07572D1F15DE6919007B0FDF /* OCSInvocationSpec.m in Sources */,
+				07572D2215DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */,
+				07572D2515DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -960,6 +975,9 @@
 				07CAF35A15DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 				077CE43215DC152B00512830 /* OCSMethodCallerSpec.m in Sources */,
 				F8FC52FF14AE515000D714B9 /* OCSInvocation.m in Sources */,
+				07572D2015DE6919007B0FDF /* OCSInvocationSpec.m in Sources */,
+				07572D2315DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */,
+				07572D2615DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
