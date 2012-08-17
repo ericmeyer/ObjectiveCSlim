@@ -26,7 +26,7 @@
     SlimList_AddList(subList, subSubList);
     SlimList_AddList(subList, subSubList2);
     SlimList_AddList(list, subList);
-    return [NSString stringWithFormat: @"%s", SlimList_Serialize(list)];
+    return [NSString stringWithUTF8String: SlimList_Serialize(list)];
 }
 
 @end

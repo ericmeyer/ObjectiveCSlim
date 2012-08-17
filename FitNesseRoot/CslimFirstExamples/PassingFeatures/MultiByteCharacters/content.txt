@@ -1,0 +1,3 @@
+!|script           |ValidInputTypes |
+|call with NSString|Köln            |
+|check             |called with|Köln|
