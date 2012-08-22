@@ -46,6 +46,12 @@
 		07572D2615DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */; };
 		07572D2C15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */; };
 		07572D2D15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */; };
+		0757BB4215E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
+		0757BB4315E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
+		0757BB4415E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
+		0757BB4515E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
+		0757BB4715E3373F00604742 /* OCSSelectorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4615E3373F00604742 /* OCSSelectorSpec.m */; };
+		0757BB4815E3373F00604742 /* OCSSelectorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4615E3373F00604742 /* OCSSelectorSpec.m */; };
 		077CE43115DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
 		077CE43215DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
 		079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
@@ -287,6 +293,9 @@
 		07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSymbolDictionarySpec.m; path = cslim/tests/ObjectiveC/OCSSymbolDictionarySpec.m; sourceTree = "<group>"; };
 		07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSExceptionSpec.m; path = cslim/tests/ObjectiveC/OCSExceptionSpec.m; sourceTree = "<group>"; };
 		07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSObjectiveCtoCBridgeSpec.m; path = cslim/tests/ObjectiveC/OCSObjectiveCtoCBridgeSpec.m; sourceTree = "<group>"; };
+		0757BB4015E3361200604742 /* OCSSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSSelector.h; path = cslim/include/ExecutorObjectiveC/OCSSelector.h; sourceTree = "<group>"; };
+		0757BB4115E3366800604742 /* OCSSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSelector.m; path = cslim/src/ExecutorObjectiveC/OCSSelector.m; sourceTree = "<group>"; };
+		0757BB4615E3373F00604742 /* OCSSelectorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSelectorSpec.m; path = cslim/tests/ObjectiveC/OCSSelectorSpec.m; sourceTree = "<group>"; };
 		077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCallerSpec.m; path = cslim/tests/ObjectiveC/OCSMethodCallerSpec.m; sourceTree = "<group>"; };
 		0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
 		079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutorSpec.m; path = cslim/tests/ObjectiveC/OCSStatementExecutorSpec.m; sourceTree = "<group>"; };
@@ -448,6 +457,7 @@
 				079CCEDB15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.h */,
 				07CAF34F15DB3CB2008FCC0C /* OCSInstanceCreator.h */,
 				07CAF35515DB4861008FCC0C /* OCSMethodCaller.h */,
+				0757BB4015E3361200604742 /* OCSSelector.h */,
 				F8FC52C014AE475600D714B4 /* StatementExecutor.h */,
 			);
 			name = include;
@@ -465,6 +475,7 @@
 				07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */,
 				07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */,
 				F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */,
+				0757BB4115E3366800604742 /* OCSSelector.m */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -602,6 +613,7 @@
 				07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */,
 				07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */,
 				07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */,
+				0757BB4615E3373F00604742 /* OCSSelectorSpec.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -966,6 +978,8 @@
 				07572D2215DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */,
 				07572D2515DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */,
 				07572D2C15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
+				0757BB4415E3366800604742 /* OCSSelector.m in Sources */,
+				0757BB4715E3373F00604742 /* OCSSelectorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1016,6 +1030,8 @@
 				07572D2315DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */,
 				07572D2615DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */,
 				07572D2D15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
+				0757BB4515E3366800604742 /* OCSSelector.m in Sources */,
+				0757BB4815E3373F00604742 /* OCSSelectorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1058,6 +1074,7 @@
 				07CAF35215DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
 				07CAF35815DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 				F8FC52FF14AE515000D714B7 /* OCSInvocation.m in Sources */,
+				0757BB4315E3366800604742 /* OCSSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1100,6 +1117,7 @@
 				07CAF35115DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
 				07CAF35715DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
 				F8FC52FF14AE515000D714B6 /* OCSInvocation.m in Sources */,
+				0757BB4215E3366800604742 /* OCSSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
