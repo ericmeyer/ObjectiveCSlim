@@ -36,6 +36,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		071CE5FC15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */; };
+		071CE5FD15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */; };
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		07572D1F15DE6919007B0FDF /* OCSInvocationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */; };
@@ -288,6 +290,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInstanceCreatorSpec.m; path = cslim/tests/ObjectiveC/OCSInstanceCreatorSpec.m; sourceTree = "<group>"; };
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInvocationSpec.m; path = cslim/tests/ObjectiveC/OCSInvocationSpec.m; sourceTree = "<group>"; };
 		07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSymbolDictionarySpec.m; path = cslim/tests/ObjectiveC/OCSSymbolDictionarySpec.m; sourceTree = "<group>"; };
@@ -614,6 +617,7 @@
 				07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */,
 				07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */,
 				0757BB4615E3373F00604742 /* OCSSelectorSpec.m */,
+				071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */,
 			);
 			name = Specs;
 			sourceTree = "<group>";
@@ -980,6 +984,7 @@
 				07572D2C15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
 				0757BB4415E3366800604742 /* OCSSelector.m in Sources */,
 				0757BB4715E3373F00604742 /* OCSSelectorSpec.m in Sources */,
+				071CE5FC15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1032,6 +1037,7 @@
 				07572D2D15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
 				0757BB4515E3366800604742 /* OCSSelector.m in Sources */,
 				0757BB4815E3373F00604742 /* OCSSelectorSpec.m in Sources */,
+				071CE5FD15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
