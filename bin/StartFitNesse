@@ -1,5 +1,5 @@
 if [[ $1 ]]; then
-  java -jar fitnesse.jar -e 0 -p $1
+  java -jar fitnesse-standalone.jar -e 0 -p $1
 else
-  java -jar fitnesse.jar -e 0 -p 8080
+  java -jar fitnesse-standalone.jar -e 0 -p 8080
 fi
