@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "NO"
+      parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07381AEB15ADAF63000B0A38"
-               BuildableName = "AllTests"
-               BlueprintName = "AllTests"
-               ReferencedContainer = "container:ObjectiveCSlim.xcodeproj">
+               BlueprintIdentifier = "2966CAD44C1549A7B7210B23"
+               BuildableName = "libPods-mac_test-OCDSpec2.a"
+               BlueprintName = "Pods-mac_test-OCDSpec2"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

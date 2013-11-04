@@ -13,8 +13,6 @@
 			buildPhases = (
 			);
 			dependencies = (
-				07F1C36E15D9B80700ECBC7F /* PBXTargetDependency */,
-				07F1C37015D9B80700ECBC7F /* PBXTargetDependency */,
 				07381AF115ADAF73000B0A38 /* PBXTargetDependency */,
 				07381AF515ADAF73000B0A38 /* PBXTargetDependency */,
 			);
@@ -27,8 +25,8 @@
 			buildPhases = (
 			);
 			dependencies = (
-				077CE42D15DC08C700512830 /* PBXTargetDependency */,
-				077CE42F15DC08C700512830 /* PBXTargetDependency */,
+				07080BAE182D50D8007234D0 /* PBXTargetDependency */,
+				07080BB0182D50D8007234D0 /* PBXTargetDependency */,
 			);
 			name = AllSpecs;
 			productName = AllSpecs;
@@ -36,120 +34,121 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		071CE5FC15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */; };
-		071CE5FD15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */; };
+		07080B56182D47AC007234D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
+		07080B57182D47AC007234D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
+		07080B58182D47AC007234D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */; };
+		07080B5E182D47AC007234D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07080B5C182D47AC007234D0 /* InfoPlist.strings */; };
+		07080B60182D47AC007234D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07080B5F182D47AC007234D0 /* main.m */; };
+		07080B7F182D4D49007234D0 /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
+		07080B80182D4D49007234D0 /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
+		07080B81182D4D49007234D0 /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
+		07080B82182D4D49007234D0 /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
+		07080B83182D4D49007234D0 /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
+		07080B84182D4D49007234D0 /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
+		07080B85182D4D49007234D0 /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
+		07080B86182D4D49007234D0 /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
+		07080B87182D4D49007234D0 /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
+		07080B88182D4D55007234D0 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
+		07080B89182D4D55007234D0 /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07080B8A182D4D55007234D0 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
+		07080B8B182D4D55007234D0 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
+		07080B8C182D4D55007234D0 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
+		07080B8D182D4D55007234D0 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
+		07080B8E182D4D55007234D0 /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */; };
+		07080B8F182D4D55007234D0 /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
+		07080B90182D4D55007234D0 /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
+		07080B91182D4D55007234D0 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
+		07080B93182D4FDC007234D0 /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
+		07080B94182D4FDC007234D0 /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
+		07080B95182D4FDC007234D0 /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
+		07080B96182D4FDC007234D0 /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
+		07080B97182D4FDC007234D0 /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
+		07080B98182D4FDC007234D0 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
+		07080B99182D4FDC007234D0 /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
+		07080B9A182D4FDC007234D0 /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
+		07080B9B182D4FDC007234D0 /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
+		07080B9C182D4FDC007234D0 /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
+		07080B9D182D4FDC007234D0 /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
+		07080B9E182D4FDC007234D0 /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
+		07080B9F182D4FE7007234D0 /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
+		07080BA0182D4FF6007234D0 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
+		07080BA1182D4FF6007234D0 /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07080BA2182D5023007234D0 /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
+		07080BA3182D5023007234D0 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
+		07080BA4182D502A007234D0 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
+		07080BA5182D502A007234D0 /* OCSExceptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */; };
+		07080BA6182D502A007234D0 /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07080BA7182D502A007234D0 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
+		07080BA8182D502A007234D0 /* OCSInvocationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */; };
+		07080BA9182D502A007234D0 /* OCSSymbolDictionarySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */; };
+		07080BAA182D502A007234D0 /* OCSObjectiveCtoCBridgeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */; };
+		07080BAB182D502A007234D0 /* OCSSelectorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4615E3373F00604742 /* OCSSelectorSpec.m */; };
+		07080BAC182D502A007234D0 /* OCSInstanceCreatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */; };
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
-		07572D1F15DE6919007B0FDF /* OCSInvocationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */; };
-		07572D2015DE6919007B0FDF /* OCSInvocationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */; };
-		07572D2215DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */; };
-		07572D2315DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */; };
-		07572D2515DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */; };
-		07572D2615DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */; };
-		07572D2C15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */; };
-		07572D2D15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */; };
 		0757BB4215E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
 		0757BB4315E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
-		0757BB4415E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
-		0757BB4515E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
-		0757BB4715E3373F00604742 /* OCSSelectorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4615E3373F00604742 /* OCSSelectorSpec.m */; };
-		0757BB4815E3373F00604742 /* OCSSelectorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4615E3373F00604742 /* OCSSelectorSpec.m */; };
-		077CE43115DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
-		077CE43215DC152B00512830 /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
-		079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
-		079CCEDA15DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
-		079CCEDD15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
-		079CCEDE15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
 		079CCEDF15DAFB99003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
 		079CCEE015DAFB9A003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
+		07C87F641827E4DB00862F2E /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07C87F651827E4F800862F2E /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
+		07C87F661827E4FD00862F2E /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
+		07C87F671827E50700862F2E /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
+		07C87F681827E54000862F2E /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
+		07C87F691827E54300862F2E /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
+		07C87F6A1827E54500862F2E /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
+		07C87F6B1827E55200862F2E /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
+		07C87F6C1827E55400862F2E /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
+		07C87F6D1827E55600862F2E /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
+		07C87F6E1827E55900862F2E /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
+		07C87F6F1827E56E00862F2E /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
+		07C87F701827E57200862F2E /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
+		07C87F711827E58200862F2E /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
+		07C87F721827E59C00862F2E /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
+		07C87F731827E59C00862F2E /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
+		07C87F741827E59C00862F2E /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
+		07C87F751827E59C00862F2E /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
+		07C87F761827E59C00862F2E /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
+		07C87F771827E59C00862F2E /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
+		07C87F781827E59C00862F2E /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
+		07C87F791827E59C00862F2E /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
+		07C87F7A1827E59C00862F2E /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
+		07C87F7B1827E5AD00862F2E /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
+		07C87F7C1827E5BB00862F2E /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
+		07C87F7D1827E5C600862F2E /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
+		07C87F7E1827E5C600862F2E /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
+		07C87F7F1827E5FA00862F2E /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
+		07C87F801827E60500862F2E /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
+		07C87F811827E60800862F2E /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
+		07C87F821827E62600862F2E /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
+		07C87F831827E62600862F2E /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
+		07C87F841827E62600862F2E /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */; };
+		07C87F851827E62600862F2E /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
+		07C87F861827E62600862F2E /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
+		07C87F871827E63800862F2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CB31571827E20A008F4658 /* main.m */; };
+		07C87F881827E66500862F2E /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07C87F891827E66F00862F2E /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07C87F8A1827EC8E00862F2E /* OCSInstanceCreatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */; };
+		07C87F8B1827EC9600862F2E /* OCSStatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */; };
+		07C87F8C1827EC9600862F2E /* OCSExceptionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2415DEABE5007B0FDF /* OCSExceptionSpec.m */; };
+		07C87F8D1827EC9600862F2E /* OCSMethodCallerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */; };
+		07C87F8E1827EC9600862F2E /* OCSInvocationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */; };
+		07C87F8F1827EC9600862F2E /* OCSSymbolDictionarySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2115DEA593007B0FDF /* OCSSymbolDictionarySpec.m */; };
+		07C87F901827EC9600862F2E /* OCSObjectiveCtoCBridgeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */; };
+		07C87F911827EC9600862F2E /* OCSSelectorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4615E3373F00604742 /* OCSSelectorSpec.m */; };
 		07CAF35115DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */; };
 		07CAF35215DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */; };
-		07CAF35315DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */; };
-		07CAF35415DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */; };
 		07CAF35715DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
 		07CAF35815DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
-		07CAF35915DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
-		07CAF35A15DB4861008FCC0C /* OCSMethodCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */; };
+		07CB31551827E20A008F4658 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
 		07EEC09015DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09115DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
-		07EEC09215DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
-		07EEC09315DAB3960012CA03 /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		07EEC09415DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
 		07EEC09515DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
-		07EEC09615DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
-		07EEC09715DAB3960012CA03 /* OCSStatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08E15DAB3960012CA03 /* OCSStatementExecutor.m */; };
 		07EEC09815DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
 		07EEC09915DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
-		07EEC09A15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
-		07EEC09B15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
-		07F1C2F315D9B17000ECBC7F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ED9F001448BDF900DCBB3F /* Cocoa.framework */; };
-		07F1C2F615D9B17000ECBC7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2F515D9B17000ECBC7F /* main.m */; };
-		07F1C2FD15D9B1DB00ECBC7F /* libSpecKitMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0795B2CD15D9A1DE000D3DD4 /* libSpecKitMac.a */; };
-		07F1C2FE15D9B1E300ECBC7F /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07F1C31B15D9B3B400ECBC7F /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
-		07F1C31C15D9B3B400ECBC7F /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
-		07F1C31D15D9B3B400ECBC7F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07F1C31E15D9B3B400ECBC7F /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
-		07F1C31F15D9B3B400ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
-		07F1C32015D9B3B400ECBC7F /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
-		07F1C32115D9B3B400ECBC7F /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
-		07F1C32215D9B3B400ECBC7F /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
-		07F1C32315D9B3B400ECBC7F /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
-		07F1C32415D9B3B400ECBC7F /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
-		07F1C32515D9B3B400ECBC7F /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
-		07F1C32615D9B3B400ECBC7F /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
-		07F1C32715D9B3B400ECBC7F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
-		07F1C32815D9B3B400ECBC7F /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
-		07F1C32915D9B3B400ECBC7F /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
-		07F1C32A15D9B3B400ECBC7F /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
-		07F1C32B15D9B3B400ECBC7F /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
-		07F1C32C15D9B3B400ECBC7F /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
-		07F1C32D15D9B3B400ECBC7F /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
-		07F1C32E15D9B3B400ECBC7F /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
-		07F1C32F15D9B3B400ECBC7F /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
-		07F1C33015D9B3B400ECBC7F /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
-		07F1C33115D9B3B400ECBC7F /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
-		07F1C33215D9B3B400ECBC7F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
-		07F1C33315D9B3B400ECBC7F /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
-		07F1C33415D9B3B400ECBC7F /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
-		07F1C33515D9B3B400ECBC7F /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
-		07F1C33715D9B69600ECBC7F /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07F1C33F15D9B77D00ECBC7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
-		07F1C34015D9B77D00ECBC7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
-		07F1C34115D9B77D00ECBC7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */; };
-		07F1C34715D9B77D00ECBC7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07F1C34515D9B77D00ECBC7F /* InfoPlist.strings */; };
-		07F1C34915D9B77D00ECBC7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C34815D9B77D00ECBC7F /* main.m */; };
-		07F1C34E15D9B78500ECBC7F /* libSpecKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0795B2CB15D9A1DE000D3DD4 /* libSpecKit.a */; };
-		07F1C34F15D9B7C100ECBC7F /* ListExecutor.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C414AE47A500D714B4 /* ListExecutor.c */; };
-		07F1C35015D9B7C100ECBC7F /* Slim.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C514AE47A500D714B4 /* Slim.c */; };
-		07F1C35115D9B7C100ECBC7F /* OCSReturnValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C014F8628C003D2B3F /* OCSReturnValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07F1C35215D9B7C100ECBC7F /* SlimConnectionHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C614AE47A500D714B4 /* SlimConnectionHandler.c */; };
-		07F1C35315D9B7C100ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
-		07F1C35415D9B7C100ECBC7F /* SlimListDeserializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C814AE47A500D714B4 /* SlimListDeserializer.c */; };
-		07F1C35515D9B7C100ECBC7F /* SlimListSerializer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C914AE47A500D714B4 /* SlimListSerializer.c */; };
-		07F1C35615D9B7C100ECBC7F /* SlimUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CA14AE47A500D714B4 /* SlimUtil.c */; };
-		07F1C35715D9B7C100ECBC7F /* StatementExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CE14AE47D500D714B4 /* StatementExecutor.m */; };
-		07F1C35815D9B7C100ECBC7F /* SocketServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CC14AE47B200D714B4 /* SocketServer.c */; };
-		07F1C35915D9B7C100ECBC7F /* TcpComLink.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52CD14AE47B200D714B4 /* TcpComLink.c */; };
-		07F1C35A15D9B7C100ECBC7F /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
-		07F1C35B15D9B7C100ECBC7F /* ValidReturnTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */; };
-		07F1C35C15D9B7C100ECBC7F /* RespondsToStringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C414F862B4003D2B3F /* RespondsToStringValue.m */; };
-		07F1C35E15D9B7C100ECBC7F /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
-		07F1C35F15D9B7C100ECBC7F /* Count.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DA614671E11001FC9E6 /* Count.m */; };
-		07F1C36015D9B7C100ECBC7F /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = F8543DB314683673001FC9E6 /* Math.m */; };
-		07F1C36115D9B7C100ECBC7F /* EchoFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E28146C2BE500D064A5 /* EchoFixture.m */; };
-		07F1C36215D9B7C100ECBC7F /* TestQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E2D146DC1CE00D064A5 /* TestQuery.m */; };
-		07F1C36315D9B7C100ECBC7F /* TearDown.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E30146E05E700D064A5 /* TearDown.m */; };
-		07F1C36415D9B7C100ECBC7F /* PageDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E33146E060400D064A5 /* PageDriver.m */; };
-		07F1C36515D9B7C100ECBC7F /* SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E37146E061E00D064A5 /* SetUp.m */; };
-		07F1C36615D9B7C100ECBC7F /* Uncle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E91E3A14706A9B00D064A5 /* Uncle.m */; };
-		07F1C36715D9B7C100ECBC7F /* Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E7F7D1582B0F1004C029E /* Adder.m */; };
-		07F1C36815D9B7C100ECBC7F /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52D314AE498900D714B4 /* Fixtures.m */; };
-		07F1C36915D9B7C100ECBC7F /* TestSlim.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FA14AE515000D714B4 /* TestSlim.m */; };
-		07F1C36A15D9B7C100ECBC7F /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
-		07F1C36B15D9B7C100ECBC7F /* StatementExecutorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		07F1C36C15D9B7C100ECBC7F /* OCSReturnValueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		07F1C37115D9B8BE00ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
+		CED15DBB346E462F89555F60 /* libPods-mac_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBF0EB14B2B4B8EADBF31FE /* libPods-mac_test.a */; };
 		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F81E7F4F1582AAF6004C029E /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
 		F81E7F511582AAF6004C029E /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
@@ -212,11 +211,24 @@
 		F8FC52FF14AE515000D714B4 /* TestSlimTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */; };
 		F8FC52FF14AE515000D714B6 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
 		F8FC52FF14AE515000D714B7 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
-		F8FC52FF14AE515000D714B8 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
-		F8FC52FF14AE515000D714B9 /* OCSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52FF14AE515000D714B5 /* OCSInvocation.m */; };
+		FCC7DBC93C3948AE8EC89B1E /* libPods-ios_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4E52656122470E924229CD /* libPods-ios_test.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		07080BAD182D50D8007234D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07CB31531827E20A008F4658;
+			remoteInfo = MacSpecs;
+		};
+		07080BAF182D50D8007234D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07080B54182D47AC007234D0;
+			remoteInfo = iOSSpecs;
+		};
 		07381AF015ADAF73000B0A38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
@@ -231,65 +243,14 @@
 			remoteGlobalIDString = F81E7F4C1582AAF6004C029E;
 			remoteInfo = iOSAcceptanceTests;
 		};
-		077CE42C15DC08C700512830 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 07F1C2F015D9B17000ECBC7F;
-			remoteInfo = MacSpecs;
-		};
-		077CE42E15DC08C700512830 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 07F1C33C15D9B77D00ECBC7F;
-			remoteInfo = iOSSpecs;
-		};
-		0795B2CA15D9A1DE000D3DD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 94A6BA5A15BB2DE7003F22B6;
-			remoteInfo = SpecKit;
-		};
-		0795B2CC15D9A1DE000D3DD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 942AAEEC15BBB3760006C241;
-			remoteInfo = SpecKitMac;
-		};
-		0795B2CE15D9A1DE000D3DD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 947F6C2515BC39A200C7CF3B;
-			remoteInfo = SpecKitTests;
-		};
-		0795B2D015D9A1DE000D3DD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 944FBF4E15C168C100BF85FC;
-			remoteInfo = SpecKitAcceptanceTest;
-		};
-		07F1C36D15D9B80700ECBC7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 07F1C2F015D9B17000ECBC7F;
-			remoteInfo = MacSK;
-		};
-		07F1C36F15D9B80700ECBC7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8ED9EF31448BDF900DCBB3F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 07F1C33C15D9B77D00ECBC7F;
-			remoteInfo = iOSSpecKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07080B55182D47AC007234D0 /* iOSSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07080B5B182D47AC007234D0 /* iOSSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSSpecs-Info.plist"; sourceTree = "<group>"; };
+		07080B5D182D47AC007234D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07080B5F182D47AC007234D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07080B61182D47AC007234D0 /* iOSSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInstanceCreatorSpec.m; path = cslim/tests/ObjectiveC/OCSInstanceCreatorSpec.m; sourceTree = "<group>"; };
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInvocationSpec.m; path = cslim/tests/ObjectiveC/OCSInvocationSpec.m; sourceTree = "<group>"; };
@@ -300,7 +261,6 @@
 		0757BB4115E3366800604742 /* OCSSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSelector.m; path = cslim/src/ExecutorObjectiveC/OCSSelector.m; sourceTree = "<group>"; };
 		0757BB4615E3373F00604742 /* OCSSelectorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSelectorSpec.m; path = cslim/tests/ObjectiveC/OCSSelectorSpec.m; sourceTree = "<group>"; };
 		077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCallerSpec.m; path = cslim/tests/ObjectiveC/OCSMethodCallerSpec.m; sourceTree = "<group>"; };
-		0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpecKit.xcodeproj; path = SpecKit/SpecKit.xcodeproj; sourceTree = "<group>"; };
 		079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutorSpec.m; path = cslim/tests/ObjectiveC/OCSStatementExecutorSpec.m; sourceTree = "<group>"; };
 		079CCEDB15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSObjectiveCtoCBridge.h; path = cslim/include/ExecutorObjectiveC/OCSObjectiveCtoCBridge.h; sourceTree = "<group>"; };
 		079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSObjectiveCtoCBridge.m; path = cslim/src/ExecutorObjectiveC/OCSObjectiveCtoCBridge.m; sourceTree = "<group>"; };
@@ -308,6 +268,9 @@
 		07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInstanceCreator.m; path = cslim/src/ExecutorObjectiveC/OCSInstanceCreator.m; sourceTree = "<group>"; };
 		07CAF35515DB4861008FCC0C /* OCSMethodCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSMethodCaller.h; path = cslim/include/ExecutorObjectiveC/OCSMethodCaller.h; sourceTree = "<group>"; };
 		07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCaller.m; path = cslim/src/ExecutorObjectiveC/OCSMethodCaller.m; sourceTree = "<group>"; };
+		07CB31541827E20A008F4658 /* MacSpecs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacSpecs; sourceTree = BUILT_PRODUCTS_DIR; };
+		07CB31571827E20A008F4658 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07CB315A1827E20A008F4658 /* MacSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		07EEC08A15DAB37C0012CA03 /* OCSException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSException.h; path = cslim/include/ExecutorObjectiveC/OCSException.h; sourceTree = "<group>"; };
 		07EEC08B15DAB37C0012CA03 /* OCSStatementExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSStatementExecutor.h; path = cslim/include/ExecutorObjectiveC/OCSStatementExecutor.h; sourceTree = "<group>"; };
 		07EEC08C15DAB37C0012CA03 /* OCSSymbolDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSSymbolDictionary.h; path = cslim/include/ExecutorObjectiveC/OCSSymbolDictionary.h; sourceTree = "<group>"; };
@@ -316,15 +279,18 @@
 		07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSymbolDictionary.m; path = cslim/src/ExecutorObjectiveC/OCSSymbolDictionary.m; sourceTree = "<group>"; };
 		07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		07F1C2CA15D9A26D00ECBC7F /* StatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatementExecutorSpec.m; path = cslim/tests/ObjectiveC/StatementExecutorSpec.m; sourceTree = "<group>"; };
-		07F1C2F115D9B17000ECBC7F /* MacSpecs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacSpecs; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F1C2F515D9B17000ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07F1C2F815D9B17000ECBC7F /* MacSK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSK-Prefix.pch"; sourceTree = "<group>"; };
 		07F1C33615D9B69600ECBC7F /* OCSReturnValueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSReturnValueSpec.m; path = cslim/tests/ObjectiveC/OCSReturnValueSpec.m; sourceTree = "<group>"; };
-		07F1C33D15D9B77D00ECBC7F /* iOSSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F1C34415D9B77D00ECBC7F /* iOSSpecKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSSpecKit-Info.plist"; sourceTree = "<group>"; };
 		07F1C34615D9B77D00ECBC7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07F1C34815D9B77D00ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07F1C34A15D9B77D00ECBC7F /* iOSSpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSpecKit-Prefix.pch"; sourceTree = "<group>"; };
+		3EBF0EB14B2B4B8EADBF31FE /* libPods-mac_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mac_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9785FC8F202485F838C7229 /* Pods-ios_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_test.xcconfig"; path = "Pods/Pods-ios_test.xcconfig"; sourceTree = "<group>"; };
+		C861FF339B9545DA930AE737 /* Pods-mac_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mac_test.xcconfig"; path = "Pods/Pods-mac_test.xcconfig"; sourceTree = "<group>"; };
+		E9702D604C36413C856D2042 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4E52656122470E924229CD /* libPods-ios_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81ADAC91449CA8600BC821A /* ObjAdderFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjAdderFixture.h; sourceTree = "<group>"; };
 		F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjAdderFixture.m; sourceTree = "<group>"; };
 		F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -397,26 +363,27 @@
 		F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSlimTwo.m; path = cslim/tests/ObjectiveC/TestSlimTwo.m; sourceTree = "<group>"; };
 		F8FC52FF14AE515000D714B5 /* OCSInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInvocation.m; path = cslim/src/ExecutorObjectiveC/OCSInvocation.m; sourceTree = "<group>"; };
 		F8FC52FF14AE515000D714BA /* OCSInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSInvocation.h; path = cslim/include/ExecutorObjectiveC/OCSInvocation.h; sourceTree = "<group>"; };
+		FF8B6CE90DA047B09D2253BD /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		07F1C2EE15D9B17000ECBC7F /* Frameworks */ = {
+		07080B51182D47AC007234D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F1C2F315D9B17000ECBC7F /* Cocoa.framework in Frameworks */,
-				07F1C2FD15D9B1DB00ECBC7F /* libSpecKitMac.a in Frameworks */,
+				07080B56182D47AC007234D0 /* UIKit.framework in Frameworks */,
+				07080B57182D47AC007234D0 /* Foundation.framework in Frameworks */,
+				07080B58182D47AC007234D0 /* CoreGraphics.framework in Frameworks */,
+				FCC7DBC93C3948AE8EC89B1E /* libPods-ios_test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		07F1C33915D9B77D00ECBC7F /* Frameworks */ = {
+		07CB31511827E20A008F4658 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F1C33F15D9B77D00ECBC7F /* UIKit.framework in Frameworks */,
-				07F1C34015D9B77D00ECBC7F /* Foundation.framework in Frameworks */,
-				07F1C34115D9B77D00ECBC7F /* CoreGraphics.framework in Frameworks */,
-				07F1C34E15D9B78500ECBC7F /* libSpecKit.a in Frameworks */,
+				07CB31551827E20A008F4658 /* Cocoa.framework in Frameworks */,
+				CED15DBB346E462F89555F60 /* libPods-mac_test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +407,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07080B59182D47AC007234D0 /* iOSSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				07080B5A182D47AC007234D0 /* Supporting Files */,
+			);
+			path = iOSSpecs;
+			sourceTree = "<group>";
+		};
+		07080B5A182D47AC007234D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07080B5B182D47AC007234D0 /* iOSSpecs-Info.plist */,
+				07080B5C182D47AC007234D0 /* InfoPlist.strings */,
+				07080B5F182D47AC007234D0 /* main.m */,
+				07080B61182D47AC007234D0 /* iOSSpecs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		07572D2715DEAC5B007B0FDF /* Objective C */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,17 +495,6 @@
 			name = c;
 			sourceTree = "<group>";
 		};
-		0795B2C115D9A1DE000D3DD4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0795B2CB15D9A1DE000D3DD4 /* libSpecKit.a */,
-				0795B2CD15D9A1DE000D3DD4 /* libSpecKitMac.a */,
-				0795B2CF15D9A1DE000D3DD4 /* SpecKitTests.octest */,
-				0795B2D115D9A1DE000D3DD4 /* SpecKitAcceptanceTest.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		079CCED715DABB3C003C8A31 /* MockFixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +504,23 @@
 				F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */,
 			);
 			name = MockFixtures;
+			sourceTree = "<group>";
+		};
+		07CB31561827E20A008F4658 /* MacSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				07CB31591827E20A008F4658 /* Supporting Files */,
+			);
+			path = MacSpecs;
+			sourceTree = "<group>";
+		};
+		07CB31591827E20A008F4658 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07CB31571827E20A008F4658 /* main.m */,
+				07CB315A1827E20A008F4658 /* MacSpecs-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		07F1C2F415D9B17000ECBC7F /* MacSpecKit */ = {
@@ -625,13 +617,17 @@
 		F8ED9EF11448BDF900DCBB3F = {
 			isa = PBXGroup;
 			children = (
-				0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */,
 				F8FC52B714AE472600D714B4 /* cslim */,
 				F873F3CF1448BEF300FFCA02 /* Fixtures */,
 				F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */,
 				F8A425F41452110700FD4ECA /* Specs */,
+				07CB31561827E20A008F4658 /* MacSpecs */,
+				07080B59182D47AC007234D0 /* iOSSpecs */,
 				F8ED9EFF1448BDF900DCBB3F /* Frameworks */,
 				F8ED9EFD1448BDF900DCBB3F /* Products */,
+				FF8B6CE90DA047B09D2253BD /* Pods-test.xcconfig */,
+				A9785FC8F202485F838C7229 /* Pods-ios_test.xcconfig */,
+				C861FF339B9545DA930AE737 /* Pods-mac_test.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -640,8 +636,8 @@
 			children = (
 				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */,
 				F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */,
-				07F1C2F115D9B17000ECBC7F /* MacSpecs */,
-				07F1C33D15D9B77D00ECBC7F /* iOSSpecs.app */,
+				07CB31541827E20A008F4658 /* MacSpecs */,
+				07080B55182D47AC007234D0 /* iOSSpecs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -654,6 +650,9 @@
 				F8A425B4145208CC00FD4ECA /* Foundation.framework */,
 				07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */,
 				F8ED9F021448BDF900DCBB3F /* Other Frameworks */,
+				E9702D604C36413C856D2042 /* libPods-test.a */,
+				EE4E52656122470E924229CD /* libPods-ios_test.a */,
+				3EBF0EB14B2B4B8EADBF31FE /* libPods-mac_test.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -712,40 +711,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07F1C2F015D9B17000ECBC7F /* MacSpecs */ = {
+		07080B54182D47AC007234D0 /* iOSSpecs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSpecs" */;
+			buildConfigurationList = 07080B68182D47AC007234D0 /* Build configuration list for PBXNativeTarget "iOSSpecs" */;
 			buildPhases = (
-				07F1C2ED15D9B17000ECBC7F /* Sources */,
-				07F1C2EE15D9B17000ECBC7F /* Frameworks */,
-				07F1C2EF15D9B17000ECBC7F /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MacSpecs;
-			productName = MacSK;
-			productReference = 07F1C2F115D9B17000ECBC7F /* MacSpecs */;
-			productType = "com.apple.product-type.tool";
-		};
-		07F1C33C15D9B77D00ECBC7F /* iOSSpecs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 07F1C34B15D9B77D00ECBC7F /* Build configuration list for PBXNativeTarget "iOSSpecs" */;
-			buildPhases = (
-				07F1C33815D9B77D00ECBC7F /* Sources */,
-				07F1C33915D9B77D00ECBC7F /* Frameworks */,
-				07F1C33A15D9B77D00ECBC7F /* Resources */,
-				07F1C33B15D9B77D00ECBC7F /* ShellScript */,
+				D3BC0544F38444178AC9D244 /* Check Pods Manifest.lock */,
+				07080B50182D47AC007234D0 /* Sources */,
+				07080B51182D47AC007234D0 /* Frameworks */,
+				07080B52182D47AC007234D0 /* Resources */,
+				07080B53182D47AC007234D0 /* ShellScript */,
+				E30667BC428F46F2920CCF87 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iOSSpecs;
-			productName = iOSSpecKit;
-			productReference = 07F1C33D15D9B77D00ECBC7F /* iOSSpecs.app */;
+			productName = iOSSpecs;
+			productReference = 07080B55182D47AC007234D0 /* iOSSpecs.app */;
 			productType = "com.apple.product-type.application";
+		};
+		07CB31531827E20A008F4658 /* MacSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07CB315B1827E20A008F4658 /* Build configuration list for PBXNativeTarget "MacSpecs" */;
+			buildPhases = (
+				96281130E003456B8AE5254A /* Check Pods Manifest.lock */,
+				07CB31501827E20A008F4658 /* Sources */,
+				07CB31511827E20A008F4658 /* Frameworks */,
+				07CB31521827E20A008F4658 /* ShellScript */,
+				0E24A599A334427AB50D6A88 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacSpecs;
+			productName = MacSpecs;
+			productReference = 07CB31541827E20A008F4658 /* MacSpecs */;
+			productType = "com.apple.product-type.tool";
 		};
 		F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */ = {
 			isa = PBXNativeTarget;
@@ -801,61 +804,24 @@
 			mainGroup = F8ED9EF11448BDF900DCBB3F;
 			productRefGroup = F8ED9EFD1448BDF900DCBB3F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0795B2C115D9A1DE000D3DD4 /* Products */;
-					ProjectRef = 0795B2C015D9A1DE000D3DD4 /* SpecKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */,
 				F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */,
-				07F1C2F015D9B17000ECBC7F /* MacSpecs */,
-				07F1C33C15D9B77D00ECBC7F /* iOSSpecs */,
+				07CB31531827E20A008F4658 /* MacSpecs */,
+				07080B54182D47AC007234D0 /* iOSSpecs */,
 				07381AEB15ADAF63000B0A38 /* AllTests */,
 				077CE42815DC08BE00512830 /* AllSpecs */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		0795B2CB15D9A1DE000D3DD4 /* libSpecKit.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSpecKit.a;
-			remoteRef = 0795B2CA15D9A1DE000D3DD4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0795B2CD15D9A1DE000D3DD4 /* libSpecKitMac.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSpecKitMac.a;
-			remoteRef = 0795B2CC15D9A1DE000D3DD4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0795B2CF15D9A1DE000D3DD4 /* SpecKitTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SpecKitTests.octest;
-			remoteRef = 0795B2CE15D9A1DE000D3DD4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0795B2D115D9A1DE000D3DD4 /* SpecKitAcceptanceTest.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SpecKitAcceptanceTest.octest;
-			remoteRef = 0795B2D015D9A1DE000D3DD4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		07F1C33A15D9B77D00ECBC7F /* Resources */ = {
+		07080B52182D47AC007234D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F1C34715D9B77D00ECBC7F /* InfoPlist.strings in Resources */,
+				07080B5E182D47AC007234D0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,6 +846,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		07080B53182D47AC007234D0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n#  RunIPhoneUnitTest.sh\n#  Copyright 2008 Google Inc.\n#\n#  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not\n#  use this file except in compliance with the License.  You may obtain a copy\n#  of the License at\n#\n#  http://www.apache.org/licenses/LICENSE-2.0\n#\n#  Unless required by applicable law or agreed to in writing, software\n#  distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\n#  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the\n#  License for the specific language governing permissions and limitations under\n#  the License.\n#\n#  Runs all unittests through the iPhone simulator. We don't handle running them\n#  on the device. To run on the device just choose \"run\".\n\nset -o errexit\nset -o nounset\nset -o verbose\n\n#  Controlling environment variables:\n# GTM_DISABLE_ZOMBIES -\n#   Set to a non-zero value to turn on zombie checks. You will probably\n#   want to turn this off if you enable leaks.\nGTM_DISABLE_ZOMBIES=${GTM_DISABLE_ZOMBIES:=1}\n\n# GTM_ENABLE_LEAKS -\n#   Set to a non-zero value to turn on the leaks check. You will probably want\n#   to disable zombies, otherwise you will get a lot of false positives.\n\n# GTM_DISABLE_TERMINATION\n#   Set to a non-zero value so that the app doesn't terminate when it's finished\n#   running tests. This is useful when using it with external tools such\n#   as Instruments.\n\n# GTM_LEAKS_SYMBOLS_TO_IGNORE\n#   List of comma separated symbols that leaks should ignore. Mainly to control\n#   leaks in frameworks you don't have control over.\n#   Search this file for GTM_LEAKS_SYMBOLS_TO_IGNORE to see examples.\n#   Please feel free to add other symbols as you find them but make sure to\n#   reference Radars or other bug systems so we can track them.\n\n# GTM_REMOVE_GCOV_DATA\n#   Before starting the test, remove any *.gcda files for the current run so\n#   you won't get failures when the source file has changed and the data can't\n#   be merged.\n#\nGTM_REMOVE_GCOV_DATA=${GTM_REMOVE_GCOV_DATA:=0}\n\n# GTM_DISABLE_USERDIR_SETUP\n#   Controls whether or not CFFIXED_USER_HOME is erased and set up from scratch\n#   for you each time the script is run. In some cases you may have a wrapper\n#   script calling this one that takes care of that for us so you can set up\n#   a certain user configuration.\nGTM_DISABLE_USERDIR_SETUP=${GTM_DISABLE_USERDIR_SETUP:=0}\n\n# GTM_DISABLE_IPHONE_LAUNCH_DAEMONS\n#   Controls whether or not we launch up the iPhone Launch Daemons before\n#   we start testing. You need Launch Daemons to test anything that interacts\n#   with security.\nGTM_DISABLE_IPHONE_LAUNCH_DAEMONS=1 #${GTM_DISABLE_IPHONE_LAUNCH_DAEMONS:=0}\n\nScriptDir=$(dirname \"$(echo $0 | sed -e \"s,^\\([^/]\\),$(pwd)/\\1,\")\")\nScriptName=$(basename \"$0\")\nThisScript=\"${ScriptDir}/${ScriptName}\"\n\nGTMXcodeNote() {\n    echo ${ThisScript}:${1}: note: GTM ${2}\n}\n\nif [ \"$PLATFORM_NAME\" == \"iphonesimulator\" ]; then\n  # We kill the iPhone simulator because otherwise we run into issues where\n  # the unittests fail becuase the simulator is currently running, and\n  # at this time the iPhone SDK won't allow two simulators running at the same\n  # time.\n  set +e\n  /usr/bin/killall \"iPhone Simulator\"\n  set -e\n\n  if [ $GTM_REMOVE_GCOV_DATA -ne 0 ]; then\n    if [ \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" != \"-\" ]; then\n      if [ -d \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" ]; then\n        GTMXcodeNote ${LINENO} \"Removing any .gcda files\"\n        (cd \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" && \\\n            find . -type f -name \"*.gcda\" -print0 | xargs -0 rm -f )\n      fi\n    fi\n  fi\n\n  export DYLD_ROOT_PATH=\"$SDKROOT\"\n  export DYLD_FRAMEWORK_PATH=\"$CONFIGURATION_BUILD_DIR\"\n  export IPHONE_SIMULATOR_ROOT=\"$SDKROOT\"\n  export CFFIXED_USER_HOME=\"$TEMP_FILES_DIR/iPhone Simulator User Dir\"\n\n  # See http://developer.apple.com/technotes/tn2004/tn2124.html for an\n  # explanation of these environment variables.\n\n  #export MallocScribble=YES\n  export MallocPreScribble=YES\n  #export MallocGuardEdges=YES\n  #export MallocStackLogging=YES\n  export NSAutoreleaseFreedObjectCheckEnabled=YES\n\n  # Turn on the mostly undocumented OBJC_DEBUG stuff.\n  export OBJC_DEBUG_FRAGILE_SUPERCLASSES=YES\n  export OBJC_DEBUG_UNLOAD=YES\n  # Turned off due to the amount of false positives from NS classes.\n  # export OBJC_DEBUG_FINALIZERS=YES\n  export OBJC_DEBUG_NIL_SYNC=YES\n  export OBJC_PRINT_REPLACED_METHODS=NO\n\n  if [ $GTM_DISABLE_ZOMBIES -eq 0 ]; then\n    GTMXcodeNote ${LINENO} \"Enabling zombies\"\n    export CFZombieLevel=3\n    export NSZombieEnabled=YES\n  fi\n\n  if [ $GTM_DISABLE_USERDIR_SETUP -eq 0 ]; then\n    # Cleanup user home directory\n    if [ -d \"$CFFIXED_USER_HOME\" ]; then\n      rm -rf \"$CFFIXED_USER_HOME\"\n    fi\n    mkdir \"$CFFIXED_USER_HOME\"\n    mkdir \"$CFFIXED_USER_HOME/Documents\"\n    mkdir -p \"$CFFIXED_USER_HOME/Library/Caches\"\n  fi\n\n  # 6251475 iPhone simulator leaks @ CFHTTPCookieStore shutdown if\n  #         CFFIXED_USER_HOME empty\n  GTM_LEAKS_SYMBOLS_TO_IGNORE=\"CFHTTPCookieStore\"\n\n  if [ $GTM_DISABLE_IPHONE_LAUNCH_DAEMONS -eq 0 ]; then\n    # If we want to test anything that interacts with the keychain, we need\n    # securityd up and running. See RunIPhoneLaunchDaemons.sh for details.\n    launchctl submit -l RunIPhoneLaunchDaemons -- \"${ScriptDir}/RunIPhoneLaunchDaemons.sh\" $IPHONE_SIMULATOR_ROOT $CFFIXED_USER_HOME\n    # No matter how we exit, we want to shut down our launchctl job.\n    trap \"launchctl remove RunIPhoneLaunchDaemons\" INT TERM EXIT\n  fi\n\n  # Start our app.\n  \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\" -RegisterForSystemEvents\n\nelse\n  GTMXcodeNote ${LINENO} \"Skipping running of unittests for device build.\"\nfi\nexit 0";
+		};
 		07B7CB4515A0D50600B2898C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -893,7 +872,7 @@
 			shellPath = /bin/sh;
 			shellScript = ./bin/Mac/RunSlimTests;
 		};
-		07F1C2EF15D9B17000ECBC7F /* ShellScript */ = {
+		07CB31521827E20A008F4658 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -906,18 +885,65 @@
 			shellPath = /bin/sh;
 			shellScript = $TARGET_BUILD_DIR/$EXECUTABLE_PATH;
 		};
-		07F1C33B15D9B77D00ECBC7F /* ShellScript */ = {
+		0E24A599A334427AB50D6A88 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n#  RunIPhoneUnitTest.sh\n#  Copyright 2008 Google Inc.\n#\n#  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not\n#  use this file except in compliance with the License.  You may obtain a copy\n#  of the License at\n#\n#  http://www.apache.org/licenses/LICENSE-2.0\n#\n#  Unless required by applicable law or agreed to in writing, software\n#  distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\n#  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the\n#  License for the specific language governing permissions and limitations under\n#  the License.\n#\n#  Runs all unittests through the iPhone simulator. We don't handle running them\n#  on the device. To run on the device just choose \"run\".\n\nset -o errexit\nset -o nounset\nset -o verbose\n\n#  Controlling environment variables:\n# GTM_DISABLE_ZOMBIES -\n#   Set to a non-zero value to turn on zombie checks. You will probably\n#   want to turn this off if you enable leaks.\nGTM_DISABLE_ZOMBIES=${GTM_DISABLE_ZOMBIES:=1}\n\n# GTM_ENABLE_LEAKS -\n#   Set to a non-zero value to turn on the leaks check. You will probably want\n#   to disable zombies, otherwise you will get a lot of false positives.\n\n# GTM_DISABLE_TERMINATION\n#   Set to a non-zero value so that the app doesn't terminate when it's finished\n#   running tests. This is useful when using it with external tools such\n#   as Instruments.\n\n# GTM_LEAKS_SYMBOLS_TO_IGNORE\n#   List of comma separated symbols that leaks should ignore. Mainly to control\n#   leaks in frameworks you don't have control over.\n#   Search this file for GTM_LEAKS_SYMBOLS_TO_IGNORE to see examples.\n#   Please feel free to add other symbols as you find them but make sure to\n#   reference Radars or other bug systems so we can track them.\n\n# GTM_REMOVE_GCOV_DATA\n#   Before starting the test, remove any *.gcda files for the current run so\n#   you won't get failures when the source file has changed and the data can't\n#   be merged.\n#\nGTM_REMOVE_GCOV_DATA=${GTM_REMOVE_GCOV_DATA:=0}\n\n# GTM_DISABLE_USERDIR_SETUP\n#   Controls whether or not CFFIXED_USER_HOME is erased and set up from scratch\n#   for you each time the script is run. In some cases you may have a wrapper\n#   script calling this one that takes care of that for us so you can set up\n#   a certain user configuration.\nGTM_DISABLE_USERDIR_SETUP=${GTM_DISABLE_USERDIR_SETUP:=0}\n\n# GTM_DISABLE_IPHONE_LAUNCH_DAEMONS\n#   Controls whether or not we launch up the iPhone Launch Daemons before\n#   we start testing. You need Launch Daemons to test anything that interacts\n#   with security.\nGTM_DISABLE_IPHONE_LAUNCH_DAEMONS=1 #${GTM_DISABLE_IPHONE_LAUNCH_DAEMONS:=0}\n\nScriptDir=$(dirname \"$(echo $0 | sed -e \"s,^\\([^/]\\),$(pwd)/\\1,\")\")\nScriptName=$(basename \"$0\")\nThisScript=\"${ScriptDir}/${ScriptName}\"\n\nGTMXcodeNote() {\n    echo ${ThisScript}:${1}: note: GTM ${2}\n}\n\nif [ \"$PLATFORM_NAME\" == \"iphonesimulator\" ]; then\n  # We kill the iPhone simulator because otherwise we run into issues where\n  # the unittests fail becuase the simulator is currently running, and\n  # at this time the iPhone SDK won't allow two simulators running at the same\n  # time.\n  set +e\n  /usr/bin/killall \"iPhone Simulator\"\n  set -e\n\n  if [ $GTM_REMOVE_GCOV_DATA -ne 0 ]; then\n    if [ \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" != \"-\" ]; then\n      if [ -d \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" ]; then\n        GTMXcodeNote ${LINENO} \"Removing any .gcda files\"\n        (cd \"${OBJECT_FILE_DIR}-${CURRENT_VARIANT}\" && \\\n            find . -type f -name \"*.gcda\" -print0 | xargs -0 rm -f )\n      fi\n    fi\n  fi\n\n  export DYLD_ROOT_PATH=\"$SDKROOT\"\n  export DYLD_FRAMEWORK_PATH=\"$CONFIGURATION_BUILD_DIR\"\n  export IPHONE_SIMULATOR_ROOT=\"$SDKROOT\"\n  export CFFIXED_USER_HOME=\"$TEMP_FILES_DIR/iPhone Simulator User Dir\"\n\n  # See http://developer.apple.com/technotes/tn2004/tn2124.html for an\n  # explanation of these environment variables.\n\n  #export MallocScribble=YES\n  export MallocPreScribble=YES\n  #export MallocGuardEdges=YES\n  #export MallocStackLogging=YES\n  export NSAutoreleaseFreedObjectCheckEnabled=YES\n\n  # Turn on the mostly undocumented OBJC_DEBUG stuff.\n  export OBJC_DEBUG_FRAGILE_SUPERCLASSES=YES\n  export OBJC_DEBUG_UNLOAD=YES\n  # Turned off due to the amount of false positives from NS classes.\n  # export OBJC_DEBUG_FINALIZERS=YES\n  export OBJC_DEBUG_NIL_SYNC=YES\n  export OBJC_PRINT_REPLACED_METHODS=NO\n\n  if [ $GTM_DISABLE_ZOMBIES -eq 0 ]; then\n    GTMXcodeNote ${LINENO} \"Enabling zombies\"\n    export CFZombieLevel=3\n    export NSZombieEnabled=YES\n  fi\n\n  if [ $GTM_DISABLE_USERDIR_SETUP -eq 0 ]; then\n    # Cleanup user home directory\n    if [ -d \"$CFFIXED_USER_HOME\" ]; then\n      rm -rf \"$CFFIXED_USER_HOME\"\n    fi\n    mkdir \"$CFFIXED_USER_HOME\"\n    mkdir \"$CFFIXED_USER_HOME/Documents\"\n    mkdir -p \"$CFFIXED_USER_HOME/Library/Caches\"\n  fi\n\n  # 6251475 iPhone simulator leaks @ CFHTTPCookieStore shutdown if\n  #         CFFIXED_USER_HOME empty\n  GTM_LEAKS_SYMBOLS_TO_IGNORE=\"CFHTTPCookieStore\"\n\n  if [ $GTM_DISABLE_IPHONE_LAUNCH_DAEMONS -eq 0 ]; then\n    # If we want to test anything that interacts with the keychain, we need\n    # securityd up and running. See RunIPhoneLaunchDaemons.sh for details.\n    launchctl submit -l RunIPhoneLaunchDaemons -- \"${ScriptDir}/RunIPhoneLaunchDaemons.sh\" $IPHONE_SIMULATOR_ROOT $CFFIXED_USER_HOME\n    # No matter how we exit, we want to shut down our launchctl job.\n    trap \"launchctl remove RunIPhoneLaunchDaemons\" INT TERM EXIT\n  fi\n\n  # Start our app.\n  \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\" -RegisterForSystemEvents\n\nelse\n  GTMXcodeNote ${LINENO} \"Skipping running of unittests for device build.\"\nfi\nexit 0";
+			shellScript = "\"${SRCROOT}/Pods/Pods-mac_test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96281130E003456B8AE5254A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3BC0544F38444178AC9D244 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E30667BC428F46F2920CCF87 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ios_test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		F81E7F821582B4EE004C029E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -935,109 +961,109 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		07F1C2ED15D9B17000ECBC7F /* Sources */ = {
+		07080B50182D47AC007234D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F1C31D15D9B3B400ECBC7F /* OCSReturnValue.m in Sources */,
-				07F1C32315D9B3B400ECBC7F /* StatementExecutor.m in Sources */,
-				07F1C31B15D9B3B400ECBC7F /* ListExecutor.c in Sources */,
-				07F1C31C15D9B3B400ECBC7F /* Slim.c in Sources */,
-				07F1C31E15D9B3B400ECBC7F /* SlimConnectionHandler.c in Sources */,
-				07F1C31F15D9B3B400ECBC7F /* SlimList.c in Sources */,
-				07F1C32015D9B3B400ECBC7F /* SlimListDeserializer.c in Sources */,
-				07F1C32115D9B3B400ECBC7F /* SlimListSerializer.c in Sources */,
-				07F1C32215D9B3B400ECBC7F /* SlimUtil.c in Sources */,
-				07F1C32415D9B3B400ECBC7F /* SocketServer.c in Sources */,
-				07F1C32515D9B3B400ECBC7F /* TcpComLink.c in Sources */,
-				07F1C32615D9B3B400ECBC7F /* ValidInputTypes.m in Sources */,
-				07F1C32715D9B3B400ECBC7F /* ValidReturnTypes.m in Sources */,
-				07F1C32815D9B3B400ECBC7F /* RespondsToStringValue.m in Sources */,
-				07F1C32915D9B3B400ECBC7F /* ObjAdderFixture.m in Sources */,
-				07F1C32A15D9B3B400ECBC7F /* Count.m in Sources */,
-				07F1C32B15D9B3B400ECBC7F /* Math.m in Sources */,
-				07F1C32C15D9B3B400ECBC7F /* EchoFixture.m in Sources */,
-				07F1C32D15D9B3B400ECBC7F /* TestQuery.m in Sources */,
-				07F1C32E15D9B3B400ECBC7F /* TearDown.m in Sources */,
-				07F1C32F15D9B3B400ECBC7F /* PageDriver.m in Sources */,
-				07F1C33015D9B3B400ECBC7F /* SetUp.m in Sources */,
-				07F1C33115D9B3B400ECBC7F /* Uncle.m in Sources */,
-				07F1C33215D9B3B400ECBC7F /* Adder.m in Sources */,
-				07F1C33315D9B3B400ECBC7F /* Fixtures.m in Sources */,
-				07F1C33415D9B3B400ECBC7F /* TestSlim.m in Sources */,
-				07F1C33515D9B3B400ECBC7F /* TestSlimTwo.m in Sources */,
-				07F1C2F615D9B17000ECBC7F /* main.m in Sources */,
-				07F1C2FE15D9B1E300ECBC7F /* StatementExecutorSpec.m in Sources */,
-				07F1C33715D9B69600ECBC7F /* OCSReturnValueSpec.m in Sources */,
-				07EEC09215DAB3960012CA03 /* OCSException.m in Sources */,
-				07EEC09615DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
-				07EEC09A15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
-				079CCED915DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */,
-				079CCEDD15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
-				07CAF35315DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
-				07CAF35915DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
-				077CE43115DC152B00512830 /* OCSMethodCallerSpec.m in Sources */,
-				F8FC52FF14AE515000D714B8 /* OCSInvocation.m in Sources */,
-				07572D1F15DE6919007B0FDF /* OCSInvocationSpec.m in Sources */,
-				07572D2215DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */,
-				07572D2515DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */,
-				07572D2C15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
-				0757BB4415E3366800604742 /* OCSSelector.m in Sources */,
-				0757BB4715E3373F00604742 /* OCSSelectorSpec.m in Sources */,
-				071CE5FC15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m in Sources */,
+				07080B60182D47AC007234D0 /* main.m in Sources */,
+				07080B7F182D4D49007234D0 /* ListExecutor.c in Sources */,
+				07080B80182D4D49007234D0 /* Slim.c in Sources */,
+				07080B81182D4D49007234D0 /* SlimConnectionHandler.c in Sources */,
+				07080B82182D4D49007234D0 /* SlimList.c in Sources */,
+				07080B83182D4D49007234D0 /* SlimListDeserializer.c in Sources */,
+				07080B84182D4D49007234D0 /* SlimListSerializer.c in Sources */,
+				07080B85182D4D49007234D0 /* SlimUtil.c in Sources */,
+				07080B86182D4D49007234D0 /* SocketServer.c in Sources */,
+				07080B87182D4D49007234D0 /* TcpComLink.c in Sources */,
+				07080B88182D4D55007234D0 /* OCSInvocation.m in Sources */,
+				07080B89182D4D55007234D0 /* OCSReturnValue.m in Sources */,
+				07080B8A182D4D55007234D0 /* OCSException.m in Sources */,
+				07080B8B182D4D55007234D0 /* OCSStatementExecutor.m in Sources */,
+				07080B8C182D4D55007234D0 /* OCSSymbolDictionary.m in Sources */,
+				07080B8D182D4D55007234D0 /* OCSObjectiveCtoCBridge.m in Sources */,
+				07080B8E182D4D55007234D0 /* OCSInstanceCreator.m in Sources */,
+				07080B8F182D4D55007234D0 /* OCSMethodCaller.m in Sources */,
+				07080B90182D4D55007234D0 /* StatementExecutor.m in Sources */,
+				07080B91182D4D55007234D0 /* OCSSelector.m in Sources */,
+				07080B93182D4FDC007234D0 /* ValidInputTypes.m in Sources */,
+				07080B94182D4FDC007234D0 /* ValidReturnTypes.m in Sources */,
+				07080B95182D4FDC007234D0 /* RespondsToStringValue.m in Sources */,
+				07080B96182D4FDC007234D0 /* ObjAdderFixture.m in Sources */,
+				07080B97182D4FDC007234D0 /* Count.m in Sources */,
+				07080B98182D4FDC007234D0 /* Math.m in Sources */,
+				07080B99182D4FDC007234D0 /* EchoFixture.m in Sources */,
+				07080B9A182D4FDC007234D0 /* TestQuery.m in Sources */,
+				07080B9B182D4FDC007234D0 /* TearDown.m in Sources */,
+				07080B9C182D4FDC007234D0 /* PageDriver.m in Sources */,
+				07080B9D182D4FDC007234D0 /* SetUp.m in Sources */,
+				07080B9E182D4FDC007234D0 /* Uncle.m in Sources */,
+				07080B9F182D4FE7007234D0 /* Adder.m in Sources */,
+				07080BA0182D4FF6007234D0 /* Fixtures.m in Sources */,
+				07080BA1182D4FF6007234D0 /* StatementExecutorSpec.m in Sources */,
+				07080BA2182D5023007234D0 /* TestSlim.m in Sources */,
+				07080BA3182D5023007234D0 /* TestSlimTwo.m in Sources */,
+				07080BA4182D502A007234D0 /* OCSStatementExecutorSpec.m in Sources */,
+				07080BA5182D502A007234D0 /* OCSExceptionSpec.m in Sources */,
+				07080BA6182D502A007234D0 /* OCSReturnValueSpec.m in Sources */,
+				07080BA7182D502A007234D0 /* OCSMethodCallerSpec.m in Sources */,
+				07080BA8182D502A007234D0 /* OCSInvocationSpec.m in Sources */,
+				07080BA9182D502A007234D0 /* OCSSymbolDictionarySpec.m in Sources */,
+				07080BAA182D502A007234D0 /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
+				07080BAB182D502A007234D0 /* OCSSelectorSpec.m in Sources */,
+				07080BAC182D502A007234D0 /* OCSInstanceCreatorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		07F1C33815D9B77D00ECBC7F /* Sources */ = {
+		07CB31501827E20A008F4658 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F1C34F15D9B7C100ECBC7F /* ListExecutor.c in Sources */,
-				07F1C35015D9B7C100ECBC7F /* Slim.c in Sources */,
-				07F1C35115D9B7C100ECBC7F /* OCSReturnValue.m in Sources */,
-				07F1C35215D9B7C100ECBC7F /* SlimConnectionHandler.c in Sources */,
-				07F1C35315D9B7C100ECBC7F /* SlimList.c in Sources */,
-				07F1C35415D9B7C100ECBC7F /* SlimListDeserializer.c in Sources */,
-				07F1C35515D9B7C100ECBC7F /* SlimListSerializer.c in Sources */,
-				07F1C35615D9B7C100ECBC7F /* SlimUtil.c in Sources */,
-				07F1C35715D9B7C100ECBC7F /* StatementExecutor.m in Sources */,
-				07F1C35815D9B7C100ECBC7F /* SocketServer.c in Sources */,
-				07F1C35915D9B7C100ECBC7F /* TcpComLink.c in Sources */,
-				07F1C35A15D9B7C100ECBC7F /* ValidInputTypes.m in Sources */,
-				07F1C35B15D9B7C100ECBC7F /* ValidReturnTypes.m in Sources */,
-				07F1C35C15D9B7C100ECBC7F /* RespondsToStringValue.m in Sources */,
-				07F1C35E15D9B7C100ECBC7F /* ObjAdderFixture.m in Sources */,
-				07F1C35F15D9B7C100ECBC7F /* Count.m in Sources */,
-				07F1C36015D9B7C100ECBC7F /* Math.m in Sources */,
-				07F1C36115D9B7C100ECBC7F /* EchoFixture.m in Sources */,
-				07F1C36215D9B7C100ECBC7F /* TestQuery.m in Sources */,
-				07F1C36315D9B7C100ECBC7F /* TearDown.m in Sources */,
-				07F1C36415D9B7C100ECBC7F /* PageDriver.m in Sources */,
-				07F1C36515D9B7C100ECBC7F /* SetUp.m in Sources */,
-				07F1C36615D9B7C100ECBC7F /* Uncle.m in Sources */,
-				07F1C36715D9B7C100ECBC7F /* Adder.m in Sources */,
-				07F1C36815D9B7C100ECBC7F /* Fixtures.m in Sources */,
-				07F1C36915D9B7C100ECBC7F /* TestSlim.m in Sources */,
-				07F1C36A15D9B7C100ECBC7F /* TestSlimTwo.m in Sources */,
-				07F1C36B15D9B7C100ECBC7F /* StatementExecutorSpec.m in Sources */,
-				07F1C36C15D9B7C100ECBC7F /* OCSReturnValueSpec.m in Sources */,
-				07F1C34915D9B77D00ECBC7F /* main.m in Sources */,
-				07EEC09315DAB3960012CA03 /* OCSException.m in Sources */,
-				07EEC09715DAB3960012CA03 /* OCSStatementExecutor.m in Sources */,
-				07EEC09B15DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */,
-				079CCEDA15DABB97003C8A31 /* OCSStatementExecutorSpec.m in Sources */,
-				079CCEDE15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */,
-				07CAF35415DB3CB2008FCC0C /* OCSInstanceCreator.m in Sources */,
-				07CAF35A15DB4861008FCC0C /* OCSMethodCaller.m in Sources */,
-				077CE43215DC152B00512830 /* OCSMethodCallerSpec.m in Sources */,
-				F8FC52FF14AE515000D714B9 /* OCSInvocation.m in Sources */,
-				07572D2015DE6919007B0FDF /* OCSInvocationSpec.m in Sources */,
-				07572D2315DEA593007B0FDF /* OCSSymbolDictionarySpec.m in Sources */,
-				07572D2615DEABE5007B0FDF /* OCSExceptionSpec.m in Sources */,
-				07572D2D15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
-				0757BB4515E3366800604742 /* OCSSelector.m in Sources */,
-				0757BB4815E3373F00604742 /* OCSSelectorSpec.m in Sources */,
-				071CE5FD15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m in Sources */,
+				07C87F871827E63800862F2E /* main.m in Sources */,
+				07C87F641827E4DB00862F2E /* OCSReturnValue.m in Sources */,
+				07C87F651827E4F800862F2E /* StatementExecutor.m in Sources */,
+				07C87F661827E4FD00862F2E /* ListExecutor.c in Sources */,
+				07C87F671827E50700862F2E /* Slim.c in Sources */,
+				07C87F681827E54000862F2E /* SlimConnectionHandler.c in Sources */,
+				07C87F691827E54300862F2E /* SlimList.c in Sources */,
+				07C87F6A1827E54500862F2E /* SlimListDeserializer.c in Sources */,
+				07C87F6B1827E55200862F2E /* SlimListSerializer.c in Sources */,
+				07C87F6C1827E55400862F2E /* SlimUtil.c in Sources */,
+				07C87F6D1827E55600862F2E /* SocketServer.c in Sources */,
+				07C87F6E1827E55900862F2E /* TcpComLink.c in Sources */,
+				07C87F6F1827E56E00862F2E /* ValidInputTypes.m in Sources */,
+				07C87F701827E57200862F2E /* ValidReturnTypes.m in Sources */,
+				07C87F711827E58200862F2E /* RespondsToStringValue.m in Sources */,
+				07C87F721827E59C00862F2E /* ObjAdderFixture.m in Sources */,
+				07C87F731827E59C00862F2E /* Count.m in Sources */,
+				07C87F741827E59C00862F2E /* Math.m in Sources */,
+				07C87F751827E59C00862F2E /* EchoFixture.m in Sources */,
+				07C87F761827E59C00862F2E /* TestQuery.m in Sources */,
+				07C87F771827E59C00862F2E /* TearDown.m in Sources */,
+				07C87F781827E59C00862F2E /* PageDriver.m in Sources */,
+				07C87F791827E59C00862F2E /* SetUp.m in Sources */,
+				07C87F7A1827E59C00862F2E /* Uncle.m in Sources */,
+				07C87F7B1827E5AD00862F2E /* Adder.m in Sources */,
+				07C87F7C1827E5BB00862F2E /* Fixtures.m in Sources */,
+				07C87F7D1827E5C600862F2E /* TestSlim.m in Sources */,
+				07C87F7E1827E5C600862F2E /* TestSlimTwo.m in Sources */,
+				07C87F7F1827E5FA00862F2E /* OCSInvocation.m in Sources */,
+				07C87F801827E60500862F2E /* OCSException.m in Sources */,
+				07C87F811827E60800862F2E /* OCSStatementExecutor.m in Sources */,
+				07C87F821827E62600862F2E /* OCSSymbolDictionary.m in Sources */,
+				07C87F831827E62600862F2E /* OCSObjectiveCtoCBridge.m in Sources */,
+				07C87F841827E62600862F2E /* OCSInstanceCreator.m in Sources */,
+				07C87F851827E62600862F2E /* OCSMethodCaller.m in Sources */,
+				07C87F861827E62600862F2E /* OCSSelector.m in Sources */,
+				07C87F881827E66500862F2E /* StatementExecutorSpec.m in Sources */,
+				07C87F891827E66F00862F2E /* OCSReturnValueSpec.m in Sources */,
+				07C87F8A1827EC8E00862F2E /* OCSInstanceCreatorSpec.m in Sources */,
+				07C87F8B1827EC9600862F2E /* OCSStatementExecutorSpec.m in Sources */,
+				07C87F8C1827EC9600862F2E /* OCSExceptionSpec.m in Sources */,
+				07C87F8D1827EC9600862F2E /* OCSMethodCallerSpec.m in Sources */,
+				07C87F8E1827EC9600862F2E /* OCSInvocationSpec.m in Sources */,
+				07C87F8F1827EC9600862F2E /* OCSSymbolDictionarySpec.m in Sources */,
+				07C87F901827EC9600862F2E /* OCSObjectiveCtoCBridgeSpec.m in Sources */,
+				07C87F911827EC9600862F2E /* OCSSelectorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1130,6 +1156,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		07080BAE182D50D8007234D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07CB31531827E20A008F4658 /* MacSpecs */;
+			targetProxy = 07080BAD182D50D8007234D0 /* PBXContainerItemProxy */;
+		};
+		07080BB0182D50D8007234D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07080B54182D47AC007234D0 /* iOSSpecs */;
+			targetProxy = 07080BAF182D50D8007234D0 /* PBXContainerItemProxy */;
+		};
 		07381AF115ADAF73000B0A38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */;
@@ -1140,29 +1176,17 @@
 			target = F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */;
 			targetProxy = 07381AF415ADAF73000B0A38 /* PBXContainerItemProxy */;
 		};
-		077CE42D15DC08C700512830 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 07F1C2F015D9B17000ECBC7F /* MacSpecs */;
-			targetProxy = 077CE42C15DC08C700512830 /* PBXContainerItemProxy */;
-		};
-		077CE42F15DC08C700512830 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 07F1C33C15D9B77D00ECBC7F /* iOSSpecs */;
-			targetProxy = 077CE42E15DC08C700512830 /* PBXContainerItemProxy */;
-		};
-		07F1C36E15D9B80700ECBC7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 07F1C2F015D9B17000ECBC7F /* MacSpecs */;
-			targetProxy = 07F1C36D15D9B80700ECBC7F /* PBXContainerItemProxy */;
-		};
-		07F1C37015D9B80700ECBC7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 07F1C33C15D9B77D00ECBC7F /* iOSSpecs */;
-			targetProxy = 07F1C36F15D9B80700ECBC7F /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		07080B5C182D47AC007234D0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07080B5D182D47AC007234D0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		07F1C34515D9B77D00ECBC7F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1190,6 +1214,71 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		07080B62182D47AC007234D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9785FC8F202485F838C7229 /* Pods-ios_test.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSSpecs/iOSSpecs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "iOSSpecs/iOSSpecs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07080B63182D47AC007234D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9785FC8F202485F838C7229 /* Pods-ios_test.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSSpecs/iOSSpecs-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "iOSSpecs/iOSSpecs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		07381AEC15ADAF63000B0A38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1220,102 +1309,59 @@
 			};
 			name = Release;
 		};
-		07F1C2FA15D9B17000ECBC7F /* Debug */ = {
+		07CB315C1827E20A008F4658 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C861FF339B9545DA930AE737 /* Pods-mac_test.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MacSK/MacSK-Prefix.pch";
+				GCC_PREFIX_HEADER = "MacSpecs/MacSpecs-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = SpecKit;
 				INFOPLIST_FILE = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		07F1C2FB15D9B17000ECBC7F /* Release */ = {
+		07CB315D1827E20A008F4658 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C861FF339B9545DA930AE737 /* Pods-mac_test.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MacSK/MacSK-Prefix.pch";
+				GCC_PREFIX_HEADER = "MacSpecs/MacSpecs-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = SpecKit;
 				INFOPLIST_FILE = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		07F1C34C15D9B77D00ECBC7F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOSSpecKit/iOSSpecKit-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = SpecKit;
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		07F1C34D15D9B77D00ECBC7F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOSSpecKit/iOSSpecKit-Prefix.pch";
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = SpecKit;
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -1428,6 +1474,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07080B68182D47AC007234D0 /* Build configuration list for PBXNativeTarget "iOSSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07080B62182D47AC007234D0 /* Debug */,
+				07080B63182D47AC007234D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		07381AEE15ADAF63000B0A38 /* Build configuration list for PBXAggregateTarget "AllTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1446,20 +1501,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07F1C2F915D9B17000ECBC7F /* Build configuration list for PBXNativeTarget "MacSpecs" */ = {
+		07CB315B1827E20A008F4658 /* Build configuration list for PBXNativeTarget "MacSpecs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07F1C2FA15D9B17000ECBC7F /* Debug */,
-				07F1C2FB15D9B17000ECBC7F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		07F1C34B15D9B77D00ECBC7F /* Build configuration list for PBXNativeTarget "iOSSpecs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				07F1C34C15D9B77D00ECBC7F /* Debug */,
-				07F1C34D15D9B77D00ECBC7F /* Release */,
+				07CB315C1827E20A008F4658 /* Debug */,
+				07CB315D1827E20A008F4658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,3 @@
 [submodule "cslim"]
 	path = cslim
 	url = git@github.com:dougbradbury/cslim.git
-[submodule "SpecKit"]
-	path = SpecKit
-	url = https://github.com/sdegutis/SpecKit.git

@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'iOSSpecKit' target in the 'iOSSpecKit' project
+// Prefix header for all source files of the 'iOSSpecs' target in the 'iOSSpecs' project
 //
 
 #ifdef __OBJC__
