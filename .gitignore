@@ -23,3 +23,6 @@ DerivedData/*
 .DS_Store
 
 .idea/*
+
+*.tasks
+*.todo
