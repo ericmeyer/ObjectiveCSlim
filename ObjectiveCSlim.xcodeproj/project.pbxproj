@@ -84,6 +84,7 @@
 		07080BAA182D502A007234D0 /* OCSObjectiveCtoCBridgeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 07572D2B15DEACF8007B0FDF /* OCSObjectiveCtoCBridgeSpec.m */; };
 		07080BAB182D502A007234D0 /* OCSSelectorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4615E3373F00604742 /* OCSSelectorSpec.m */; };
 		07080BAC182D502A007234D0 /* OCSInstanceCreatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */; };
+		07131A8D182D82B300E81279 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07131A8C182D82B300E81279 /* Default-568h@2x.png */; };
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		0757BB4215E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
@@ -251,6 +252,7 @@
 		07080B5D182D47AC007234D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07080B5F182D47AC007234D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07080B61182D47AC007234D0 /* iOSSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		07131A8C182D82B300E81279 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInstanceCreatorSpec.m; path = cslim/tests/ObjectiveC/OCSInstanceCreatorSpec.m; sourceTree = "<group>"; };
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		07572D1E15DE6919007B0FDF /* OCSInvocationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInvocationSpec.m; path = cslim/tests/ObjectiveC/OCSInvocationSpec.m; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 		F8ED9EF11448BDF900DCBB3F = {
 			isa = PBXGroup;
 			children = (
+				07131A8C182D82B300E81279 /* Default-568h@2x.png */,
 				F8FC52B714AE472600D714B4 /* cslim */,
 				F873F3CF1448BEF300FFCA02 /* Fixtures */,
 				F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */,
@@ -820,6 +823,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07080B5E182D47AC007234D0 /* InfoPlist.strings in Resources */,
+				07131A8D182D82B300E81279 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
