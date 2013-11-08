@@ -1,3 +1,3 @@
 [submodule "cslim"]
 	path = cslim
-	url = git@github.com:dougbradbury/cslim.git
+	url = https://github.com/dougbradbury/cslim.git
