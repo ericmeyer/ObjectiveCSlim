@@ -363,7 +363,6 @@
 		F8FC52FC14AE515000D714B4 /* TestSlimTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestSlimTwo.m; path = cslim/tests/ObjectiveC/TestSlimTwo.m; sourceTree = "<group>"; };
 		F8FC52FF14AE515000D714B5 /* OCSInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInvocation.m; path = cslim/src/ExecutorObjectiveC/OCSInvocation.m; sourceTree = "<group>"; };
 		F8FC52FF14AE515000D714BA /* OCSInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSInvocation.h; path = cslim/include/ExecutorObjectiveC/OCSInvocation.h; sourceTree = "<group>"; };
-		FF8B6CE90DA047B09D2253BD /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -625,7 +624,6 @@
 				07080B59182D47AC007234D0 /* iOSSpecs */,
 				F8ED9EFF1448BDF900DCBB3F /* Frameworks */,
 				F8ED9EFD1448BDF900DCBB3F /* Products */,
-				FF8B6CE90DA047B09D2253BD /* Pods-test.xcconfig */,
 				A9785FC8F202485F838C7229 /* Pods-ios_test.xcconfig */,
 				C861FF339B9545DA930AE737 /* Pods-mac_test.xcconfig */,
 			);
