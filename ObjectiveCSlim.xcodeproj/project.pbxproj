@@ -89,6 +89,7 @@
 		07131A8D182D82B300E81279 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07131A8C182D82B300E81279 /* Default-568h@2x.png */; };
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
+		07460744182E96EE008D96D8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07131A8C182D82B300E81279 /* Default-568h@2x.png */; };
 		0757BB4215E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
 		0757BB4315E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
 		079CCEDF15DAFB99003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
@@ -849,6 +850,7 @@
 			files = (
 				F81E7F6E1582AAF6004C029E /* InfoPlist.strings in Resources */,
 				F81E7F6F1582AAF6004C029E /* Credits.rtf in Resources */,
+				07460744182E96EE008D96D8 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
