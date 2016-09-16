@@ -1,5 +1,7 @@
 # Using Objective C Slim
 
+[![Build Status](https://travis-ci.org/ericmeyer/ObjectiveCSlim.svg?branch=master)](https://travis-ci.org/ericmeyer/ObjectiveCSlim)
+
 ## See here for installation/setup instructions: https://github.com/ericmeyer/OCSlim-Templates
 
 # What is Objective C Slim?
