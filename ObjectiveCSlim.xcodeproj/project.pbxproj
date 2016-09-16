@@ -909,7 +909,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf /tmp/ObjectiveCSlim\nmkdir /tmp/ObjectiveCSlim\ncp -r $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME /tmp/ObjectiveCSlim/$FULL_PRODUCT_NAME\n./bin/Mac/RunSlimTests";
+			shellScript = "mkdir -p /tmp/ObjectiveCSlim\ncp -r $CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME /tmp/ObjectiveCSlim/$FULL_PRODUCT_NAME\n./bin/Mac/RunSlimTests";
 		};
 		07CB31521827E20A008F4658 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
