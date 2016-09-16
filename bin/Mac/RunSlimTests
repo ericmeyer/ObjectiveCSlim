@@ -1,5 +1,5 @@
 if [[ $SLIM_PORT ]]; then
-  "./DerivedData/ObjectiveCSlim/Build/Products/Debug/AcceptanceTests.app/Contents/MacOS/AcceptanceTests" $SLIM_PORT
+  "/tmp/ObjectiveCSlim/AcceptanceTests.app/Contents/MacOS/AcceptanceTests" $SLIM_PORT
 else
   "./bin/Mac/RunSlimTestsHeadless"
 fi

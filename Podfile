@@ -1,13 +1,9 @@
-target :ios_test do
-  link_with "iOSSpecs"
+target "iOSSpecs" do
   platform :ios
-
   pod "OCDSpec2"
 end
 
-target :mac_test do
-  link_with "MacSpecs"
+target "MacSpecs" do
   platform :osx
-
   pod "OCDSpec2"
 end
