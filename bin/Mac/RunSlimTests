@@ -1,5 +1,7 @@
 if [[ $SLIM_PORT ]]; then
-  "/tmp/ObjectiveCSlim/AcceptanceTests.app/Contents/MacOS/AcceptanceTests" $SLIM_PORT
+  echo "Running tests on port $SLIM_PORT"
+  "./build/ObjectiveCSlim/AcceptanceTests.app/Contents/MacOS/AcceptanceTests" $SLIM_PORT
 else
+  echo "Running tests headless"
   "./bin/Mac/RunSlimTestsHeadless"
 fi
