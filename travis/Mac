@@ -1,0 +1,2 @@
+xcodebuild -workspace "ObjectiveCSlim.xcworkspace" -scheme "MacAcceptanceTests" -sdk macosx -configuration Debug clean build
+java -jar fitnesse-standalone.jar -c "MacRunnerTests?suite&format=text"
