@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "89D1DB61C99DA86E7B369DDD262B7BA0762A0F8E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "89D1DB61C99DA86E7B369DDD262B7BA0762A0F8E" : 9223372036854775807,
+    "2184FCAD113E505BCD603D89586240249E5E2A1B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2E5C6F59-A3E3-4CF1-BA7B-3097A9ABFCB0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "89D1DB61C99DA86E7B369DDD262B7BA0762A0F8E" : "ObjectiveCSlim\/",
+    "2184FCAD113E505BCD603D89586240249E5E2A1B" : "ObjectiveCSlim\/cslim\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ObjectiveCSlim",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ObjectiveCSlim.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dougbradbury\/cslim.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2184FCAD113E505BCD603D89586240249E5E2A1B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ericmeyer\/ObjectiveCSlim.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89D1DB61C99DA86E7B369DDD262B7BA0762A0F8E"
+    }
+  ]
+}
