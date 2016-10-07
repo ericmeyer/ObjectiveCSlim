@@ -158,6 +158,7 @@
 		07EEC09915DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
 		07F1C37115D9B8BE00ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
 		3AFF87128A005000FF2C87E0 /* libPods-MacSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804A6D9CA5B3BAFA26816C72 /* libPods-MacSpecs.a */; };
+		8C2808B61DA7F027007521E8 /* ValidReturnTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2808B51DA7F027007521E8 /* ValidReturnTypes.swift */; };
 		A8807FA11F9BE74E63DFF8C9 /* libPods-iOSSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD7F00DABAC15662C284D93 /* libPods-iOSSpecs.a */; };
 		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F81E7F4F1582AAF6004C029E /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
@@ -313,6 +314,8 @@
 		07F1C34A15D9B77D00ECBC7F /* iOSSpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSpecKit-Prefix.pch"; sourceTree = "<group>"; };
 		5BD7F00DABAC15662C284D93 /* libPods-iOSSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		804A6D9CA5B3BAFA26816C72 /* libPods-MacSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MacSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2808B41DA7F026007521E8 /* MacSpecs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSpecs-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C2808B51DA7F027007521E8 /* ValidReturnTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidReturnTypes.swift; path = cslim/tests/ObjectiveC/ValidReturnTypes.swift; sourceTree = "<group>"; };
 		9ED4366165319D79381FFFEC /* Pods-iOSSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSSpecs/Pods-iOSSpecs.release.xcconfig"; sourceTree = "<group>"; };
 		BAD5B86CCCA01963DD6AC35F /* Pods-MacSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-MacSpecs/Pods-MacSpecs.release.xcconfig"; sourceTree = "<group>"; };
 		D5851806EACD05B095666504 /* Pods-iOSSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSSpecs/Pods-iOSSpecs.debug.xcconfig"; sourceTree = "<group>"; };
@@ -605,6 +608,7 @@
 				F88745C814F862BF003D2B3F /* ValidInputTypes.m */,
 				F88745C914F862BF003D2B3F /* ValidReturnTypes.h */,
 				F88745CA14F862BF003D2B3F /* ValidReturnTypes.m */,
+				8C2808B51DA7F027007521E8 /* ValidReturnTypes.swift */,
 				F88745C314F862B4003D2B3F /* RespondsToStringValue.h */,
 				F88745C414F862B4003D2B3F /* RespondsToStringValue.m */,
 				F873F3D71448C5F100FFCA02 /* fitnesse.jar */,
@@ -627,6 +631,7 @@
 				F8E91E37146E061E00D064A5 /* SetUp.m */,
 				F8E91E3914706A9B00D064A5 /* Uncle.h */,
 				F8E91E3A14706A9B00D064A5 /* Uncle.m */,
+				8C2808B41DA7F026007521E8 /* MacSpecs-Bridging-Header.h */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -830,6 +835,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					07CB31531827E20A008F4658 = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = F8ED9EF61448BDF900DCBB3F /* Build configuration list for PBXProject "ObjectiveCSlim" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1111,6 +1121,7 @@
 				07C87F861827E62600862F2E /* OCSSelector.m in Sources */,
 				07C87F881827E66500862F2E /* StatementExecutorSpec.m in Sources */,
 				07C87F891827E66F00862F2E /* OCSReturnValueSpec.m in Sources */,
+				8C2808B61DA7F027007521E8 /* ValidReturnTypes.swift in Sources */,
 				07C87F8A1827EC8E00862F2E /* OCSInstanceCreatorSpec.m in Sources */,
 				07C87F8B1827EC9600862F2E /* OCSStatementExecutorSpec.m in Sources */,
 				07C87F8C1827EC9600862F2E /* OCSExceptionSpec.m in Sources */,
@@ -1384,6 +1395,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1401,9 +1413,13 @@
 				);
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "MacSpecs-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1414,6 +1430,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1427,9 +1444,12 @@
 				GCC_PREFIX_HEADER = "MacSpecs/MacSpecs-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "MacSpecs-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
