@@ -1,7 +1,10 @@
-!|script           |ValidInputTypes        |
-|call with NSString|Hello World            |
-|check             |called with|Hello World|
+!|script           |ValidInputTypes               |
+|call with NSString|Hello World                   |
+|check             |called with string|Hello World|
 
+!|script           |ValidInputTypes         |
+|call with NSNumber|123                     |
+|check             |called with NSNumber|123|
 
 !|script|ValidInputTypes           |
 |call with zero args               |
