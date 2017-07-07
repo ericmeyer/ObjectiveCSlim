@@ -294,7 +294,7 @@
 		07CAF35015DB3CB2008FCC0C /* OCSInstanceCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInstanceCreator.m; path = cslim/src/ExecutorObjectiveC/OCSInstanceCreator.m; sourceTree = "<group>"; };
 		07CAF35515DB4861008FCC0C /* OCSMethodCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSMethodCaller.h; path = cslim/include/ExecutorObjectiveC/OCSMethodCaller.h; sourceTree = "<group>"; };
 		07CAF35615DB4861008FCC0C /* OCSMethodCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCaller.m; path = cslim/src/ExecutorObjectiveC/OCSMethodCaller.m; sourceTree = "<group>"; };
-		07CB31541827E20A008F4658 /* MacSpecs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacSpecs; sourceTree = BUILT_PRODUCTS_DIR; };
+		07CB31541827E20A008F4658 /* MacSpecsOld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacSpecsOld; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CB31571827E20A008F4658 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07CB315A1827E20A008F4658 /* MacSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		07EEC08A15DAB37C0012CA03 /* OCSException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSException.h; path = cslim/include/ExecutorObjectiveC/OCSException.h; sourceTree = "<group>"; };
@@ -678,7 +678,7 @@
 			children = (
 				F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */,
 				F81E7F741582AAF6004C029E /* iOSAcceptanceTests.app */,
-				07CB31541827E20A008F4658 /* MacSpecs */,
+				07CB31541827E20A008F4658 /* MacSpecsOld */,
 				07080B55182D47AC007234D0 /* iOSSpecs.app */,
 			);
 			name = Products;
@@ -773,9 +773,9 @@
 			productReference = 07080B55182D47AC007234D0 /* iOSSpecs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		07CB31531827E20A008F4658 /* MacSpecs */ = {
+		07CB31531827E20A008F4658 /* MacSpecsOld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07CB315B1827E20A008F4658 /* Build configuration list for PBXNativeTarget "MacSpecs" */;
+			buildConfigurationList = 07CB315B1827E20A008F4658 /* Build configuration list for PBXNativeTarget "MacSpecsOld" */;
 			buildPhases = (
 				55E9433CC05388179AA4D615 /* [CP] Check Pods Manifest.lock */,
 				07CB31501827E20A008F4658 /* Sources */,
@@ -787,9 +787,9 @@
 			);
 			dependencies = (
 			);
-			name = MacSpecs;
+			name = MacSpecsOld;
 			productName = MacSpecs;
-			productReference = 07CB31541827E20A008F4658 /* MacSpecs */;
+			productReference = 07CB31541827E20A008F4658 /* MacSpecsOld */;
 			productType = "com.apple.product-type.tool";
 		};
 		F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */ = {
@@ -855,7 +855,7 @@
 			targets = (
 				F8ED9F211448BE3200DCBB3F /* MacAcceptanceTests */,
 				F81E7F4C1582AAF6004C029E /* iOSAcceptanceTests */,
-				07CB31531827E20A008F4658 /* MacSpecs */,
+				07CB31531827E20A008F4658 /* MacSpecsOld */,
 				07080B54182D47AC007234D0 /* iOSSpecs */,
 				07381AEB15ADAF63000B0A38 /* AllTests */,
 				077CE42815DC08BE00512830 /* AllSpecs */,
@@ -932,7 +932,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$TARGET_BUILD_DIR/$EXECUTABLE_PATH";
+			shellScript = $TARGET_BUILD_DIR/$EXECUTABLE_PATH;
 		};
 		2DE73EFF00476674345F8442 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1227,7 +1227,7 @@
 /* Begin PBXTargetDependency section */
 		07080BAE182D50D8007234D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07CB31531827E20A008F4658 /* MacSpecs */;
+			target = 07CB31531827E20A008F4658 /* MacSpecsOld */;
 			targetProxy = 07080BAD182D50D8007234D0 /* PBXContainerItemProxy */;
 		};
 		07080BB0182D50D8007234D0 /* PBXTargetDependency */ = {
@@ -1237,7 +1237,7 @@
 		};
 		07131A90182DA0DE00E81279 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07CB31531827E20A008F4658 /* MacSpecs */;
+			target = 07CB31531827E20A008F4658 /* MacSpecsOld */;
 			targetProxy = 07131A8F182DA0DE00E81279 /* PBXContainerItemProxy */;
 		};
 		07131A92182DA0DE00E81279 /* PBXTargetDependency */ = {
@@ -1616,7 +1616,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07CB315B1827E20A008F4658 /* Build configuration list for PBXNativeTarget "MacSpecs" */ = {
+		07CB315B1827E20A008F4658 /* Build configuration list for PBXNativeTarget "MacSpecsOld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07CB315C1827E20A008F4658 /* Debug */,
