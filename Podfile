@@ -8,7 +8,7 @@ target "MacSpecsOld" do
   pod "OCDSpec2"
 end
 
-target "MacSpecs" do
+target "MacTests" do
   platform :osx, "10.10"
   use_frameworks!
   pod "Quick", "~> 1.0"

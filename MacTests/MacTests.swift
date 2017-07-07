@@ -1,14 +1,28 @@
 //
-//  MacSpecs.swift
-//  MacSpecs
+//  MacTests.swift
+//  MacTests
 //
-//  Created by Eric Meyer on 7/7/17.
+//  Created by Paul Stringer on 07/07/2017.
 //
 //
 
 import XCTest
+import Quick
 
-class MacSpecs: XCTestCase {
+class FooSpec : QuickSpec {
+    
+    override func spec() {
+        describe("foo") {
+            it("bar") {
+                XCTAssertTrue(true)
+            }
+        }
+    }
+    
+}
+
+
+class MacTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
