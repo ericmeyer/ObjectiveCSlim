@@ -97,6 +97,8 @@
 		074A1AC618B3EDB5000A365A /* OCSlimToObjectiveCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 074A1AC218B3EDB5000A365A /* OCSlimToObjectiveCBridge.m */; };
 		0757BB4215E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
 		0757BB4315E3366800604742 /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
+		076CFB0B1F3DF87200B3EABE /* OCSSelectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CFB0A1F3DF87200B3EABE /* OCSSelectorSpec.swift */; };
+		07902A9B1F3DE66300ADF9AB /* OCSSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4115E3366800604742 /* OCSSelector.m */; };
 		079CCEDF15DAFB99003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
 		079CCEE015DAFB9A003C8A31 /* OCSObjectiveCtoCBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 079CCEDC15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.m */; };
 		07B57B751D8C394100E6AE7E /* ValidInputTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = F88745C814F862BF003D2B3F /* ValidInputTypes.m */; };
@@ -159,7 +161,6 @@
 		07EEC09915DAB3960012CA03 /* OCSSymbolDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08F15DAB3960012CA03 /* OCSSymbolDictionary.m */; };
 		07F1C37115D9B8BE00ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
 		3AFF87128A005000FF2C87E0 /* libPods-MacSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804A6D9CA5B3BAFA26816C72 /* libPods-MacSpecs.a */; };
-		8C2357C01F0FE84B0046CEF5 /* MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2357BF1F0FE84B0046CEF5 /* MacTests.swift */; };
 		8C2808B61DA7F027007521E8 /* ValidReturnTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2808B51DA7F027007521E8 /* ValidReturnTypes.swift */; };
 		A8807FA11F9BE74E63DFF8C9 /* libPods-iOSSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD7F00DABAC15662C284D93 /* libPods-iOSSpecs.a */; };
 		D3B2DF1649953F24380DDF04 /* libPods-MacSpecsOld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E27B9E10F1CE6074D2831C /* libPods-MacSpecsOld.a */; };
@@ -289,6 +290,7 @@
 		0757BB4015E3361200604742 /* OCSSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSSelector.h; path = cslim/include/ExecutorObjectiveC/OCSSelector.h; sourceTree = "<group>"; };
 		0757BB4115E3366800604742 /* OCSSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSelector.m; path = cslim/src/ExecutorObjectiveC/OCSSelector.m; sourceTree = "<group>"; };
 		0757BB4615E3373F00604742 /* OCSSelectorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSSelectorSpec.m; path = cslim/tests/ObjectiveC/OCSSelectorSpec.m; sourceTree = "<group>"; };
+		076CFB0A1F3DF87200B3EABE /* OCSSelectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OCSSelectorSpec.swift; path = cslim/tests/Swift/OCSSelectorSpec.swift; sourceTree = SOURCE_ROOT; };
 		077CE43015DC152B00512830 /* OCSMethodCallerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSMethodCallerSpec.m; path = cslim/tests/ObjectiveC/OCSMethodCallerSpec.m; sourceTree = "<group>"; };
 		079CCED815DABB97003C8A31 /* OCSStatementExecutorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSStatementExecutorSpec.m; path = cslim/tests/ObjectiveC/OCSStatementExecutorSpec.m; sourceTree = "<group>"; };
 		079CCEDB15DAFB7D003C8A31 /* OCSObjectiveCtoCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSObjectiveCtoCBridge.h; path = cslim/include/ExecutorObjectiveC/OCSObjectiveCtoCBridge.h; sourceTree = "<group>"; };
@@ -323,7 +325,6 @@
 		804A6D9CA5B3BAFA26816C72 /* libPods-MacSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MacSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDA3F8EB2A4257A2C1382CB /* Pods-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MacTests/Pods-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C2357BD1F0FE84B0046CEF5 /* MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C2357BF1F0FE84B0046CEF5 /* MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacTests.swift; sourceTree = "<group>"; };
 		8C2357C11F0FE84B0046CEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C2808B41DA7F026007521E8 /* MacSpecs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSpecs-Bridging-Header.h"; sourceTree = "<group>"; };
 		8C2808B51DA7F027007521E8 /* ValidReturnTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidReturnTypes.swift; path = cslim/tests/ObjectiveC/ValidReturnTypes.swift; sourceTree = "<group>"; };
@@ -373,8 +374,8 @@
 		F8ED9F0C1448BDF900DCBB3F /* ObjectiveCSlimMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveCSlimMac-Prefix.pch"; sourceTree = "<group>"; };
 		F8ED9F101448BDF900DCBB3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		F8ED9F2E1448BE3200DCBB3F /* AcceptanceTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcceptanceTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8F160131587A4250092AA09 /* RunAllTests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RunAllTests; path = bin/RunAllTests; sourceTree = "<group>"; };
-		F8F160181587A4250092AA09 /* StartFitNesse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = StartFitNesse; path = bin/StartFitNesse; sourceTree = "<group>"; };
+		F8F160131587A4250092AA09 /* RunAllTests */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; name = RunAllTests; path = bin/RunAllTests; sourceTree = "<group>"; };
+		F8F160181587A4250092AA09 /* StartFitNesse */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; name = StartFitNesse; path = bin/StartFitNesse; sourceTree = "<group>"; };
 		F8FC52B914AE475600D714B4 /* ListExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ListExecutor.h; path = cslim/include/CSlim/ListExecutor.h; sourceTree = "<group>"; };
 		F8FC52BA14AE475600D714B4 /* Slim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Slim.h; path = cslim/include/CSlim/Slim.h; sourceTree = "<group>"; };
 		F8FC52BB14AE475600D714B4 /* SlimConnectionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlimConnectionHandler.h; path = cslim/include/CSlim/SlimConnectionHandler.h; sourceTree = "<group>"; };
@@ -627,8 +628,8 @@
 		8C2357BE1F0FE84B0046CEF5 /* MacTests */ = {
 			isa = PBXGroup;
 			children = (
-				8C2357BF1F0FE84B0046CEF5 /* MacTests.swift */,
 				8C2357C11F0FE84B0046CEF5 /* Info.plist */,
+				076CFB0A1F3DF87200B3EABE /* OCSSelectorSpec.swift */,
 			);
 			path = MacTests;
 			sourceTree = "<group>";
@@ -1252,7 +1253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C2357C01F0FE84B0046CEF5 /* MacTests.swift in Sources */,
+				07902A9B1F3DE66300ADF9AB /* OCSSelector.m in Sources */,
+				076CFB0B1F3DF87200B3EABE /* OCSSelectorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1607,6 +1609,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.objectivecslim.MacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "MacSpecs-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1639,6 +1642,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.objectivecslim.MacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MacSpecs-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
