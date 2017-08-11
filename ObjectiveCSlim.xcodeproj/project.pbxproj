@@ -88,6 +88,8 @@
 		07080BAB182D502A007234D0 /* OCSSelectorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757BB4615E3373F00604742 /* OCSSelectorSpec.m */; };
 		07080BAC182D502A007234D0 /* OCSInstanceCreatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */; };
 		07131A8D182D82B300E81279 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07131A8C182D82B300E81279 /* Default-568h@2x.png */; };
+		072644061F3DF9840076616A /* OCSExceptionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072644051F3DF9840076616A /* OCSExceptionSpec.swift */; };
+		072644071F3DF9A40076616A /* OCSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EEC08D15DAB3960012CA03 /* OCSException.m */; };
 		072E0CF315A11FBD009615B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072E0CED15A11F8F009615B6 /* UIKit.framework */; };
 		072E0CF615A1213C009615B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A425B4145208CC00FD4ECA /* Foundation.framework */; };
 		07460744182E96EE008D96D8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07131A8C182D82B300E81279 /* Default-568h@2x.png */; };
@@ -280,6 +282,7 @@
 		07080B61182D47AC007234D0 /* iOSSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		07131A8C182D82B300E81279 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		071CE5FB15E5CAA00084BC17 /* OCSInstanceCreatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSInstanceCreatorSpec.m; path = cslim/tests/ObjectiveC/OCSInstanceCreatorSpec.m; sourceTree = "<group>"; };
+		072644051F3DF9840076616A /* OCSExceptionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OCSExceptionSpec.swift; path = cslim/tests/Swift/OCSExceptionSpec.swift; sourceTree = SOURCE_ROOT; };
 		072E0CED15A11F8F009615B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		074A1AC218B3EDB5000A365A /* OCSlimToObjectiveCBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSlimToObjectiveCBridge.m; path = cslim/src/ExecutorObjectiveC/OCSlimToObjectiveCBridge.m; sourceTree = "<group>"; };
 		074A1AC718B3EDCB000A365A /* OCSlimToObjectiveCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSlimToObjectiveCBridge.h; path = cslim/include/ExecutorObjectiveC/OCSlimToObjectiveCBridge.h; sourceTree = "<group>"; };
@@ -630,6 +633,7 @@
 			children = (
 				8C2357C11F0FE84B0046CEF5 /* Info.plist */,
 				076CFB0A1F3DF87200B3EABE /* OCSSelectorSpec.swift */,
+				072644051F3DF9840076616A /* OCSExceptionSpec.swift */,
 			);
 			path = MacTests;
 			sourceTree = "<group>";
@@ -1254,6 +1258,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07902A9B1F3DE66300ADF9AB /* OCSSelector.m in Sources */,
+				072644071F3DF9A40076616A /* OCSException.m in Sources */,
+				072644061F3DF9840076616A /* OCSExceptionSpec.swift in Sources */,
 				076CFB0B1F3DF87200B3EABE /* OCSSelectorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
